@@ -1,0 +1,100 @@
+fileFormatVersion: 2
+guid: 11ec6a4316112bc4fb6d1fa54d5cbd2b
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: default
+    100004: MyCurvedPlaneConcave
+    100006: MyCurvedPlaneConvex
+    100008: CurvedPlaneConcave
+    100010: CurvedPlaneConvex
+    100012: SimpleCurvedPlaneConcave
+    100014: SimpleCurvedPlaneConvex
+    100016: SimpleCurvedPlaneDouble
+    400000: //RootNode
+    400002: default
+    400004: MyCurvedPlaneConcave
+    400006: MyCurvedPlaneConvex
+    400008: CurvedPlaneConcave
+    400010: CurvedPlaneConvex
+    400012: SimpleCurvedPlaneConcave
+    400014: SimpleCurvedPlaneConvex
+    400016: SimpleCurvedPlaneDouble
+    2300000: default
+    2300002: MyCurvedPlaneConcave
+    2300004: MyCurvedPlaneConvex
+    2300006: CurvedPlaneConcave
+    2300008: CurvedPlaneConvex
+    2300010: SimpleCurvedPlaneConcave
+    2300012: SimpleCurvedPlaneConvex
+    2300014: SimpleCurvedPlaneDouble
+    3300000: default
+    3300002: MyCurvedPlaneConcave
+    3300004: MyCurvedPlaneConvex
+    3300006: CurvedPlaneConcave
+    3300008: CurvedPlaneConvex
+    3300010: SimpleCurvedPlaneConcave
+    3300012: SimpleCurvedPlaneConvex
+    3300014: SimpleCurvedPlaneDouble
+    4300000: default
+    4300002: MyCurvedPlaneConcave
+    4300004: MyCurvedPlaneConvex
+    4300006: CurvedPlaneConcave
+    4300008: CurvedPlaneConvex
+    4300010: SimpleCurvedPlaneConcave
+    4300012: SimpleCurvedPlaneConvex
+    4300014: SimpleCurvedPlaneDouble
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 0
+  userData: 

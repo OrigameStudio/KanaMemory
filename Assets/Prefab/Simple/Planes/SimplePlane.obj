@@ -1,0 +1,31 @@
+#
+# Simple Plane
+#
+# Copyleft Guillermo Calvo 2012
+#
+
+o MySimplePlane
+
+
+v -0.5 0 -0.5
+v -0.5 0 0.5
+v 0.5 0 0.5
+v 0.5 0 -0.5
+
+vt 1 0
+vt 1 1
+vt 0 1
+vt 0 0
+
+g SimplePlane
+
+f 1/1 2/2 3/3 4/4
+
+g SimplePlaneBottom
+
+f 2/1 1/2 4/3 3/4
+
+g SimplePlaneDouble
+
+f 1/1 2/2 3/3 4/4
+f 2/1 1/2 4/3 3/4
