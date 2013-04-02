@@ -1,0 +1,32 @@
+# Unity
+/Library/
+/Temp/
+/Obj/
+/ExportedObj/
+
+# Unity3D meta files
+*.pidb.meta
+
+# Unity3D On Crash Reports
+sysinfo.txt
+*.stackdump
+
+# Builds
+/Build/
+/Releases/
+*.apk
+*.unitypackage
+
+# IDE and project files
+/.consulo/
+/.vs/
+/*.csproj
+/*.unityproj
+/*.sln
+/*.suo
+/*.tmp
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
