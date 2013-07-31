@@ -254,7 +254,7 @@ MonoBehaviour:
   lights:
   - {fileID: 946007604}
   - {fileID: 2068537028}
-  nextScene: 2
+  nextScene: 1
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
 --- !u!82 &466758273
 AudioSource:
