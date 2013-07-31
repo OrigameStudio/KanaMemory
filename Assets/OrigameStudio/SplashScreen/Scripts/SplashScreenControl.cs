@@ -18,9 +18,13 @@ public class SplashScreenControl : MonoBehaviour{
 	public	SplashScreenLight[]			lights;
 	public	int							nextScene = -1;
 	public	Color						ambientLight = Color.black;
+	public	string						skipAnimationClip;
 
+	private	bool						exitApplication = false;
 
 	void Start(){
+
+		Debug.Log("Hullo! (^_^)");
 
 		RenderSettings.ambientLight = this.ambientLight;
 
@@ -36,7 +40,18 @@ public class SplashScreenControl : MonoBehaviour{
 
 			if( Physics.Raycast(ray, out hit) ){
 
-				if( hit.collider.gameObject.GetComponent<SplashScreenCollapsable>() != null ){
+				SplashScreenCollapsable collapsable = hit.collider.gameObject.GetComponent<SplashScreenCollapsable>();
+
+				if(collapsable != null ){
+
+					if(collapsable.exitApplication){
+
+						this.exitApplication = true;
+
+					}else if(collapsable.nextScene >= 0){
+
+						this.nextScene = collapsable.nextScene;
+					}
 
 					this.Skip(hit.point);
 				}
@@ -58,7 +73,7 @@ public class SplashScreenControl : MonoBehaviour{
 				this.animation.Stop();
 			}
 
-			this.animation.clip = this.animation.GetClip("SplashScreen@Skip");
+			this.animation.clip = this.animation.GetClip(this.skipAnimationClip);
 
 			this.animation.Rewind();
 
@@ -105,7 +120,16 @@ public class SplashScreenControl : MonoBehaviour{
 
 		this.status = SplashScreenStatus.finished;
 
-		Application.LoadLevel(this.nextScene);
+		if(this.exitApplication){
+
+			Debug.Log("Bye! (o_o)");
+
+			Application.Quit();
+
+		}else{
+
+			Application.LoadLevel(this.nextScene);
+		}
 	}
 
 }
