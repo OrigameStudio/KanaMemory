@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: 8c7b245d04cc9d04da24ea0c07760cc6
+guid: 8d79106749d1bd349bce5ed083b3ee03
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: default
-    400000: //RootNode
-    400002: default
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: Play
+    100002: //RootNode
+    400000: Play
+    400002: //RootNode
+    2300000: Play
+    3300000: Play
+    4300000: Play
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:

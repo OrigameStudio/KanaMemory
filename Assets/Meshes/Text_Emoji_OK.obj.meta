@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: 9f2050279da2eef4fabad5eeb78ea5b2
+guid: af65303422bfd144580b6fa7ed20b61d
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: default
+    100000: Emoji_OK
     100002: //RootNode
-    400000: default
+    400000: Emoji_OK
     400002: //RootNode
-    2300000: default
-    3300000: default
-    4300000: default
+    2300000: Emoji_OK
+    3300000: Emoji_OK
+    4300000: Emoji_OK
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
