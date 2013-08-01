@@ -12,7 +12,7 @@ public class SplashScreenCollapsable : MonoBehaviour {
 		this.UseGravity(this.gameObject, false);
 	}
 
-	private void UseGravity(GameObject obj, bool useGravity){
+	protected void UseGravity(GameObject obj, bool useGravity){
 
 		Rigidbody[] bodies = obj.GetComponentsInChildren<Rigidbody>();
 
@@ -22,7 +22,7 @@ public class SplashScreenCollapsable : MonoBehaviour {
 		}
 	}
 
-	private void IsKinematic(GameObject obj, bool isKinematic){
+	protected void IsKinematic(GameObject obj, bool isKinematic){
 
 		Rigidbody[] bodies = obj.GetComponentsInChildren<Rigidbody>();
 
@@ -32,7 +32,7 @@ public class SplashScreenCollapsable : MonoBehaviour {
 		}
 	}
 
-	private void Explode(GameObject obj, Vector3 explosionPoint, float explosionForce, float explosionRadius){
+	protected void Explode(GameObject obj, Vector3 explosionPoint, float explosionForce, float explosionRadius){
 
 		Rigidbody[] bodies = obj.GetComponentsInChildren<Rigidbody>();
 
