@@ -24,8 +24,6 @@ public class SplashScreenControl : MonoBehaviour{
 
 	void Start(){
 
-		Debug.Log("Hullo! (^_^)");
-
 		RenderSettings.ambientLight = this.ambientLight;
 
 		this.animation.Play();
@@ -43,6 +41,8 @@ public class SplashScreenControl : MonoBehaviour{
 				SplashScreenCollapsable collapsable = hit.collider.gameObject.GetComponent<SplashScreenCollapsable>();
 
 				if(collapsable != null ){
+
+					collapsable.Hit(hit.point);
 
 					if(collapsable.exitApplication){
 
