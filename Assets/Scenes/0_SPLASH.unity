@@ -1668,6 +1668,8 @@ MonoBehaviour:
   - {fileID: 946007604}
   - {fileID: 2068537028}
   nextScene: 1
+  ambientLight: {r: 0, g: 0, b: 0, a: 1}
+  skipAnimationClip: SplashScreen@Skip
 --- !u!82 &466758273
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3815,6 +3817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a779a27072932438627994e8656ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: -1
+  exitApplication: 0
 --- !u!65 &1165031654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4149,6 +4153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a779a27072932438627994e8656ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: -1
+  exitApplication: 0
 --- !u!111 &1228857701
 Animation:
   m_ObjectHideFlags: 0
