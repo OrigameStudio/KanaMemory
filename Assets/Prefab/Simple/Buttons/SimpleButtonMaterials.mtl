@@ -1,0 +1,14 @@
+
+newmtl BACK
+
+newmtl DOWN
+
+newmtl FRONT
+
+newmtl LEFT
+
+newmtl RIGHT
+
+newmtl UP
+
+newmtl DEFAULT_MATERIAL

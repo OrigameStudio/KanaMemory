@@ -1,0 +1,105 @@
+fileFormatVersion: 2
+guid: dfe6d517281682a4e94692bf584657ba
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SimpleCube
+    100004: SimpleCube2TexturesFront
+    100006: SimpleCube2TexturesUp
+    100008: SimpleCube3TexturesFrontBack
+    100010: SimpleCube3TexturesUpDown
+    100012: SimpleCube6Textures
+    100014: SimpleCubeInside
+    100016: SimpleCubeInside6Textures
+    100018: SimpleButton6Textures
+    400000: //RootNode
+    400002: SimpleCube
+    400004: SimpleCube2TexturesFront
+    400006: SimpleCube2TexturesUp
+    400008: SimpleCube3TexturesFrontBack
+    400010: SimpleCube3TexturesUpDown
+    400012: SimpleCube6Textures
+    400014: SimpleCubeInside
+    400016: SimpleCubeInside6Textures
+    400018: SimpleButton6Textures
+    2300000: SimpleCube
+    2300002: SimpleCube2TexturesFront
+    2300004: SimpleCube2TexturesUp
+    2300006: SimpleCube3TexturesFrontBack
+    2300008: SimpleCube3TexturesUpDown
+    2300010: SimpleCube6Textures
+    2300012: SimpleCubeInside
+    2300014: SimpleCubeInside6Textures
+    2300016: SimpleButton6Textures
+    3300000: SimpleCube
+    3300002: SimpleCube2TexturesFront
+    3300004: SimpleCube2TexturesUp
+    3300006: SimpleCube3TexturesFrontBack
+    3300008: SimpleCube3TexturesUpDown
+    3300010: SimpleCube6Textures
+    3300012: SimpleCubeInside
+    3300014: SimpleCubeInside6Textures
+    3300016: SimpleButton6Textures
+    4300000: SimpleCube
+    4300002: SimpleCube2TexturesFront
+    4300004: SimpleCube2TexturesUp
+    4300006: SimpleCube3TexturesFrontBack
+    4300008: SimpleCube3TexturesUpDown
+    4300010: SimpleCube6Textures
+    4300012: SimpleCubeInside
+    4300014: SimpleCubeInside6Textures
+    4300016: SimpleButton6Textures
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 0
+  userData: 

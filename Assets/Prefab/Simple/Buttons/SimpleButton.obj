@@ -1,0 +1,63 @@
+#
+# Simple Cube
+#
+# Copyleft Guillermo Calvo 2013
+#
+
+mtllib SimpleButtonMaterials.mtl
+
+
+o MySimpleButton
+
+v -0.5 -0.5 -0.5
+v -0.5 -0.5 0.5
+v -0.4 0.5 -0.35
+v -0.4 0.5 0.35
+v 0.5 -0.5 -0.5
+v 0.5 -0.5 0.5
+v 0.4 0.5 -0.35
+v 0.4 0.5 0.35
+
+vn 0 0 1
+vn 0 0 -1
+vn 0 1 0
+vn 0 -1 0
+vn 1 0 0
+vn -1 0 0
+vn 0 0 0
+
+vt 0 0
+vt 1 0
+vt 1 1
+vt 0 1
+
+
+#
+# ----------------------------------------------------------------
+#
+
+g SimpleButton6Textures
+
+usemtl BACK
+
+f 1/2/2 3/3/2 7/4/2 5/1/2
+
+usemtl DOWN
+
+f 1/3/4 5/4/4 6/1/4 2/2/4
+
+usemtl FRONT
+
+f 4/4/1 2/1/1 6/2/1 8/3/1
+
+usemtl LEFT
+
+f 5/2/5 7/3/5 8/4/5 6/1/5
+
+usemtl RIGHT
+
+f 1/1/6 2/2/6 4/3/6 3/4/6
+
+usemtl UP
+
+f 3/2/3 4/3/3 8/4/3 7/1/3
