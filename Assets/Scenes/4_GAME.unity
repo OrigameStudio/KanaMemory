@@ -47863,6 +47863,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -47894,6 +47898,50 @@ Prefab:
     - target: {fileID: 11400004, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: publisherId
+      value: ca-app-pub-7744701786126851/7034606527
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[0]
+      value: Japanese
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[1]
+      value: Hiragana
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[2]
+      value: Katakana
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[3]
+      value: Kanji
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[4]
+      value: Japan
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[5]
+      value: Nihongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[6]
+      value: Nihon
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[9]
+      value: "Jap\xF3n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[8]
+      value: "Japon\xE9s"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: target.keywords.Array.data[7]
+      value: JP
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
@@ -51513,8 +51561,8 @@ MonoBehaviour:
   lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
   currentAd:
     icon: {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
-    action: {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
-    text: Simplicity is the ultimate sophistication.
+    action: {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
+    text: If it works, it's obsolete.
 --- !u!114 &1743261342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51606,7 +51654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bdf14effc102404ab6a46bc6a50a821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  publisherId: YOUR_PUBLISHER_ID
+  publisherId: ca-app-pub-7744701786126851/7034606527
   isTesting: 1
   testDeviceIds:
   - TEST_DEVICE_ID
@@ -51624,7 +51672,17 @@ MonoBehaviour:
       year: 0
       month: 0
       day: 0
-    keywords: []
+    keywords:
+    - Japanese
+    - Hiragana
+    - Katakana
+    - Kanji
+    - Japan
+    - Nihongo
+    - Nihon
+    - JP
+    - "Japon\xE9s"
+    - "Jap\xF3n"
     location:
       latitude: NaN
       longitude: NaN
