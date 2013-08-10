@@ -491,6 +491,57 @@ Transform:
   m_Children:
   - {fileID: 2068537027}
   m_Father: {fileID: 186224827}
+--- !u!1 &458038584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 458038586}
+  - 114: {fileID: 458038585}
+  m_Layer: 0
+  m_Name: _Game
+  m_TagString: GAME_DATA
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &458038585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458038584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fa03e09f4a23a429c7bdde061f2ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: 0
+  type: 0
+  difficulty: 1
+  boardSize: 2
+  cards:
+    total: 0
+    matches: 0
+    failures: 0
+  games: 0
+  time:
+    start: 0
+    total: 0
+    left: 0
+--- !u!4 &458038586
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 458038584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &466758270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,201 +2087,6 @@ Transform:
   m_Children:
   - {fileID: 481604483}
   m_Father: {fileID: 1515073742}
---- !u!1 &1186302024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_PrefabInternal: {fileID: 2077730284}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1186302028}
-  - 114: {fileID: 1186302027}
-  - 114: {fileID: 1186302026}
-  - 114: {fileID: 1186302025}
-  m_Layer: 0
-  m_Name: AdMobPlugin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1186302025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 2077730284}
-  m_GameObject: {fileID: 1186302024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcdadf56b0d1e54e906ae9deec40c57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  executeInEditMode: 1
-  style: 0
-  texts:
-  - Bugs that go away by themselves come back by themselves.
-  - When in doubt, use brute force.
-  - Deleted code is debugged code.
-  - Premature optimization is the root of all evil.
-  - Simplicity is the ultimate sophistication.
-  - With diligence it is possible to make anything run slowly.
-  - Simplicity carried to the extreme becomes elegance.
-  - The best is the enemy of the good.
-  - A data structure is just a stupid programming language.
-  - Software gets slower faster than hardware gets faster.
-  - If it doesn't work, it doesn't matter how fast it doesn't work.
-  - If it works, it's obsolete.
-  - The common language of programmers is Profanity.
-  - There is no place like 127.0.0.1.
-  - The code is 100% complete, it just doesn't work yet.
-  - Programming is hard, let's go shopping.
-  icons:
-  - {fileID: 2800000, guid: 42f0fee300d07b347874caf6491a8e1e, type: 3}
-  - {fileID: 2800000, guid: a0eff840123186b4a97e58764a06116a, type: 3}
-  - {fileID: 2800000, guid: 13ac363ff191c2648b2b4adae2553a7e, type: 3}
-  - {fileID: 2800000, guid: fbf551ccd05c60540877234ccbe0f135, type: 3}
-  - {fileID: 2800000, guid: ca76f053bcdffaf4bad67609b6b8c854, type: 3}
-  - {fileID: 2800000, guid: 8e5ce85e4d1b6404d9840eebe6224f77, type: 3}
-  - {fileID: 2800000, guid: 91db7cb3febcec4419d4ab042f0f2f5d, type: 3}
-  - {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
-  - {fileID: 2800000, guid: 9af03d6d762bd4f4a8e8d9c435989f81, type: 3}
-  - {fileID: 2800000, guid: aa33e0a9e023cdf4b8adabbb7bd8bd23, type: 3}
-  actions:
-  - {fileID: 2800000, guid: 87cb40c70b3249c4896cb0ef2bff4e61, type: 3}
-  - {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
-  - {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
-  darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
-  lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
-  currentAd:
-    icon: {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
-    action: {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
-    text: The best is the enemy of the good.
---- !u!114 &1186302026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 2077730284}
-  m_GameObject: {fileID: 1186302024}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36da46230c88f0e44ba41ec202f52749, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rectangles:
-    loadButton:
-      serializedVersion: 2
-      x: 32
-      y: 32
-      width: 64
-      height: 48
-    exitButton:
-      serializedVersion: 2
-      x: 104
-      y: 32
-      width: 64
-      height: 48
-    showButton:
-      serializedVersion: 2
-      x: 32
-      y: 88
-      width: 64
-      height: 48
-    hideButton:
-      serializedVersion: 2
-      x: 104
-      y: 88
-      width: 64
-      height: 48
-    horizontalPositionButton:
-      serializedVersion: 2
-      x: 176
-      y: 32
-      width: 240
-      height: 48
-    verticalPositionButton:
-      serializedVersion: 2
-      x: 176
-      y: 88
-      width: 240
-      height: 48
-    orientationButton:
-      serializedVersion: 2
-      x: 176
-      y: 144
-      width: 240
-      height: 48
-    genderButton:
-      serializedVersion: 2
-      x: 32
-      y: 144
-      width: 136
-      height: 48
-    sizeButton:
-      serializedVersion: 2
-      x: 176
-      y: 200
-      width: 240
-      height: 50
-    lastErrorRectButton:
-      serializedVersion: 2
-      x: 32
-      y: 256
-      width: 384
-      height: 50
-    receivedLabel:
-      serializedVersion: 2
-      x: 32
-      y: 256
-      width: 384
-      height: 50
---- !u!114 &1186302027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada,
-    type: 2}
-  m_PrefabInternal: {fileID: 2077730284}
-  m_GameObject: {fileID: 1186302024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bdf14effc102404ab6a46bc6a50a821, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  publisherId: a1515a4f62c5e2b
-  isTesting: 1
-  testDeviceIds:
-  - TEST_DEVICE_ID
-  guessSelfDeviceId: 1
-  size: 0
-  orientation: 0
-  horizontalPosition: 0
-  verticalPosition: 2
-  refreshInterval: 30
-  loadOnStart: 1
-  loadOnReconfigure: 1
-  target:
-    gender: 0
-    birthday:
-      year: 0
-      month: 0
-      day: 0
-    keywords: []
-    location:
-      latitude: NaN
-      longitude: NaN
-      altitude: NaN
---- !u!4 &1186302028
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_PrefabInternal: {fileID: 2077730284}
-  m_GameObject: {fileID: 1186302024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1187330064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3536,74 +3392,6 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
---- !u!1001 &2077730284
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: publisherId
-      value: a1515a4f62c5e2b
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: style
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: currentAd.icon
-      value: 
-      objectReference: {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
-    - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: currentAd.action
-      value: 
-      objectReference: {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
-    - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: currentAd.text
-      value: The best is the enemy of the good.
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
-  m_RootGameObject: {fileID: 1186302024}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &2094599272
 GameObject:
   m_ObjectHideFlags: 0
