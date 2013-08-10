@@ -51560,9 +51560,9 @@ MonoBehaviour:
   darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
   lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
   currentAd:
-    icon: {fileID: 2800000, guid: d502f1730be94304e98d7deeb2736ba8, type: 3}
+    icon: {fileID: 2800000, guid: ca76f053bcdffaf4bad67609b6b8c854, type: 3}
     action: {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
-    text: If it works, it's obsolete.
+    text: Bugs that go away by themselves come back by themselves.
 --- !u!114 &1743261342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56946,7 +56946,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1927189529}
   m_LocalRotation: {x: .601814985, y: 0, z: 0, w: .798635542}
-  m_LocalPosition: {x: 0, y: 6, z: -2}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 628095889}
