@@ -9,10 +9,8 @@
 //// and vertically) 					   ////
 ////  									   ////
 ///////////////////////////////////////////////
-
 using UnityEngine;
 using System.Collections;
-
 
 public class SwipeControlXY : MonoBehaviour{
 
@@ -29,10 +27,10 @@ public class SwipeControlXY : MonoBehaviour{
 	public bool  clickEdgeToSwitch = true;
 
 	// how many pixels do you have to move the mouse/finger in each direction to get to the next value? - this was called partWidth before...
-	public Vector2 pxDistBetweenValues = new Vector2 (200f, 50f);
+	public Vector2 pxDistBetweenValues = new Vector2(200f, 50f);
 
 	// calculated once in the beginning, so we don't have to do costly divisions every frame
-	private Vector2 partFactor = new Vector2 (1f, 1f);
+	private Vector2 partFactor = new Vector2(1f, 1f);
 
 	// start with this value
 	public Vector2 startValue = Vector2.zero;
@@ -41,12 +39,12 @@ public class SwipeControlXY : MonoBehaviour{
 	public Vector2 currentValue = Vector2.zero;
 
 	//max value
-	public Vector2 maxValue = new Vector2 (10, 10);
+	public Vector2 maxValue = new Vector2(10, 10);
 
 	//where you can click to start the swipe movement (once you clicked you can drag outside as well) - used to be called MouseRect
 	public Rect activeArea;
-	public Rect leftEdgeRectForClickSwitch = new Rect ();
-	public Rect rightEdgeRectForClickSwitch = new Rect ();
+	public Rect leftEdgeRectForClickSwitch = new Rect();
+	public Rect rightEdgeRectForClickSwitch = new Rect();
 	public Matrix4x4 matrix = Matrix4x4.identity;
 
 	//dragging operation in progress?
@@ -63,7 +61,7 @@ public class SwipeControlXY : MonoBehaviour{
 	private Vector2 smoothStartPos = Vector2.zero;
 
 	//how far (% of the width of one element) do we have to drag to set it to change currentValue?
-	private Vector2 smoothDragOffset = new Vector2 (0.2f, 0.2f);
+	private Vector2 smoothDragOffset = new Vector2(0.2f, 0.2f);
 	private float lastSmoothValue;
 	private float[] prevSmoothValueX = new float[5];
 	private float[] prevSmoothValueY = new float[5];
@@ -76,7 +74,7 @@ public class SwipeControlXY : MonoBehaviour{
 	private float yVelocity;
 
 	//Clamp the maximum speed of Mathf.SmoothDamp()
-	public Vector2 maxSpeed = new Vector2 (20.0f, 20.0f);
+	public Vector2 maxSpeed = new Vector2(20.0f, 20.0f);
 	public float bufferZone = 0.12f;
 	private Vector2 mStartPos;
 
@@ -85,7 +83,6 @@ public class SwipeControlXY : MonoBehaviour{
 
 	//transformed Position
 	private Vector2 tPos;
-
 	public bool debug = false;
 
 	IEnumerator Start(){
@@ -104,7 +101,7 @@ public class SwipeControlXY : MonoBehaviour{
 
 		if(!this.skipAutoSetup){
 
-			this.Setup ();
+			this.Setup();
 		}
 	}
 
@@ -120,7 +117,7 @@ public class SwipeControlXY : MonoBehaviour{
 		//Apply Start-value
 		this.currentValue = this.startValue;
 
-		if(this.activeArea != new Rect(0, 0, 0, 0) ){
+		if( this.activeArea != new Rect(0, 0, 0, 0) ){
 
 			this.SetActiveArea(this.activeArea);
 		}
@@ -273,7 +270,7 @@ public class SwipeControlXY : MonoBehaviour{
 								if( this.currentValue.x - (this.smoothValue.x + (this.smoothValue.x - this.GetAvgValue(this.prevSmoothValueX))) > this.smoothDragOffset.x || this.currentValue.x - (this.smoothValue.x + (this.smoothValue.x - this.GetAvgValue(this.prevSmoothValueX))) < -this.smoothDragOffset.x ){
 
 									//dragged beyond dragOffset to the right
-									this.currentValue.x = Mathf.Round(  this.smoothValue.x + (this.smoothValue.x - this.GetAvgValue(this.prevSmoothValueX) )  );
+									this.currentValue.x = Mathf.Round(  this.smoothValue.x + ( this.smoothValue.x - this.GetAvgValue(this.prevSmoothValueX) )  );
 									this.xVelocity = ( this.smoothValue.x - this.GetAvgValue(prevSmoothValueX) ); // * -0.10f ;
 
 									if(this.currentValue.x > this.maxValue.x){
@@ -289,7 +286,7 @@ public class SwipeControlXY : MonoBehaviour{
 								if( this.currentValue.y - (this.smoothValue.y + (this.smoothValue.y - this.GetAvgValue(this.prevSmoothValueY))) > this.smoothDragOffset.y || this.currentValue.y - (this.smoothValue.y + (this.smoothValue.y - this.GetAvgValue(this.prevSmoothValueY))) < -this.smoothDragOffset.y ){
 
 									//dragged beyond dragOffset to the right
-									this.currentValue.y = Mathf.Round(  this.smoothValue.y + (this.smoothValue.y - GetAvgValue(this.prevSmoothValueY) )  );
+									this.currentValue.y = Mathf.Round(  this.smoothValue.y + ( this.smoothValue.y - GetAvgValue(this.prevSmoothValueY) )  );
 									this.yVelocity = ( this.smoothValue.y - this.GetAvgValue(this.prevSmoothValueY) ); // * -0.10f ;
 
 									if(this.currentValue.y > this.maxValue.y){
@@ -317,64 +314,112 @@ public class SwipeControlXY : MonoBehaviour{
 					}
 				}
 
-			#if UNITY_IPHONE || UNITY_ANDROID
+#if UNITY_IPHONE || UNITY_ANDROID
 
-			foreach(Touch touch in Input.touches){
-				pos = Vector3(touch.position.x, Screen.height - touch.position.y, 0.0f);
-				tPos = matrix.inverse.MultiplyPoint3x4(pos);
+				foreach(Touch touch in Input.touches){
 
-				//BEGAN
-				print(tPos + " inside " + activeArea + "?");
-				if (touch.phase == TouchPhase.Began && activeArea.Contains(tPos)) {
-					fingerStartArea[touch.fingerId] = 1;
-					print("hit!");
-				}
-				//WHILE FINGER DOWN
-				if(fingerStartArea[touch.fingerId] == 1) { // no touchRect.Contains check because once you touched down you're allowed to drag outside...
-					touched = true;
-					//START
-					if(touch.phase == TouchPhase.Began) {
-						smoothStartPos.x = smoothValue.x + tPos.x * partFactor.x;
-						FillArrayWithValue(prevSmoothValueX, smoothValue.x);
-						smoothStartPos.y = smoothValue.y + tPos.y * partFactor.y;
-						FillArrayWithValue(prevSmoothValueY, smoothValue.y);
+					pos = new Vector3(touch.position.x, Screen.height - touch.position.y, 0.0f);
+					tPos = matrix.inverse.MultiplyPoint3x4(pos);
+
+					//BEGAN
+					//print(tPos + " inside " + activeArea + "?");
+					if(touch.phase == TouchPhase.Began && activeArea.Contains(tPos)){
+						fingerStartArea[touch.fingerId] = 1;
+						//print("hit!");
 					}
-					//DRAGGING
-					smoothValue.x = smoothStartPos.x - tPos.x * partFactor.x;
-					smoothValue.y = smoothStartPos.y - tPos.y * partFactor.y;
-					if(smoothValue.x < -bufferZone) { smoothValue.x = -bufferZone; }
-					else if(smoothValue.x > maxValue.x + bufferZone) { smoothValue.x = maxValue.x + bufferZone; }
-					if(smoothValue.y < -bufferZone) { smoothValue.y = -bufferZone; }
-					else if(smoothValue.y > maxValue.y + bufferZone) { smoothValue.y = maxValue.y + bufferZone; }
-					//END
-					if(touch.phase == TouchPhase.Ended) {
-							if(currentValue.x - (smoothValue.x + (smoothValue.x - GetAvgValue(prevSmoothValueX))) > smoothDragOffset.x || currentValue.x - (smoothValue.x + (smoothValue.x - GetAvgValue(prevSmoothValueX))) < -smoothDragOffset.x){ //dragged beyond dragOffset to the right
+
+					//WHILE FINGER DOWN
+					if(fingerStartArea[touch.fingerId] == 1){
+
+						// no touchRect.Contains check because once you touched down you're allowed to drag outside...
+						touched = true;
+
+						//START
+						if(touch.phase == TouchPhase.Began){
+
+							smoothStartPos.x = smoothValue.x + tPos.x * partFactor.x;
+							FillArrayWithValue(prevSmoothValueX, smoothValue.x);
+							smoothStartPos.y = smoothValue.y + tPos.y * partFactor.y;
+							FillArrayWithValue(prevSmoothValueY, smoothValue.y);
+						}
+
+						//DRAGGING
+						smoothValue.x = smoothStartPos.x - tPos.x * partFactor.x;
+						smoothValue.y = smoothStartPos.y - tPos.y * partFactor.y;
+
+						if(smoothValue.x < -bufferZone){
+
+							smoothValue.x = -bufferZone;
+
+						}else if(smoothValue.x > maxValue.x + bufferZone){
+
+							smoothValue.x = maxValue.x + bufferZone;
+						}
+
+						if(smoothValue.y < -bufferZone){
+
+							smoothValue.y = -bufferZone;
+
+						}else if(smoothValue.y > maxValue.y + bufferZone){
+
+							smoothValue.y = maxValue.y + bufferZone;
+						}
+
+						//END
+						if(touch.phase == TouchPhase.Ended){
+
+							if(currentValue.x - (smoothValue.x + (smoothValue.x - GetAvgValue(prevSmoothValueX))) > smoothDragOffset.x || currentValue.x - (smoothValue.x + (smoothValue.x - GetAvgValue(prevSmoothValueX))) < -smoothDragOffset.x){
+
+								//dragged beyond dragOffset to the right
 								currentValue.x = Mathf.Round(smoothValue.x + (smoothValue.x - GetAvgValue(prevSmoothValueX)));
 								xVelocity = (smoothValue.x - GetAvgValue(prevSmoothValueX)); // * -0.10f ;
-								if(currentValue.x > maxValue.x) currentValue.x = maxValue.x;
-								else if(currentValue.x < 0f) currentValue.x = 0f;
+
+								if(currentValue.x > maxValue.x){
+
+									currentValue.x = maxValue.x;
+
+								}else if(currentValue.x < 0f){
+
+									currentValue.x = 0f;
+								}
 							}
-							if(currentValue.y - (smoothValue.y + (smoothValue.y - GetAvgValue(prevSmoothValueY))) > smoothDragOffset.y || currentValue.y - (smoothValue.y + (smoothValue.y - GetAvgValue(prevSmoothValueY))) < -smoothDragOffset.y){ //dragged beyond dragOffset to the right
+
+							if(currentValue.y - (smoothValue.y + (smoothValue.y - GetAvgValue(prevSmoothValueY))) > smoothDragOffset.y || currentValue.y - (smoothValue.y + (smoothValue.y - GetAvgValue(prevSmoothValueY))) < -smoothDragOffset.y){
+
+								//dragged beyond dragOffset to the right
 								currentValue.y = Mathf.Round(smoothValue.y + (smoothValue.y - GetAvgValue(prevSmoothValueY)));
 								yVelocity = (smoothValue.y - GetAvgValue(prevSmoothValueY)); // * -0.10f ;
-								if(currentValue.y > maxValue.y) currentValue.y = maxValue.y;
-								else if(currentValue.y < 0f) currentValue.y = 0f;
+
+								if(currentValue.y > maxValue.y){
+
+									currentValue.y = maxValue.y;
+
+								}else if(currentValue.y < 0f){
+
+									currentValue.y = 0f;
+								}
 							}
 
 						}
-						for(i = 1; i < prevSmoothValueX.Length; i++) {
+
+						for(int i = 1; i < prevSmoothValueX.Length; i++){
+
 							prevSmoothValueX[i] = prevSmoothValueX[i- 1];
 							prevSmoothValueY[i] = prevSmoothValueY[i- 1];
 						}
+
 						prevSmoothValueX[0] = smoothValue.x;
 						prevSmoothValueY[0] = smoothValue.y;
+					}
+
+
+					if(touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled){
+
+						fingerStartArea[touch.fingerId] = 0;
+					}
+
 				}
-
-
-				if(touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled) fingerStartArea[touch.fingerId] = 0;
-
-			}
-			#endif
+#endif
 
 			}
 
