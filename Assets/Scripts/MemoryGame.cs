@@ -13,14 +13,29 @@ public class MemoryGame : MonoBehaviour{
 	public int				games;
 	public TimeStats		time;
 
+	private static MemoryGame instance;
 	public static MemoryGame GetInstance(){
+		
+		if(MemoryGame.instance == null){
 
-		return( (MemoryGame)GameObject.FindObjectOfType( typeof(MemoryGame) ) );
+			MemoryGame.instance = (MemoryGame)GameObject.FindObjectOfType( typeof(MemoryGame) );
+		}
+
+		return(MemoryGame.instance);
 	}
 
 	void Start(){
 
-		GameObject.DontDestroyOnLoad(this.gameObject);
+		MemoryGame.GetInstance();
+
+		if(MemoryGame.instance != null && MemoryGame.instance != this){
+
+			GameObject.Destroy(this.gameObject);
+
+		}else{
+
+			GameObject.DontDestroyOnLoad(this.gameObject);
+		}
 	}
 
 	public void StartGame(int pairs, int seconds){
