@@ -10,8 +10,8 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Prueba
-  productName: foo
+  companyName: Origame Studio
+  productName: Kana Memory
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -30,7 +30,7 @@ PlayerSettings:
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
-  use32BitDisplayBuffer: 1
+  use32BitDisplayBuffer: 0
   use24BitDepthBuffer: 0
   defaultIsFullScreen: 0
   defaultIsNativeResolution: 1
@@ -69,7 +69,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: com.Company.ProductName
+  iPhoneBundleIdentifier: com.origamestudio.kanamemory
   productGUID: 25511ae292f7a264da114d4113d6ad9c
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
@@ -106,9 +106,24 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: c82b8ca65468bf34cb26503741c5a40c, type: 3}
       m_Size: 128
-  m_BuildTargetBatching: []
+  - m_BuildTarget: Android
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: c82b8ca65468bf34cb26503741c5a40c, type: 3}
+      m_Size: 144
+    - m_Icon: {fileID: 2800000, guid: a75dd6b6a31dbac4fb39a7a859349583, type: 3}
+      m_Size: 96
+    - m_Icon: {fileID: 2800000, guid: aa1a07908102276489a184a94f5569d9, type: 3}
+      m_Size: 72
+    - m_Icon: {fileID: 2800000, guid: 390e5ce27d3e9c348ae245d4aac23146, type: 3}
+      m_Size: 48
+    - m_Icon: {fileID: 2800000, guid: b1b726f53ac8ff642b67eb3110dbc26a, type: 3}
+      m_Size: 36
+  m_BuildTargetBatching:
+  - m_BuildTarget: Android
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiRegion: 1
