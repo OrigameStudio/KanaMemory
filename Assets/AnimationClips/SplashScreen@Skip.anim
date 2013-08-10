@@ -37,7 +37,7 @@ AnimationClip:
   m_EditorCurves: []
   m_EulerEditorCurves: []
   m_Events:
-  - time: .983333349
+  - time: 1
     functionName: FadeOut
     data: 
     objectReferenceParameter: {fileID: 0}
