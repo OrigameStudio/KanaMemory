@@ -1,11 +1,4 @@
-
-using UnityEngine;
-using System.Collections;
-
-
-public enum Alphabet{ HIRAGANA, KATAKANA, ROMAJI };
-
-
+﻿
 public enum Character{
 	A, I, U, E, O,
 	KA, KI, KU, KE, KO,
@@ -17,9 +10,11 @@ public enum Character{
 	YA, YU, YO,
 	RA, RI, RU, RE, RO,
 	WA, WO,
+	N,
+
 	GA, GI, GU, GE, GO,
 	ZA, JI, ZU, ZE, ZO,
-	DA, DJI, DZU, DE, DO,
+	DA, DJI, DZU, DE, DO, /* DJI=JI, DJU=ZU */
 	BA, BI, BU, BE, BO,
 	PA, PI, PU, PE, PO,
 
@@ -34,7 +29,7 @@ public enum Character{
 	JA, JU, JO,
 	BYA, BYU, BYO,
 	PYA, PYU, PYO,
-	N,
+
 	VA, VI, VU, VE, VO,
 	DU,
 	TI,
@@ -42,30 +37,4 @@ public enum Character{
 	SHE,
 	JE,
 	CHE
- };
-
-public class Card : MonoBehaviour {
-
-	public string cardName;
-	public Alphabet alphabet;
-	public Character character;
-
-	// Use this for initialization
-	void Start () {
-
-	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
-
-	public void Flip () {
-
-		//transform.rotation.z += 180;
-
-		print ("ROTANDO...");
-		transform.Rotate( new Vector3(0, 0, 180) );
-
-	}
-}
+};
