@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 16
 --- !u!65 &8038877
 BoxCollider:
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 42
 --- !u!65 &17788619
 BoxCollider:
@@ -805,7 +805,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: e13adb9aea897f440867804bd5505a38, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -1174,7 +1174,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: dd92cfdd97354834baaccad0b393bfe4, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 2
 --- !u!65 &26612734
 BoxCollider:
@@ -1658,7 +1658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 27
 --- !u!65 &37146274
 BoxCollider:
@@ -2422,7 +2422,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 4938da101fd8f12428f8bd8cc669e546, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -2511,7 +2511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 29
 --- !u!65 &51103270
 BoxCollider:
@@ -2609,7 +2609,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 5a943a43f32684747b42e9cfe52becba, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -4205,7 +4205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 4
 --- !u!65 &115853709
 BoxCollider:
@@ -4475,7 +4475,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: f53db340ef7430e4b90b944c7c1004b4, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -6061,7 +6061,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 72d99fb2f4f03cf4d85672a82837cea0, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -6209,7 +6209,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 34070c1f4b2190344b7c26663c409a9d, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -6267,7 +6267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 14
 --- !u!65 &183799721
 BoxCollider:
@@ -6461,7 +6461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 12
 --- !u!65 &199717755
 BoxCollider:
@@ -8160,7 +8160,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 5fdc8428ca59ef24e8a5666a5f0c8c45, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -10463,7 +10463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 33
 --- !u!65 &329980242
 BoxCollider:
@@ -11712,7 +11712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 36
 --- !u!65 &359911540
 BoxCollider:
@@ -13541,7 +13541,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 2362f2923ef43404eb1b929c3a468c88, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -14233,7 +14233,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6d1905edb19e1d1468ab1598d4e6f817, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -14697,7 +14697,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6ff195356091da94c8eb04d88549111a, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -14941,7 +14941,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 1c8cc3344c19fa643a18576fd5d72a08, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -15097,7 +15097,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 98e7c9005585e0543abed70d1589018d, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -15232,7 +15232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 24
 --- !u!65 &523463838
 BoxCollider:
@@ -15600,7 +15600,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ec255ebb762b7e84c81147bf2debb403, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -16053,7 +16053,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: c6bf8fd4f572ba545a4199474c881cb3, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -16345,7 +16345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 1
 --- !u!65 &555855131
 BoxCollider:
@@ -17824,7 +17824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 26
 --- !u!65 &613661292
 BoxCollider:
@@ -18828,7 +18828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 5
 --- !u!65 &634807885
 BoxCollider:
@@ -19272,7 +19272,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: c19f0947284f57145894e943ef1fdddd, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -19642,7 +19642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 25
 --- !u!65 &654268226
 BoxCollider:
@@ -20524,7 +20524,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 0ea56b8ed00b1b440acce88786dbdbbb, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -21301,7 +21301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 13
 --- !u!65 &709006107
 BoxCollider:
@@ -22447,7 +22447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 7
 --- !u!65 &757207372
 BoxCollider:
@@ -22527,7 +22527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 21
 --- !u!65 &761945875
 BoxCollider:
@@ -23041,7 +23041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 32
 --- !u!65 &771415163
 BoxCollider:
@@ -23299,7 +23299,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: c04653b0c24936b4b8486bdd3107c260, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -23432,7 +23432,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: caf8bcf89e17b8241aa5e11103587563, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -24678,7 +24678,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: fc6bd68f659f0c84884848052c7f2d7d, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -25432,7 +25432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 38
 --- !u!65 &871647000
 BoxCollider:
@@ -26124,7 +26124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 10
 --- !u!65 &895514467
 BoxCollider:
@@ -27323,7 +27323,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ec0e912b9cdf7b54bb03ac733f3ffdcb, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -27659,7 +27659,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 9c6739132965a674c95e91ed5e97b16f, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -28310,7 +28310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 11
 --- !u!65 &967301128
 BoxCollider:
@@ -29280,7 +29280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 17
 --- !u!65 &983155255
 BoxCollider:
@@ -30486,7 +30486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 18
 --- !u!65 &1022693527
 BoxCollider:
@@ -30791,7 +30791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 40
 --- !u!65 &1023746508
 BoxCollider:
@@ -31373,7 +31373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 35
 --- !u!65 &1042167637
 BoxCollider:
@@ -31533,7 +31533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 8
 --- !u!65 &1046318741
 BoxCollider:
@@ -31783,7 +31783,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 4304d83cb4aa4f245b286fad19ceb3af, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -32426,7 +32426,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 3e1d3aa747e066246b7570075ca62ff2, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -32853,7 +32853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 45
 --- !u!65 &1084291891
 BoxCollider:
@@ -34155,7 +34155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 41
 --- !u!65 &1165222258
 BoxCollider:
@@ -35925,7 +35925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 39
 --- !u!65 &1227903547
 BoxCollider:
@@ -36235,7 +36235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 28
 --- !u!65 &1232617911
 BoxCollider:
@@ -38004,7 +38004,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 68c23bf1df03a3b47b438d25b3587962, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -39397,7 +39397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 20
 --- !u!65 &1344392903
 BoxCollider:
@@ -40237,7 +40237,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d88295637243d63498f3e3ef783306b3, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -40401,7 +40401,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 4ce118cd2d83bda4eb7803334b8167a8, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -40713,7 +40713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 37
 --- !u!65 &1384608787
 BoxCollider:
@@ -40793,7 +40793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 23
 --- !u!65 &1385441319
 BoxCollider:
@@ -41100,7 +41100,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 3ed65f03a8739274880f88e4eaf3ceb8, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -42286,7 +42286,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 0a5946328ef4bfa4792c0637964ea484, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -42995,7 +42995,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: c0dcdd9cefe798040921b4d2ccee70a0, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -43200,7 +43200,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 78acc5e8ec74ffe4285d80957c146bec, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -43356,7 +43356,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: f27d8e0ab63ab1247b3f4a0d442d265d, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -43646,7 +43646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 3
 --- !u!65 &1483565287
 BoxCollider:
@@ -44448,7 +44448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 9
 --- !u!65 &1507778599
 BoxCollider:
@@ -45045,7 +45045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 15
 --- !u!65 &1522213077
 BoxCollider:
@@ -46190,7 +46190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 43
 --- !u!65 &1567046206
 BoxCollider:
@@ -46384,7 +46384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 30
 --- !u!65 &1579951948
 BoxCollider:
@@ -46962,7 +46962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 31
 --- !u!65 &1599415577
 BoxCollider:
@@ -47943,6 +47943,10 @@ Prefab:
       propertyPath: target.keywords.Array.data[7]
       value: JP
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
   m_RootGameObject: {fileID: 1743261340}
@@ -48863,7 +48867,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 8daa574a22360c9479cd9c2aa5354580, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -49531,7 +49535,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 2ce4a34204f040c45abed2d12442a5ec, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -51456,7 +51460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 44
 --- !u!65 &1742695257
 BoxCollider:
@@ -51559,10 +51563,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
   darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
   lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
-  currentAd:
-    icon: {fileID: 2800000, guid: ca76f053bcdffaf4bad67609b6b8c854, type: 3}
-    action: {fileID: 2800000, guid: cf53756917301da499205cef5c050738, type: 3}
-    text: Bugs that go away by themselves come back by themselves.
 --- !u!114 &1743261342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51835,7 +51835,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 94bda010fcd2c7741a988be85cfe234a, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -51893,7 +51893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 6
 --- !u!65 &1749134608
 BoxCollider:
@@ -52049,7 +52049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 0
 --- !u!65 &1751226054
 BoxCollider:
@@ -53948,7 +53948,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 585d65162f2dc3e4da0fb152521250d5, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -54424,7 +54424,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 80f02f3edea632d4a974c3c34b4097f8, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -54500,7 +54500,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: aa5177706b4e3d446a9b8f129084e2d5, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -55831,7 +55831,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: cca0cc9489db9c3458fbc9149c8e00d3, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -55907,7 +55907,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 9bff9db14a1315948b4910bddbb044df, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -56149,7 +56149,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: ac6d2dfa4b0daa84989d77189f190a1f, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -56770,7 +56770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 22
 --- !u!65 &1921563083
 BoxCollider:
@@ -57302,7 +57302,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 65051d3c2e51c7c4caa9040a7fb7b23d, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -58089,7 +58089,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: e2f8f19033a693145a993aa8954f008c, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -58904,7 +58904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 19
 --- !u!65 &2001248274
 BoxCollider:
@@ -60439,7 +60439,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: aa6899252f9bc7d45ab56b0690b123b6, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -60653,7 +60653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: 
-  alphabet: 0
+  alphabet: 1
   character: 34
 --- !u!65 &2073603252
 BoxCollider:
@@ -61059,7 +61059,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: d5feef7fada000f48894760953b9eca1, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
@@ -62196,7 +62196,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 91b41dfe9cb542e4ba2ef1abb2c901d8, type: 2}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: alphabet
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
       propertyPath: character
