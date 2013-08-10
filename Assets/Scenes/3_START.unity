@@ -301,7 +301,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
-  Mute: 1
+  Mute: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1629,7 +1629,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fa03e09f4a23a429c7bdde061f2ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  status: 0
   type: 0
+  difficulty: 0
+  boardSize: 2
+  cards:
+    total: 0
+    matches: 0
+    failures: 0
+  games: 0
+  time:
+    start: 0
+    total: 0
+    left: 0
 --- !u!1 &2068537026
 GameObject:
   m_ObjectHideFlags: 0
