@@ -19,6 +19,7 @@ public class SplashScreenControl : MonoBehaviour{
 	public	int							nextScene = -1;
 	public	Color						ambientLight = Color.black;
 	public	string						skipAnimationClip;
+	public	bool						escapeExitsApplication;
 
 	private	bool						exitApplication = false;
 
@@ -56,6 +57,16 @@ public class SplashScreenControl : MonoBehaviour{
 					this.Skip(hit.point);
 				}
 			}
+		}
+
+		if( Input.GetKey(KeyCode.Escape) ){
+
+			if(this.escapeExitsApplication){
+
+				this.exitApplication = true;
+			}
+
+			this.Skip(null);
 		}
 	}
 
@@ -122,7 +133,7 @@ public class SplashScreenControl : MonoBehaviour{
 
 		if(this.exitApplication){
 
-			Debug.Log("Bye! (o_o)");
+			Debug.Log("Bye! ^_^");
 
 			Application.Quit();
 
