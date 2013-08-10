@@ -136,6 +136,11 @@ public class AdMobPlugin : MonoBehaviour{
 		return( this.plugin.Call<int>("getReceived") );
 	}
 
+	void OnDestroy(){
+
+		this.Hide();
+	}
+
 #else
 
 	private int received;
