@@ -239,7 +239,6 @@ public class AdMobPluginMockup : MonoBehaviour{
  * helper classes and enums
  */
 
-[System.Serializable]
 public class AdMockup{
 
 	public Texture	icon;
