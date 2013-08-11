@@ -114,9 +114,16 @@ public class Card : MonoBehaviour{
 
 	public bool Matches(Card that){
 
-		//return( Random.Range(0, 2) == 0 );
-
-		return( this.character == that.character);
+		return(
+			/* same character... */
+			this.character == that.character
+			/* ...or same pronunciation (romaji) */
+			|| (
+				this.sound == that.sound
+				&&
+				(this.alphabet == Alphabet.ROMAJI || that.alphabet == Alphabet.ROMAJI)
+			)
+		);
 	}
 
 	public static Card FindMatchingCard(List<Card> cards, Card card){
