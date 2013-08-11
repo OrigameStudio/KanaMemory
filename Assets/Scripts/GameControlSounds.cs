@@ -6,4 +6,6 @@ using System.Collections;
 public class GameControlSounds{
 
 	public AudioSource clock;
+	public AudioSource success;
+	public AudioSource failure;
 }

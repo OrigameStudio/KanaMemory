@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 public class Card : MonoBehaviour{
 
-	public string cardName;
 	public Alphabet alphabet;
 	public Character character;
+	public AudioClip sound;
 
 	private bool isFaceDown = true;
 	private AnimationClip flip1;
@@ -32,9 +32,9 @@ public class Card : MonoBehaviour{
 		GameObject	thisBody;
 		GameObject	thatBody;
 
-		this.cardName	= that.cardName;
 		this.alphabet	= that.alphabet;
 		this.character	= that.character;
+		this.sound		= that.sound;
 
 		thisBody = this.GetBody();
 		thatBody = that.GetBody();
