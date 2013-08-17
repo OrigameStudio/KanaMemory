@@ -57,7 +57,12 @@ public class Card : MonoBehaviour{
 
 		body = this.transform.FindChild("Body");
 
-		return(body == null ? null : body.gameObject);
+		if(body == null){
+
+			Debug.LogError("ERROR: CARD " + this.gameObject + " HAS NO BODY! (" + this.alphabet + "/" + this.character + " <" + this.sound.name + ">)");
+		}
+
+		return(body.gameObject);
 	}
 
 	private void PlayNow(AnimationClip clip){
@@ -112,13 +117,15 @@ public class Card : MonoBehaviour{
 		GameObject.Destroy(this.gameObject, 2.5f);
 	}
 
-	public bool Matches(Card that){
+	public bool Matches(Card that, bool exactMatch = false){
 
 		return(
 			/* same character... */
 			this.character == that.character
 			/* ...or same pronunciation (romaji) */
 			|| (
+				!exactMatch
+				&&
 				this.sound == that.sound
 				&&
 				(this.alphabet == Alphabet.ROMAJI || that.alphabet == Alphabet.ROMAJI)
