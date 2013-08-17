@@ -137,7 +137,7 @@ public class Card : MonoBehaviour{
 
 		foreach(Card matchingCard in cards){
 
-			if( matchingCard.Matches(card) ){
+			if( matchingCard.Matches(card, true) ){
 
 				return(matchingCard);
 			}

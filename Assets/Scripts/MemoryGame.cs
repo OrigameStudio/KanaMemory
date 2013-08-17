@@ -57,6 +57,11 @@ public class MemoryGame : MonoBehaviour{
 		}
 	}
 
+	public void ExtendTimeLeft(float time){
+
+		this.time.total += (int)time;
+	}
+
 	public int PairsLeft(){
 
 		return(this.cards.total - this.cards.matches);
