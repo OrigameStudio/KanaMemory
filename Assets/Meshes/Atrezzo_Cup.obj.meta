@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 8c1dcc1305383234ab7ffd3cf1b1d8d9
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: default
+    100004: Level_1
+    100006: Level_2
+    100008: Level_3
+    100010: Level_4
+    100012: Level_5
+    100014: Cup
+    100016: CupLiquid_1
+    100018: CupLiquid_2
+    100020: CupLiquid_3
+    100022: CupLiquid_4
+    100024: CupLiquid_5
+    400000: //RootNode
+    400002: default
+    400004: Level_1
+    400006: Level_2
+    400008: Level_3
+    400010: Level_4
+    400012: Level_5
+    400014: Cup
+    400016: CupLiquid_1
+    400018: CupLiquid_2
+    400020: CupLiquid_3
+    400022: CupLiquid_4
+    400024: CupLiquid_5
+    2300000: default
+    2300002: Level_1
+    2300004: Level_2
+    2300006: Level_3
+    2300008: Level_4
+    2300010: Level_5
+    2300012: Cup
+    2300014: CupLiquid_1
+    2300016: CupLiquid_2
+    2300018: CupLiquid_3
+    2300020: CupLiquid_4
+    2300022: CupLiquid_5
+    3300000: default
+    3300002: Level_1
+    3300004: Level_2
+    3300006: Level_3
+    3300008: Level_4
+    3300010: Level_5
+    3300012: Cup
+    3300014: CupLiquid_1
+    3300016: CupLiquid_2
+    3300018: CupLiquid_3
+    3300020: CupLiquid_4
+    3300022: CupLiquid_5
+    4300000: default
+    4300002: Level_1
+    4300004: Level_2
+    4300006: Level_3
+    4300008: Level_4
+    4300010: Level_5
+    4300012: Cup
+    4300014: CupLiquid_1
+    4300016: CupLiquid_2
+    4300018: CupLiquid_3
+    4300020: CupLiquid_4
+    4300022: CupLiquid_5
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 0
+  userData: 
