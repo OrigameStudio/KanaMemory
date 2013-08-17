@@ -17,6 +17,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# Key store
+/Keystore
+
 # IDE and project files
 /.consulo/
 /.vs/
