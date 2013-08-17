@@ -18,6 +18,8 @@ public class GameControl : MonoBehaviour{
 	private Card	card1		= null;
 	private Card	card2		= null;
 	private bool	isTicking	= false;
+	private bool	isPaused	= false;
+	private float	timePaused;
 
 	void Start(){
 
@@ -25,7 +27,25 @@ public class GameControl : MonoBehaviour{
 
 		this.memoryGame = MemoryGame.GetInstance();
 
+		if(this.memoryGame == null){
+
+			Debug.LogWarning("Cannot find MemoryGame instance!");
+
+			this.QuitGame();
+
+			return;
+		}
+
 		board = this.boards.FindBoard(this.memoryGame.boardSize);
+
+		if(board == null){
+
+			Debug.LogWarning("Cannot find board: " + this.memoryGame.boardSize);
+
+			this.QuitGame();
+
+			return;
+		}
 
 		board.Reset(this.memoryGame.type, this.decks.FindDecks(this.memoryGame.difficulty) );
 
@@ -42,6 +62,31 @@ public class GameControl : MonoBehaviour{
 	public void Failed(){
 
 		Application.LoadLevel(this.scenes.failure);
+	}
+
+	public void QuitGame(){
+
+		Application.LoadLevel(this.scenes.home);
+	}
+
+	public void PauseGame(){
+
+		if(!this.isPaused){
+
+			this.isPaused = true;
+
+			this.timePaused = Time.time;
+		}
+	}
+
+	public void ResumeGame(){
+
+		if(this.isPaused){
+
+			this.memoryGame.ExtendTimeLeft(Time.time - this.timePaused);
+
+			this.isPaused = false;
+		}
 	}
 
 	void Update(){
@@ -85,6 +130,10 @@ public class GameControl : MonoBehaviour{
 			}
 		}
 
+		if( Input.GetKey(KeyCode.Escape) ){
+
+			Application.LoadLevel(this.scenes.home);
+		}
 	}
 
 	private void SelectCard(Card card){
