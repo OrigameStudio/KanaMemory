@@ -3,26 +3,23 @@ using System.Collections;
 
 public class MoveTo : MonoBehaviour{
 
-	public Transform	target;
-	public float		speed;
-	public bool			spherical;
+	public Vector3	target;
+	public float	speed;
+	public bool		spherical;
 
 	void Update(){
 
-		if(this.target != null){
+		if(spherical){
 
-			if(spherical){
+			this.gameObject.transform.position = Vector3.Slerp(this.gameObject.transform.position, this.target, this.speed);
 
-				this.gameObject.transform.position = Vector3.Slerp(this.gameObject.transform.position, this.target.position, this.speed);
+		}else{
 
-			}else{
-
-				this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, this.target.position, this.speed);
-			}
+			this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, this.target, this.speed);
 		}
 	}
 
-	public static MoveTo Add(GameObject obj, Transform target = null, float speed = 0.1f, bool spherical = false){
+	public static MoveTo Add(GameObject obj, Vector3 target, float speed = 0.1f, bool spherical = false){
 
 		MoveTo that = obj.AddComponent<MoveTo>();
 

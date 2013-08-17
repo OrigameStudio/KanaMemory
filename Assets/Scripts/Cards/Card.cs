@@ -111,7 +111,7 @@ public class Card : MonoBehaviour{
 
 		this.PlayLater(this.right);
 
-		MoveTo.Add(this.gameObject, targetPosition, 0.075f);
+		MoveTo.Add(this.gameObject, targetPosition.position, 0.075f);
 		LookAt.Add(this.gameObject, targetObserver);
 
 		GameObject.Destroy(this.gameObject, 2.5f);
