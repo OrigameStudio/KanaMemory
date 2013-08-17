@@ -129,6 +129,8 @@ public class Card : MonoBehaviour{
 				this.sound == that.sound
 				&&
 				(this.alphabet == Alphabet.ROMAJI || that.alphabet == Alphabet.ROMAJI)
+				&&
+				(this.alphabet != that.alphabet)
 			)
 		);
 	}
