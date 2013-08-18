@@ -1670,6 +1670,7 @@ MonoBehaviour:
   nextScene: 1
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
   skipAnimationClip: SplashScreen@Skip
+  escapeExitsApplication: 0
 --- !u!82 &466758273
 AudioSource:
   m_ObjectHideFlags: 0

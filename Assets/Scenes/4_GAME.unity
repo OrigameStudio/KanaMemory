@@ -62276,6 +62276,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: isTesting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
+      propertyPath: setTargetOnStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
   m_RootGameObject: {fileID: 1743261340}
@@ -66798,7 +66806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   publisherId: ca-app-pub-7744701786126851/7034606527
-  isTesting: 1
+  isTesting: 0
   testDeviceIds:
   - TEST_DEVICE_ID
   guessSelfDeviceId: 1
@@ -66808,6 +66816,7 @@ MonoBehaviour:
   verticalPosition: 2
   refreshInterval: 30
   loadOnStart: 1
+  setTargetOnStart: 1
   loadOnReconfigure: 1
   target:
     gender: 0
