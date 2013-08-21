@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: fbf961b172f74fa4697c078d54aec14e
+guid: f684ab3956ea7364ca4e59ccef668c63
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: KanaMemory
+    100000: default
     100002: //RootNode
-    400000: KanaMemory
+    400000: default
     400002: //RootNode
-    2300000: KanaMemory
-    3300000: KanaMemory
-    4300000: KanaMemory
+    2300000: default
+    3300000: default
+    4300000: default
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -27,7 +27,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: .100000001
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
