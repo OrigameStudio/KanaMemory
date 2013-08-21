@@ -79,6 +79,8 @@ public class HUDText : HUDElement{
 
 		if( !this.Applies() ) return;
 
+		GUI.depth = this.guiDepth;
+
 		this.DebugOnGUI();
 
 		Rect position = this.rectangle;
@@ -93,17 +95,10 @@ public class HUDText : HUDElement{
 		style.alignment = this.alignment;
 		style.wordWrap = this.wordWrap;
 
-		/* * /
-		style.stretchWidth = true;
-		style.stretchHeight = true;
-		/ * */
-
 		if(this.font.size == 0){
 
 			this.AutoFontSize(style, position);
 		}
-
-		//Debug.Log(  "text size: " + style.CalcSize( new GUIContent(this.text) ) + " @ height(" + position.width + "): " + style.CalcHeight( new GUIContent(this.text), position.width) + " $ font.size: " + style.fontSize);
 
 		if(this.shadowOffset != 0){
 
@@ -116,24 +111,12 @@ public class HUDText : HUDElement{
 
 		style.normal.textColor = this.color;
 
-		GUI.Label(position, this.text, style);
+		if( GUI.Button(position, this.text, style) ){
 
+			if(this.isClickable && (!Application.isEditor || Application.isPlaying) ){
 
-
-		/*
-		if(this.scaleMode == HUDScaleModeEnum.NoScale){
-
-			position = this.alignment.Align( position, this.GetImageRectangle() );
-
-		}else if(this.scaleMode == HUDScaleModeEnum.ScaleToFit){
-
-			position = this.alignment.Align( position, this.GetImageAspect() );
+				this.OnClick(0);
+			}
 		}
-
-		if(this.texture != null){
-
-			GUI.DrawTexture(position, this.texture, new HUDScaleMode(this.scaleMode), this.alphaBlend, this.imageAspect);
-		}
-		*/
 	}
 }

@@ -34,6 +34,8 @@ public class HUDTexture : HUDElement{
 
 	void OnGUI(){
 
+		GUI.depth = this.guiDepth;
+
 		if( !this.Applies() ) return;
 
 		this.DebugOnGUI();
@@ -54,6 +56,11 @@ public class HUDTexture : HUDElement{
 		if(this.texture != null){
 
 			GUI.DrawTexture(position, this.texture, new HUDScaleMode(this.scaleMode), this.alphaBlend, this.imageAspect);
+
+			if(this.isClickable){
+
+				this.ProcessClicks(position);
+			}
 		}
 	}
 }
