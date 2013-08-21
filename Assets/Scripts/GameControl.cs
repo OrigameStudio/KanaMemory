@@ -6,10 +6,13 @@ using System.Collections;
 public class GameControl : MonoBehaviour{
 
 	public GameControlPositions		positions;
+	public GameMusic				music;
 	public GameControlSounds		sounds;
 	public GameControlScenes		scenes;
 	public GameControlBoards		boards;
 	public GameControlDecks			decks;
+	public GameHUD					hud;
+	public Transform				away;
 
 	private MemoryGame	memoryGame;
 
@@ -23,7 +26,8 @@ public class GameControl : MonoBehaviour{
 
 	void Start(){
 
-		Board board;
+		Board	board;
+		Deck[]	decks;
 
 		this.memoryGame = MemoryGame.GetInstance();
 
@@ -47,11 +51,17 @@ public class GameControl : MonoBehaviour{
 			return;
 		}
 
-		board.Reset(this.memoryGame.type, this.decks.FindDecks(this.memoryGame.difficulty) );
+		decks = this.decks.InstantiateDecks(this.memoryGame.difficulty, this.away);
+
+		board.Reset(this.memoryGame.type, decks);
+
+		this.decks.DeleteDecks(decks);
 
 		this.memoryGame.StartGame(board.pairs, board.seconds);
 
 		Debug.Log("board.pairs: " + board.pairs + ", board.seconds: " + board.seconds);
+
+		this.hud.ResumeGame();
 	}
 
 	public void Succeed(){
@@ -73,6 +83,14 @@ public class GameControl : MonoBehaviour{
 
 		if(!this.isPaused){
 
+			Debug.Log("Pause");
+
+			this.music.enabled = false;
+
+			this.music.audio.Pause();
+
+			this.hud.PauseGame();
+
 			this.isPaused = true;
 
 			this.timePaused = Time.time;
@@ -83,7 +101,15 @@ public class GameControl : MonoBehaviour{
 
 		if(this.isPaused){
 
+			Debug.Log("Resume");
+
+			this.music.enabled = true;
+
+			this.music.audio.Play();
+
 			this.memoryGame.ExtendTimeLeft(Time.time - this.timePaused);
+
+			this.hud.ResumeGame();
 
 			this.isPaused = false;
 		}
@@ -115,24 +141,34 @@ public class GameControl : MonoBehaviour{
 			}
 		}
 
-		if( Input.GetMouseButtonDown(0) ){
+		if( !this.isPaused && Input.GetMouseButtonDown(0) ){
 
 			Ray rayo;
 			RaycastHit info;
 
 			rayo = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-			if( Physics.Raycast (rayo, out info) ){
+			if( Physics.Raycast(rayo, out info) ){
 
 				Card card = info.collider.gameObject.GetComponent<Card>();
 
-				this.SelectCard(card);
+				if(card != null){
+
+					this.SelectCard(card);
+				}
 			}
 		}
 
-		if( Input.GetKey(KeyCode.Escape) ){
+		if( Input.GetKeyDown(KeyCode.Escape) ){
 
-			Application.LoadLevel(this.scenes.home);
+			if(this.isPaused){
+
+				this.ResumeGame();
+
+			}else{
+
+				this.PauseGame();
+			}
 		}
 	}
 

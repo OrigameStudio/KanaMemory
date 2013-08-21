@@ -9,15 +9,47 @@ public class GameControlDecks{
 	public Deck[] medium;
 	public Deck[] hard;
 
-	public Deck[] FindDecks(GameDifficulty difficulty){
+	public Deck[] InstantiateDecks(GameDifficulty difficulty, Transform transform){
+
+		Deck[] prefabs	= null;
+		Deck[] decks	= null;
 
 		switch(difficulty){
 
-			case GameDifficulty.EASY:	return(this.easy);
-			case GameDifficulty.MEDIUM:	return(this.medium);
-			case GameDifficulty.HARD:	return(this.hard);
+			case GameDifficulty.EASY:
+			
+				prefabs = this.easy;
+				break;
+
+			case GameDifficulty.MEDIUM:
+
+				prefabs = this.medium;
+				break;
+
+			case GameDifficulty.HARD:
+
+				prefabs = this.hard;
+				break;
 		}
 
-		return(null);
+		if(prefabs != null){
+
+			decks = new Deck[prefabs.Length];
+
+			for(int index = 0; index < decks.Length; index++){
+
+				decks[index] = (Deck)GameObject.Instantiate(prefabs[index], transform.position, transform.rotation);
+			}
+		}
+
+		return(decks);
+	}
+	
+	public void DeleteDecks(Deck[] decks){
+
+		foreach(Deck deck in decks){
+
+			GameObject.Destroy(deck.gameObject);
+		}
 	}
 }
