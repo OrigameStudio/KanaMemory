@@ -7,35 +7,49 @@ public class HelpControl : MonoBehaviour, SwipeListener{
 
 	public SwipeControl swipe;
 
+	public bool loopPositions = true;
+
 	public Transform[] positions;
+	public Transform outside;
 
-	public int positionIndex = 0;
+	public float moveSpeed = 0.1f;
+	public float rotateSpeed = 0.01f;
+	public float focusSpeed = 0.5f;
 
-	public Camera observer;
+	public float fieldOfView = 60f;
+	public float zoom = 50f;
+
+	public int positionIndex = -1;
+
+	public GameObject observer;
+	public Camera mainCamera;
 
 	public int escapeScene = 1;
 
+	public AudioSource sounds;
+
 	public GUIText info;
 
-	public MoveTo		moveTo;
-	public RotateAs		rotateAs;
-	private Transform currentTarget;
-	public Transform previousTarget;
-	public Transform nextTarget;
+	private Focuser		focuser;
+	private	MoveTo		moveTo;
+	private	RotateAs	rotateAs;
+	private	Transform	currentTarget;
+	private	Transform	previousTarget;
+	private	Transform	nextTarget;
+	private	Transform	altTarget;
 
 	void Start(){
 
 		this.swipe.AddListener(this);
 
-		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.observer.transform.position, 0.1f);
-		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.observer.transform.rotation, 0.1f);
+		this.focuser	= Focuser.Add(this.mainCamera.gameObject, this.fieldOfView, this.focusSpeed);
+		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.observer.transform.position, this.moveSpeed);
+		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.observer.transform.rotation, this.rotateSpeed, true);
 
 		this.UpdatePositions();
 	}
 
 	void Update(){
-
-		this.info.text = "<" + positionIndex + ">" + " (" + this.moveTo.target.x + ")\n" + "currentTarget: " + currentTarget.transform.position.x + "\n" + "previousTarget: " + previousTarget.transform.position.x + "\n" + "nextTarget: " + nextTarget.transform.position.x;
 
 		if( Input.GetKey(KeyCode.Escape) ){
 
@@ -45,70 +59,225 @@ public class HelpControl : MonoBehaviour, SwipeListener{
 		if( this.swipe.isSwiping ){
 
 			float		x				= this.swipe.total.x;
+			float		y				= this.swipe.total.y;
+			float		absX			= Mathf.Abs(x);
+			float		absY			= Mathf.Abs(y);
+			bool		sideways		= absX >= absY;
 			Vector3		positionTarget	= this.currentTarget.position;
 			Vector3		rotationTarget	= this.currentTarget.rotation.eulerAngles;
-			Vector3		positionOffset;
-			Vector3		rotationOffset;
+			Vector3		positionOffset	= Vector3.zero;
 
-			if( TouchInput.IsLeftSwipe(x) ){
+			if(sideways && absX >= 0.1){
 
-				positionTarget = this.nextTarget.position;
-				rotationTarget = this.nextTarget.rotation.eulerAngles;
+				if( TouchInput.IsLeftSwipe(x) ){
 
-			}else if( TouchInput.IsRightSwipe(x) ){
+					positionTarget = this.nextTarget.position;
 
-				positionTarget = this.previousTarget.position;
-				rotationTarget = this.previousTarget.rotation.eulerAngles;
+					if(absX >= 0.4){
+
+						rotationTarget = this.nextTarget.rotation.eulerAngles;
+					}
+
+				}else{ // RightSwipe
+
+					positionTarget = this.previousTarget.position;
+
+					if(absX >= 0.4){
+
+						rotationTarget = this.previousTarget.rotation.eulerAngles;
+					}
+				}
+
+				positionOffset = (this.currentTarget.position - positionTarget) * absX;
+
+			}else if(absY >= 0.1){
+
+				if( TouchInput.IsUpSwipe(y) ){
+
+					float diff = (this.fieldOfView - this.zoom);
+
+					this.focuser.fieldOfView = this.fieldOfView - diff * absY;
+
+				}else{ // DownSwipe
+
+					positionTarget = this.altTarget.position;
+
+					if(absY >= 0.4){
+
+						rotationTarget = this.altTarget.rotation.eulerAngles;
+					}
+
+					positionOffset = (this.currentTarget.position - positionTarget) * absY;
+				}
 			}
 
-			positionOffset = (this.currentTarget.position - positionTarget) * Mathf.Abs(x);
-			rotationOffset = (this.currentTarget.rotation.eulerAngles - rotationTarget) * Mathf.Abs(x);
-
 			this.moveTo.target		= this.currentTarget.position - positionOffset;
-			//this.rotateAs.target	= Quaternion.Euler( this.currentTarget.rotation.eulerAngles - rotationOffset );
 			this.rotateAs.target	= Quaternion.Euler( rotationTarget );
+		}
+	}
+
+	private void UpdateTooltip(){
+
+		switch(this.positionIndex){
+
+			case -1:
+
+				this.info.text = "WELCOME TO THE DOJO\nSLIDE LEFT/RIGHT: NAVIGATE\nSLIDE UP: ZOOM\nSLIDE DOWN: TOGGLE HIRAGANA/KATAKANA";
+				break;
+
+			case 0:
+
+				this.info.text = "IF YOU WANT TO LEAVE THE DOJO PLEASE SLIDE DOWN";
+				break;
+
+			case 1:
+
+				this.info.text = "HIRAGANA 1 (Seion)";
+				break;
+
+			case 2:
+
+				this.info.text = "HIRAGANA 2 (Dakuon & Handakuon)";
+				break;
+
+			case 3:
+
+				this.info.text = "HIRAGANA 3 (Yoon-Seion, Yoon-Dakuon & Yoon-Handakuon)";
+				break;
+
+			case 4:
+
+				this.info.text = "KATAKANA 1 (Seion)";
+				break;
+
+			case 5:
+
+				this.info.text = "KATAKANA 2 (Dakuon & Handakuon)";
+				break;
+
+			case 6:
+
+				this.info.text = "KATAKANA 3 (Yoon-Seion, Yoon-Dakuon & Yoon-Handakuon)";
+				break;
 		}
 	}
 
 	private void UpdatePositions(){
 
-		this.currentTarget	= this.positions[this.positionIndex];
-		this.previousTarget	= ( this.positionIndex == 0 ? this.currentTarget : this.positions[this.positionIndex - 1] );
-		this.nextTarget		= ( this.positionIndex == this.positions.Length - 1 ? this.currentTarget : this.positions[this.positionIndex + 1] );
+		int altTarget;
+
+		this.UpdateTooltip();
+
+		if(this.positionIndex < 0){
+
+			this.currentTarget	= this.outside;
+
+		}else{
+
+			this.currentTarget	= this.positions[this.positionIndex];
+		}
+
+		altTarget = this.GetAlt();
+
+		if(altTarget < 0){
+
+			this.altTarget = this.outside;
+
+		}else{
+
+			this.altTarget = this.positions[altTarget];
+		}
+
+		this.previousTarget	= this.positions[ this.GetPrevious() ];
+		this.nextTarget		= this.positions[ this.GetNext() ];
 
 		this.moveTo.target		= this.currentTarget.position;
 		this.rotateAs.target	= this.currentTarget.rotation;
 	}
 
-	private void Next(){
+	private int GetAlt(){
 
-		if(this.positionIndex + 1 < this.positions.Length){
+		switch(this.positionIndex){
 
-			this.positionIndex++;
+			case -1:
+				return(0);
+
+			case 0:
+				return(-1);
+
+			default:
+
+				return(this.positions.Length - this.positionIndex);
 		}
 	}
 
-	private void Previous(){
+	private int GetNext(){
 
-		if(this.positionIndex > 0){
+		if(this.positionIndex == -1){
 
-			this.positionIndex--;
+			return(this.positions.Length - 1);
+
+		}else if(this.positionIndex + 1 < this.positions.Length){
+
+			return(this.positionIndex + 1);
+
+		}else if(this.loopPositions){
+
+			return(0);
 		}
+
+		return(this.positionIndex);
+	}
+
+	private int GetPrevious(){
+
+		if(this.positionIndex == -1){
+
+			return(1);
+
+		}else if(this.positionIndex > 0){
+
+			return(this.positionIndex - 1);
+
+		}else if(this.loopPositions){
+
+			return(this.positions.Length - 1);
+		}
+
+		return(this.positionIndex);
 	}
 
 	public void Swipe(float x, float y, TouchData touch){
 
-		if( Mathf.Abs(x) < 0.4 ){
+		float	absX		= Mathf.Abs(x);
+		float	absY		= Mathf.Abs(y);
+		bool	sideways	= absX >= absY;
 
-			/* ... */
+		this.focuser.fieldOfView = this.fieldOfView;
 
-		}else if( TouchInput.IsLeftSwipe(x) ){
+		if(sideways && absX >= 0.4){
 
-			this.Next();
+			if( TouchInput.IsLeftSwipe(x) ){
 
-		}else if( TouchInput.IsRightSwipe(x) ){
+				this.positionIndex = this.GetNext();
 
-			this.Previous();
+			}else{ // RightSwipe
+
+				this.positionIndex = this.GetPrevious();
+			}
+
+			this.observer.animation.Play();
+			this.sounds.Play();
+
+		}else if(absY >= 0.4){
+
+			if( TouchInput.IsDownSwipe(y) ){
+
+				this.positionIndex = this.GetAlt();
+
+				this.observer.animation.Play();
+				this.sounds.Play();
+			}
 		}
 
 		this.UpdatePositions();
