@@ -89,13 +89,16 @@ public class HUDText : HUDElement{
 
 		GUIStyle style = new GUIStyle();
 
-		this.font.ApplyTo(style);
+		if(this.font != null){
+
+			this.font.ApplyTo(style);
+		}
 
 		style.clipping = (this.crop ? TextClipping.Clip : TextClipping.Clip);
 		style.alignment = this.alignment;
 		style.wordWrap = this.wordWrap;
 
-		if(this.font.size == 0){
+		if(this.font != null && this.font.size == 0){
 
 			this.AutoFontSize(style, position);
 		}
