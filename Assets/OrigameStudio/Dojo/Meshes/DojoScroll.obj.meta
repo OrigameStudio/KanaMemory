@@ -1,0 +1,115 @@
+fileFormatVersion: 2
+guid: 486344fd14831af4faaf21204a76876c
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: 1_DojoScrollForeground
+    100002: 2_DojoScrollSeparators
+    100004: 3_DojoScrollBackground
+    100006: 4_DojoScrollCylinders
+    100008: 5_DojoScrollCylindersSide
+    100010: 6_DojoScrollHandler
+    100012: //RootNode
+    100014: DojoScrollBackground
+    100016: DojoScrollForeground
+    100018: DojoScrollSeparators
+    100020: DojoScrollCylindersSide
+    100022: DojoScrollHandler
+    400000: 1_DojoScrollForeground
+    400002: 2_DojoScrollSeparators
+    400004: 3_DojoScrollBackground
+    400006: 4_DojoScrollCylinders
+    400008: 5_DojoScrollCylindersSide
+    400010: 6_DojoScrollHandler
+    400012: //RootNode
+    400014: DojoScrollBackground
+    400016: DojoScrollForeground
+    400018: DojoScrollSeparators
+    400020: DojoScrollCylindersSide
+    400022: DojoScrollHandler
+    2300000: 1_DojoScrollForeground
+    2300002: 2_DojoScrollSeparators
+    2300004: 3_DojoScrollBackground
+    2300006: 4_DojoScrollCylinders
+    2300008: 5_DojoScrollCylindersSide
+    2300010: 6_DojoScrollHandler
+    2300012: DojoScrollBackground
+    2300014: DojoScrollForeground
+    2300016: DojoScrollSeparators
+    2300018: DojoScrollCylindersSide
+    2300020: DojoScrollHandler
+    3300000: 1_DojoScrollForeground
+    3300002: 2_DojoScrollSeparators
+    3300004: 3_DojoScrollBackground
+    3300006: 4_DojoScrollCylinders
+    3300008: 5_DojoScrollCylindersSide
+    3300010: 6_DojoScrollHandler
+    3300012: DojoScrollBackground
+    3300014: DojoScrollForeground
+    3300016: DojoScrollSeparators
+    3300018: DojoScrollCylindersSide
+    3300020: DojoScrollHandler
+    4300000: 1_DojoScrollForeground
+    4300002: 2_DojoScrollSeparators
+    4300004: 3_DojoScrollBackground
+    4300006: 4_DojoScrollCylinders
+    4300008: 5_DojoScrollCylindersSide
+    4300010: 6_DojoScrollHandler
+    4300012: DojoScrollBackground
+    4300014: DojoScrollForeground
+    4300016: DojoScrollSeparators
+    4300018: DojoScrollCylindersSide
+    4300020: DojoScrollHandler
+    9500000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 1
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 0
+  userData: 
