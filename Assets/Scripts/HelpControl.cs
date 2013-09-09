@@ -3,23 +3,35 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HelpControl : MonoBehaviour, SwipeListener{
+public class HelpControl : MonoBehaviour{
 
-	public SwipeControl swipe;
+	public GameObject Welcome;
+	public GameObject Navigation;
+	public GameObject Goodbye;
+	private bool isLearning;
 
-	public bool loopPositions = true;
+	public Transform[] zoomedInPositions;
+	public Transform[] zoomedOutPositions;
 
-	public Transform[] positions;
-	public Transform outside;
+	public Transform enterPosition;
+	public Transform exitPosition;
+	public Transform outsidePosition;
 
-	public float moveSpeed = 0.1f;
-	public float rotateSpeed = 0.01f;
-	public float focusSpeed = 0.5f;
+	public float moveSpeed		= 0.1f;
+	public float rotateSpeed	= 0.01f;
 
-	public float fieldOfView = 60f;
-	public float zoom = 50f;
+	public HUDTexture zoomIcon;
+	private bool isZoomed		= false;
+	public Texture zoomOutTexture;
+	public Texture zoomInTexture;
 
-	public int positionIndex = -1;
+	public HUDTexture switchIcon;
+	private int firstHiraganaIndex		= 0;
+	private int firstKatakanaIndex		= 3;
+	public Texture switchToHiraganaTexture;
+	public Texture switchToKatakanaTexture;
+
+	public int positionIndex = 0;
 
 	public GameObject observer;
 	public Camera mainCamera;
@@ -27,259 +39,210 @@ public class HelpControl : MonoBehaviour, SwipeListener{
 	public int escapeScene = 1;
 
 	public AudioSource sounds;
+	public AudioSource voice;
 
-	public GUIText info;
+	//public GUIText info;
 
-	private Focuser		focuser;
 	private	MoveTo		moveTo;
 	private	RotateAs	rotateAs;
+
 	private	Transform	currentTarget;
-	private	Transform	previousTarget;
-	private	Transform	nextTarget;
-	private	Transform	altTarget;
 
 	void Start(){
 
-		this.swipe.AddListener(this);
+		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.enterPosition.transform.position, this.moveSpeed);
+		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.enterPosition.transform.rotation, this.rotateSpeed, true);
 
-		this.focuser	= Focuser.Add(this.mainCamera.gameObject, this.fieldOfView, this.focusSpeed);
-		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.observer.transform.position, this.moveSpeed);
-		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.observer.transform.rotation, this.rotateSpeed, true);
-
-		this.UpdatePositions();
+		this.Welcome.SetActive(true);
+		this.Navigation.SetActive(false);
+		this.Goodbye.SetActive(false);
 	}
 
 	void Update(){
 
 		if( Input.GetKey(KeyCode.Escape) ){
 
-			Application.LoadLevel(this.escapeScene);
-		}
+			this.ConfirmExit();
 
-		if( this.swipe.isSwiping ){
+		}else if( this.isLearning && Input.GetMouseButtonDown(0) ){
 
-			float		x				= this.swipe.total.x;
-			float		y				= this.swipe.total.y;
-			float		absX			= Mathf.Abs(x);
-			float		absY			= Mathf.Abs(y);
-			bool		sideways		= absX >= absY;
-			Vector3		positionTarget	= this.currentTarget.position;
-			Vector3		rotationTarget	= this.currentTarget.rotation.eulerAngles;
-			Vector3		positionOffset	= Vector3.zero;
+			Ray ray;
+			RaycastHit info;
 
-			if(sideways && absX >= 0.1){
+			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-				if( TouchInput.IsLeftSwipe(x) ){
+			if( Physics.Raycast(ray, out info) ){
 
-					positionTarget = this.nextTarget.position;
+				Card card = info.collider.gameObject.GetComponent<Card>();
 
-					if(absX >= 0.4){
+				if(card != null){
 
-						rotationTarget = this.nextTarget.rotation.eulerAngles;
-					}
-
-				}else{ // RightSwipe
-
-					positionTarget = this.previousTarget.position;
-
-					if(absX >= 0.4){
-
-						rotationTarget = this.previousTarget.rotation.eulerAngles;
-					}
-				}
-
-				positionOffset = (this.currentTarget.position - positionTarget) * absX;
-
-			}else if(absY >= 0.1){
-
-				if( TouchInput.IsUpSwipe(y) ){
-
-					float diff = (this.fieldOfView - this.zoom);
-
-					this.focuser.fieldOfView = this.fieldOfView - diff * absY;
-
-				}else{ // DownSwipe
-
-					positionTarget = this.altTarget.position;
-
-					if(absY >= 0.4){
-
-						rotationTarget = this.altTarget.rotation.eulerAngles;
-					}
-
-					positionOffset = (this.currentTarget.position - positionTarget) * absY;
+					// Read aloud
+					this.voice.PlayOneShot(card.sound);
 				}
 			}
-
-			this.moveTo.target		= this.currentTarget.position - positionOffset;
-			this.rotateAs.target	= Quaternion.Euler( rotationTarget );
 		}
 	}
 
-	private void UpdateTooltip(){
+	private void UpdateCurrentTarget(){
 
-		switch(this.positionIndex){
+		if(this.isZoomed){
 
-			case -1:
-
-				this.info.text = "WELCOME TO THE DOJO\nSLIDE LEFT/RIGHT: NAVIGATE\nSLIDE UP: ZOOM\nSLIDE DOWN: TOGGLE HIRAGANA/KATAKANA";
-				break;
-
-			case 0:
-
-				this.info.text = "IF YOU WANT TO LEAVE THE DOJO PLEASE SLIDE DOWN";
-				break;
-
-			case 1:
-
-				this.info.text = "HIRAGANA 1 (Seion)";
-				break;
-
-			case 2:
-
-				this.info.text = "HIRAGANA 2 (Dakuon & Handakuon)";
-				break;
-
-			case 3:
-
-				this.info.text = "HIRAGANA 3 (Yoon-Seion, Yoon-Dakuon & Yoon-Handakuon)";
-				break;
-
-			case 4:
-
-				this.info.text = "KATAKANA 1 (Seion)";
-				break;
-
-			case 5:
-
-				this.info.text = "KATAKANA 2 (Dakuon & Handakuon)";
-				break;
-
-			case 6:
-
-				this.info.text = "KATAKANA 3 (Yoon-Seion, Yoon-Dakuon & Yoon-Handakuon)";
-				break;
-		}
-	}
-
-	private void UpdatePositions(){
-
-		int altTarget;
-
-		this.UpdateTooltip();
-
-		if(this.positionIndex < 0){
-
-			this.currentTarget	= this.outside;
+			this.currentTarget		= this.zoomedInPositions[this.positionIndex];
 
 		}else{
 
-			this.currentTarget	= this.positions[this.positionIndex];
+			this.currentTarget		= this.zoomedOutPositions[this.positionIndex];
 		}
-
-		altTarget = this.GetAlt();
-
-		if(altTarget < 0){
-
-			this.altTarget = this.outside;
-
-		}else{
-
-			this.altTarget = this.positions[altTarget];
-		}
-
-		this.previousTarget	= this.positions[ this.GetPrevious() ];
-		this.nextTarget		= this.positions[ this.GetNext() ];
 
 		this.moveTo.target		= this.currentTarget.position;
 		this.rotateAs.target	= this.currentTarget.rotation;
 	}
 
-	private int GetAlt(){
+	public void Next(){
 
-		switch(this.positionIndex){
+		if(this.positionIndex == 5){
 
-			case -1:
-				return(0);
+			this.positionIndex = 0;
 
-			case 0:
-				return(-1);
+		}else{
 
-			default:
-
-				return(this.positions.Length - this.positionIndex);
-		}
-	}
-
-	private int GetNext(){
-
-		if(this.positionIndex == -1){
-
-			return(this.positions.Length - 1);
-
-		}else if(this.positionIndex + 1 < this.positions.Length){
-
-			return(this.positionIndex + 1);
-
-		}else if(this.loopPositions){
-
-			return(0);
+			this.positionIndex++;
 		}
 
-		return(this.positionIndex);
+		this.observer.animation.Play();
+		this.sounds.Play();
+
+		this.UpdateCurrentTarget();
 	}
 
-	private int GetPrevious(){
+	public void Previous(){
 
-		if(this.positionIndex == -1){
+		if(this.positionIndex == 0){
 
-			return(1);
+			this.positionIndex = 5;
 
-		}else if(this.positionIndex > 0){
+		}else{
 
-			return(this.positionIndex - 1);
-
-		}else if(this.loopPositions){
-
-			return(this.positions.Length - 1);
+			this.positionIndex--;
 		}
 
-		return(this.positionIndex);
+		this.observer.animation.Play();
+		this.sounds.Play();
+
+		this.UpdateCurrentTarget();
 	}
 
-	public void Swipe(float x, float y, TouchData touch){
+	public void Switch(){
 
-		float	absX		= Mathf.Abs(x);
-		float	absY		= Mathf.Abs(y);
-		bool	sideways	= absX >= absY;
+		if(this.positionIndex < 3){
 
-		this.focuser.fieldOfView = this.fieldOfView;
+			this.positionIndex += 3;
 
-		if(sideways && absX >= 0.4){
+			this.switchIcon.texture = this.switchToHiraganaTexture;
 
-			if( TouchInput.IsLeftSwipe(x) ){
+		}else{
 
-				this.positionIndex = this.GetNext();
+			this.positionIndex -= 3;
 
-			}else{ // RightSwipe
-
-				this.positionIndex = this.GetPrevious();
-			}
-
-			this.observer.animation.Play();
-			this.sounds.Play();
-
-		}else if(absY >= 0.4){
-
-			if( TouchInput.IsDownSwipe(y) ){
-
-				this.positionIndex = this.GetAlt();
-
-				this.observer.animation.Play();
-				this.sounds.Play();
-			}
+			this.switchIcon.texture = this.switchToKatakanaTexture;
 		}
 
-		this.UpdatePositions();
+		this.observer.animation.Play();
+		this.sounds.Play();
+
+		this.UpdateCurrentTarget();
 	}
+
+	public void SwitchToHiragana(){
+
+		this.Welcome.SetActive(false);
+		this.Navigation.SetActive(true);
+		this.isLearning = true;
+
+		this.switchIcon.texture = this.switchToKatakanaTexture;
+
+		this.isZoomed = false;
+
+		this.positionIndex = this.firstHiraganaIndex;
+
+		this.observer.animation.Play();
+		this.sounds.Play();
+
+		this.UpdateCurrentTarget();
+	}
+
+	public void SwitchToKatakana(){
+
+		this.Welcome.SetActive(false);
+		this.Navigation.SetActive(true);
+		this.isLearning = true;
+
+		this.switchIcon.texture = this.switchToHiraganaTexture;
+
+		this.isZoomed = false;
+
+		this.positionIndex = this.firstKatakanaIndex;
+
+		this.observer.animation.Play();
+		this.sounds.Play();
+
+		this.UpdateCurrentTarget();
+	}
+
+	public void ConfirmExit(){
+
+		this.Welcome.SetActive(false);
+		this.Navigation.SetActive(false);
+		this.Goodbye.SetActive(true);
+		this.isLearning = false;
+
+		this.moveTo.target		= this.exitPosition.transform.position;
+		this.rotateAs.target	= this.exitPosition.transform.rotation;
+
+		this.observer.animation.Play();
+		this.sounds.Play();
+	}
+
+	public void Stay(){
+
+		this.Goodbye.SetActive(false);
+		this.Navigation.SetActive(false);
+		this.Welcome.SetActive(true);
+		this.isLearning = false;
+
+		this.moveTo.target		= this.enterPosition.transform.position;
+		this.rotateAs.target	= this.enterPosition.transform.rotation;
+
+		this.observer.animation.Play();
+		this.sounds.Play();
+	}
+
+	public void ToggleZoom(){
+
+		if(this.isZoomed){
+
+			this.zoomIcon.texture = this.zoomInTexture;
+
+		}else{
+
+			this.zoomIcon.texture = this.zoomOutTexture;
+		}
+
+		this.isZoomed = !this.isZoomed;
+
+		UpdateCurrentTarget();
+	}
+
+	public void Exit(){
+
+		this.Goodbye.SetActive(false);
+
+		this.moveTo.target		= this.outsidePosition.transform.position;
+		this.rotateAs.target	= this.outsidePosition.transform.rotation;
+
+		//yield return( new WaitForSeconds(1) );
+		//Application.LoadLevel(0); //this.escapeScene);
+	}
+
 }

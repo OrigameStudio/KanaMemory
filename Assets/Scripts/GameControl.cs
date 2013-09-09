@@ -143,12 +143,12 @@ public class GameControl : MonoBehaviour{
 
 		if( !this.isPaused && Input.GetMouseButtonDown(0) ){
 
-			Ray rayo;
+			Ray ray;
 			RaycastHit info;
 
-			rayo = Camera.main.ScreenPointToRay(Input.mousePosition);
+			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-			if( Physics.Raycast(rayo, out info) ){
+			if( Physics.Raycast(ray, out info) ){
 
 				Card card = info.collider.gameObject.GetComponent<Card>();
 
