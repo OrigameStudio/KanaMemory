@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 90dc37972e5559941b1ef1511933f20b
+guid: 2d2d85f1bfe1ca24db13b4e0841ab8b0
 TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    linearTexture: 1
+    linearTexture: 0
     correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
@@ -23,14 +23,14 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 1
-    aniso: 3
+    filterMode: -1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 1
-  lightmap: 1
-  compressionQuality: 100
+  lightmap: 0
+  compressionQuality: 50
   alphaIsTransparency: 0
-  textureType: 6
+  textureType: -1
   buildTargetSettings: []
   userData: 
