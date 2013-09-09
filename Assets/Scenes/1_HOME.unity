@@ -321,7 +321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   status: 0
   type: 0
-  difficulty: 2
+  difficulty: 1
   boardSize: 2
   cards:
     total: 0
