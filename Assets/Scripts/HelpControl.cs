@@ -240,9 +240,10 @@ public class HelpControl : MonoBehaviour{
 
 		this.moveTo.target		= this.outsidePosition.transform.position;
 		this.rotateAs.target	= this.outsidePosition.transform.rotation;
-
-		//yield return( new WaitForSeconds(1) );
-		//Application.LoadLevel(0); //this.escapeScene);
 	}
 
+	public void Exited(){
+
+		Application.LoadLevel(this.escapeScene);
+	}
 }
