@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Text@Tremble
+  m_Name: Text@KO
   serializedVersion: 3
   m_AnimationType: 1
   m_Compressed: 0
