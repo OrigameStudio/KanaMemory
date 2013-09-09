@@ -17,12 +17,12 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 16.5
+      - time: 179.5
         value: 1
         inSlope: -.666666687
         outSlope: -.666666687
         tangentMode: 10
-      - time: 18
+      - time: 181
         value: 0
         inSlope: -.666666687
         outSlope: -.666666687
@@ -57,12 +57,12 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 16.5
+      - time: 179.5
         value: 1
         inSlope: -.666666687
         outSlope: -.666666687
         tangentMode: 10
-      - time: 18
+      - time: 181
         value: 0
         inSlope: -.666666687
         outSlope: -.666666687
@@ -89,14 +89,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 16.5
+  - time: 179.5
     functionName: FadeOut
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 18
+  - time: 181
     functionName: Finished
     data: 
     objectReferenceParameter: {fileID: 0}
