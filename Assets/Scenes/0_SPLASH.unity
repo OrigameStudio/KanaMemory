@@ -2690,6 +2690,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
+    - target: {fileID: 3300000, guid: 39b87cef6277a42459443d096b27ef05, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: ec66894596f8db848ab0fbfe1e75ff3c, type: 3}
+    - target: {fileID: 13500000, guid: 39b87cef6277a42459443d096b27ef05, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39b87cef6277a42459443d096b27ef05, type: 2}
   m_RootGameObject: {fileID: 1228857698}
@@ -3828,7 +3836,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1165031651}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 2, z: .150000006}
@@ -4183,7 +4191,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 787670726}
   m_GameObject: {fileID: 1228857698}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .449999988
@@ -6028,7 +6036,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 787670726}
   m_GameObject: {fileID: 1731047622}
-  m_Mesh: {fileID: 4300002, guid: ec66894596f8db848ab0fbfe1e75ff3c, type: 3}
+  m_Mesh: {fileID: 4300000, guid: ec66894596f8db848ab0fbfe1e75ff3c, type: 3}
 --- !u!1 &1748316177
 GameObject:
   m_ObjectHideFlags: 0
