@@ -110,6 +110,8 @@ public class HelpControl : MonoBehaviour{
 			this.positionIndex++;
 		}
 
+		this.UpdateSwitchIcon();
+
 		this.observer.animation.Play();
 		this.sounds.Play();
 
@@ -127,10 +129,24 @@ public class HelpControl : MonoBehaviour{
 			this.positionIndex--;
 		}
 
+		this.UpdateSwitchIcon();
+
 		this.observer.animation.Play();
 		this.sounds.Play();
 
 		this.UpdateCurrentTarget();
+	}
+
+	public void UpdateSwitchIcon(){
+
+		if(this.positionIndex < 3){
+
+			this.switchIcon.texture = this.switchToKatakanaTexture;
+
+		}else{
+
+			this.switchIcon.texture = this.switchToHiraganaTexture;
+		}
 	}
 
 	public void Switch(){
@@ -139,14 +155,12 @@ public class HelpControl : MonoBehaviour{
 
 			this.positionIndex += 3;
 
-			this.switchIcon.texture = this.switchToHiraganaTexture;
-
 		}else{
 
 			this.positionIndex -= 3;
-
-			this.switchIcon.texture = this.switchToKatakanaTexture;
 		}
+
+		this.UpdateSwitchIcon();
 
 		this.observer.animation.Play();
 		this.sounds.Play();
