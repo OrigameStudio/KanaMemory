@@ -71,8 +71,8 @@ PlayerSettings:
     Others: 1
   iPhoneBundleIdentifier: com.origamestudio.kanamemory
   productGUID: 25511ae292f7a264da114d4113d6ad9c
-  iPhoneBundleVersion: 1.0
-  AndroidBundleVersionCode: 2
+  iPhoneBundleVersion: Beta 1.1
+  AndroidBundleVersionCode: 3
   AndroidMinSdkVersion: 6
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -82,7 +82,7 @@ PlayerSettings:
   ForceInternetPermission: 0
   ForceSDCardPermission: 0
   CreateWallpaper: 0
-  APKExpansionFiles: 0
+  APKExpansionFiles: 1
   StripUnusedMeshComponents: 1
   iPhoneSdkVersion: 988
   iPhoneTargetOSVersion: 10
@@ -101,7 +101,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   AndroidKeystoreName: ./Keystore/user.keystore
-  AndroidKeyaliasName: beta-release
+  AndroidKeyaliasName: kana-memory
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
