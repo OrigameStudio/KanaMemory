@@ -9,6 +9,7 @@ public class MemoryGame : MonoBehaviour{
 	public GameType			type		= GameType.GameType1;
 	public GameDifficulty	difficulty	= GameDifficulty.MEDIUM;
 	public BoardSize		boardSize	= BoardSize.MEDIUM;
+	public bool				hint		= false;
 	public GameStats		cards;
 	public int				games;
 	public TimeStats		time;

@@ -115,6 +115,11 @@ public class GameControl : MonoBehaviour{
 		}
 	}
 
+	public void ToggleHint(){
+
+		this.memoryGame.hint = !this.memoryGame.hint;
+	}
+
 	void Update(){
 
 		if(!this.animation.isPlaying){
@@ -201,6 +206,11 @@ public class GameControl : MonoBehaviour{
 			this.card2 = null;
 			this.first = false;
 
+			if(this.memoryGame.hint){
+
+				this.sounds.success.PlayOneShot(this.card1.sound);
+			}
+
 		}else if(this.card1 != card){
 
 			card.FlipFaceUp();
@@ -212,15 +222,21 @@ public class GameControl : MonoBehaviour{
 
 			if(this.failed){
 
-				this.sounds.failure.Play();
+				if(this.memoryGame.hint){
+
+					this.sounds.success.PlayOneShot(this.card2.sound);
+
+				}else{
+
+					this.sounds.failure.Play();
+				}
 
 				this.card1.Failure();
 				this.card2.Failure();
 
 			}else{
 
-				this.sounds.success.clip = this.card1.sound;
-				this.sounds.success.Play();
+				this.sounds.success.PlayOneShot(this.card1.sound);
 
 				this.card1.Success(this.positions.card1, this.positions.observer);
 				this.card2.Success(this.positions.card2, this.positions.observer);
