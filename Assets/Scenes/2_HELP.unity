@@ -17413,7 +17413,7 @@ GameObject:
   - 4: {fileID: 1279143871}
   - 114: {fileID: 1279143872}
   m_Layer: 0
-  m_Name: MessageLearnKatakana
+  m_Name: MessageStudyKatakana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17456,7 +17456,7 @@ MonoBehaviour:
     bottom: 0
     right: 0
   isClickable: 1
-  text: "LEARN\r\nKATAKANA"
+  text: "STUDY\r\nKATAKANA"
   font:
     family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     style: 0
@@ -21799,7 +21799,7 @@ GameObject:
   - 4: {fileID: 1638590289}
   - 114: {fileID: 1638590291}
   m_Layer: 0
-  m_Name: MessageLearnHiragana
+  m_Name: MessageStudyHiragana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21842,7 +21842,7 @@ MonoBehaviour:
     bottom: 0
     right: 0
   isClickable: 1
-  text: "LEARN\r\nHIRAGANA"
+  text: "STUDY\r\nHIRAGANA"
   font:
     family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     style: 0
