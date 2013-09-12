@@ -21,7 +21,7 @@ public class SplashScreenControl : MonoBehaviour{
 	public	string						skipAnimationClip;
 	public	bool						escapeExitsApplication;
 
-	private	bool						exitApplication = false;
+	protected	bool					exitApplication = false;
 
 	void Start(){
 
