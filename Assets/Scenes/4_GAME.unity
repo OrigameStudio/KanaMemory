@@ -5677,6 +5677,68 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
+--- !u!1 &328714545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 328714546}
+  - 114: {fileID: 328714547}
+  m_Layer: 0
+  m_Name: ButtonHint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &328714546
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328714545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1645012915}
+--- !u!114 &328714547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 328714545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564eee0b666fd174cb766908c5ac9c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 2
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: 0
+    top: .875
+    width: .100000001
+    height: .100000001
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  texture: {fileID: 2800000, guid: e2f2b5028a2943d4a828f46e4f9974ee, type: 3}
+  scaleMode: 1
+  alphaBlend: 1
+  imageAspect: 0
+  alignment:
+    horizontal: 0
+    vertical: 0
+  control: {fileID: 628095890}
+  action: 0
 --- !u!1 &329982222
 GameObject:
   m_ObjectHideFlags: 0
@@ -22600,6 +22662,7 @@ MonoBehaviour:
     horizontal: 0
     vertical: 0
   control: {fileID: 628095890}
+  action: 1
 --- !u!1 &1436266110
 GameObject:
   m_ObjectHideFlags: 0
@@ -26496,6 +26559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1430250129}
+  - {fileID: 328714546}
   - {fileID: 678309461}
   - {fileID: 828347688}
   - {fileID: 121012634}
@@ -26506,7 +26570,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1645012914}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f28b926c0b91bf4b828944ceff97471, type: 3}
   m_Name: 
@@ -26514,9 +26578,12 @@ MonoBehaviour:
   cardsInfo: {fileID: 678309462}
   timeInfo: {fileID: 828347690}
   typeInfo: {fileID: 121012636}
+  hintInfo: {fileID: 328714547}
   type1: {fileID: 2800000, guid: d02f8f6865f49504f934bdb182561b4e, type: 3}
   type2: {fileID: 2800000, guid: 2e59c4fed600e4242b4dc99bbab0b4c7, type: 3}
   type3: {fileID: 2800000, guid: ce571e160e3333d4ca405d0da63cbf17, type: 3}
+  hintEnable: {fileID: 2800000, guid: e2f2b5028a2943d4a828f46e4f9974ee, type: 3}
+  hintDisable: {fileID: 2800000, guid: efd1f16905ac31f4d80c65c05e59127a, type: 3}
 --- !u!1001 &1645514322
 Prefab:
   m_ObjectHideFlags: 0
