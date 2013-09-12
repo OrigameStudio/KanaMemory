@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class GameStats{
+public class MemoryGameStatsCards{
 
 	public int	total;
 	public int	matches;

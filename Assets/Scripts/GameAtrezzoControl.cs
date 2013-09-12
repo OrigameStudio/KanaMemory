@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 
 
-public class AtrezzoControl : MonoBehaviour{
+public class GameAtrezzoControl : MonoBehaviour{
 
 	public float explosionForce		= 100f;
 	public float explosionRadius	= 1f;

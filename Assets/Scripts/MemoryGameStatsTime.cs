@@ -3,7 +3,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class TimeStats{
+public class MemoryGameStatsTime{
 
 	public float	start;
 	public int		total;

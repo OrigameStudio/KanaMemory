@@ -61,7 +61,7 @@ public class GameControl : MonoBehaviour{
 
 		Debug.Log("board.pairs: " + board.pairs + ", board.seconds: " + board.seconds);
 
-		this.hud.ResumeGame();
+		this.hud.Resume();
 	}
 
 	public void Succeed(){
@@ -89,7 +89,7 @@ public class GameControl : MonoBehaviour{
 
 			this.music.audio.Pause();
 
-			this.hud.PauseGame();
+			this.hud.Pause();
 
 			this.isPaused = true;
 
@@ -109,7 +109,7 @@ public class GameControl : MonoBehaviour{
 
 			this.memoryGame.ExtendTimeLeft(Time.time - this.timePaused);
 
-			this.hud.ResumeGame();
+			this.hud.Resume();
 
 			this.isPaused = false;
 		}
@@ -243,5 +243,30 @@ public class GameControl : MonoBehaviour{
 			}
 		}
 	}
+	
+	public void onAction(GameHUDAction action){
+		
+		switch(action){
+			
+			case GameHUDAction.Hint:
 
+				this.ToggleHint();
+				break;
+
+			case GameHUDAction.Pause:
+
+				this.PauseGame();
+				break;
+
+			case GameHUDAction.Resume:
+
+				this.ResumeGame();
+				break;
+
+			case GameHUDAction.Quit:
+
+				this.QuitGame();
+				break;
+		}
+	}
 }

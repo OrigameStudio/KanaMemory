@@ -260,4 +260,55 @@ public class HelpControl : MonoBehaviour{
 
 		Application.LoadLevel(this.escapeScene);
 	}
+	
+	public void OnAction(HelpHUDAction action){
+
+		switch(action){
+			
+			case HelpHUDAction.StudyHiragana:
+
+				this.SwitchToHiragana();
+				break;
+
+			case HelpHUDAction.StudyKatakana:
+
+				this.SwitchToKatakana();
+				break;
+			
+			case HelpHUDAction.Exit:
+
+				this.Exit();
+				break;
+			
+			case HelpHUDAction.ConfirmExit:
+
+				this.ConfirmExit();
+				break;
+
+			case HelpHUDAction.Stay:
+
+				this.Stay();
+				break;
+
+			case HelpHUDAction.Previous:
+
+				this.Previous();
+				break;
+
+			case HelpHUDAction.Next:
+
+				this.Next();
+				break;
+
+			case HelpHUDAction.Switch:
+
+				this.Switch();
+				break;
+
+			case HelpHUDAction.Zoom:
+
+				this.ToggleZoom();
+				break;
+		}
+	}
 }

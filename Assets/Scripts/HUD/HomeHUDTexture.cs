@@ -2,12 +2,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class HomeHUDButton : HUDTexture{
+public class HomeHUDTexture : HUDTexture{
 
 	public HomeControl control;
 
+	public HomeHUDAction action;
+
 	public override void OnClick(int mouseButton){
 
-		this.control.Exit();
+		this.control.OnAction(this.action);
 	}
 }

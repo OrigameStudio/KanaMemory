@@ -5,14 +5,14 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
-	public GameStatus		status		= GameStatus.Ready;
-	public GameType			type		= GameType.GameType1;
-	public GameDifficulty	difficulty	= GameDifficulty.MEDIUM;
-	public BoardSize		boardSize	= BoardSize.MEDIUM;
-	public bool				hint		= false;
-	public GameStats		cards;
-	public int				games;
-	public TimeStats		time;
+	public GameStatus			status		= GameStatus.Ready;
+	public GameType				type		= GameType.GameType1;
+	public GameDifficulty		difficulty	= GameDifficulty.MEDIUM;
+	public BoardSize			boardSize	= BoardSize.MEDIUM;
+	public bool					hint		= false;
+	public MemoryGameStatsCards	cards;
+	public int					games;
+	public MemoryGameStatsTime	time;
 
 	private static MemoryGame instance;
 	public static MemoryGame GetInstance(){
