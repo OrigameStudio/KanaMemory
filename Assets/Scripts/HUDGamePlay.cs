@@ -14,8 +14,8 @@ public class HUDGamePlay : MonoBehaviour{
 	public Texture2D	type2;
 	public Texture2D	type3;
 
-	public Texture2D	hintEnabled;
-	public Texture2D	hintDisabled;
+	public Texture2D	hintEnable;
+	public Texture2D	hintDisable;
 
 	private MemoryGame memoryGame;
 
@@ -39,7 +39,7 @@ public class HUDGamePlay : MonoBehaviour{
 		this.cardsInfo.text	= this.memoryGame.cards.matches + "/" + this.memoryGame.cards.total;
 		this.timeInfo.text	= string.Format("{0}:{1:d2}", minutes, seconds);
 
-		this.hintInfo.texture = (this.memoryGame.hint ? this.hintEnabled : this.hintDisabled);
+		this.hintInfo.texture = (this.memoryGame.hint ? this.hintDisable : this.hintEnable);
 	}
 
 	private Texture2D GetGameTypeTexture(){
