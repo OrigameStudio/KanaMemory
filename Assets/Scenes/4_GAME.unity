@@ -2065,7 +2065,7 @@ GameObject:
   - 4: {fileID: 121012634}
   - 114: {fileID: 121012636}
   m_Layer: 0
-  m_Name: Type
+  m_Name: TypeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2422,7 +2422,7 @@ GameObject:
   - 4: {fileID: 139474498}
   - 114: {fileID: 139474496}
   m_Layer: 0
-  m_Name: Title
+  m_Name: _Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5687,7 +5687,7 @@ GameObject:
   - 4: {fileID: 328714546}
   - 114: {fileID: 328714547}
   m_Layer: 0
-  m_Name: ButtonHint
+  m_Name: Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10138,9 +10138,7 @@ MonoBehaviour:
     - {fileID: 11400062, guid: 7b7b1a140d6ca2541bc18f2909c84e0c, type: 2}
     - {fileID: 11400004, guid: e0ef8f0827a9c984098b0311203a0371, type: 2}
     - {fileID: 11400062, guid: bdd12fd59f582e74da749f61919d148a, type: 2}
-  hud:
-    gamePlay: {fileID: 1645012916}
-    pause: {fileID: 708821830}
+  hud: {fileID: 2144051203}
   away: {fileID: 525263519}
 --- !u!111 &628095891
 Animation:
@@ -11236,7 +11234,7 @@ GameObject:
   - 4: {fileID: 678309461}
   - 114: {fileID: 678309462}
   m_Layer: 0
-  m_Name: Cards
+  m_Name: CardsInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11870,9 +11868,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 708821828}
-  - 114: {fileID: 708821830}
   m_Layer: 0
-  m_Name: Pause
+  m_Name: PauseInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11893,21 +11890,6 @@ Transform:
   - {fileID: 1183079556}
   - {fileID: 1929546488}
   m_Father: {fileID: 2144051202}
---- !u!114 &708821830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 708821827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fbde394e4b1f424f9476352ed87e024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: {fileID: 139474496}
-  buttonYes: {fileID: 810544601}
-  buttonNo: {fileID: 1183079557}
-  background: {fileID: 1929546489}
 --- !u!1001 &711381291
 Prefab:
   m_ObjectHideFlags: 0
@@ -13325,7 +13307,7 @@ GameObject:
   - 4: {fileID: 810544603}
   - 114: {fileID: 810544601}
   m_Layer: 0
-  m_Name: ButtonYes
+  m_Name: Yes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13590,7 +13572,7 @@ GameObject:
   - 4: {fileID: 828347688}
   - 114: {fileID: 828347690}
   m_Layer: 0
-  m_Name: Time
+  m_Name: TimeInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18751,7 +18733,7 @@ GameObject:
   - 4: {fileID: 1183079556}
   - 114: {fileID: 1183079557}
   m_Layer: 0
-  m_Name: ButtonNo
+  m_Name: No
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22611,7 +22593,7 @@ GameObject:
   - 4: {fileID: 1430250129}
   - 114: {fileID: 1430250131}
   m_Layer: 0
-  m_Name: ButtonExit
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26540,9 +26522,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1645012915}
-  - 114: {fileID: 1645012916}
   m_Layer: 0
-  m_Name: GamePlay
+  m_Name: GameInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26564,26 +26545,6 @@ Transform:
   - {fileID: 828347688}
   - {fileID: 121012634}
   m_Father: {fileID: 2144051202}
---- !u!114 &1645012916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1645012914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f28b926c0b91bf4b828944ceff97471, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardsInfo: {fileID: 678309462}
-  timeInfo: {fileID: 828347690}
-  typeInfo: {fileID: 121012636}
-  hintInfo: {fileID: 328714547}
-  type1: {fileID: 2800000, guid: d02f8f6865f49504f934bdb182561b4e, type: 3}
-  type2: {fileID: 2800000, guid: 2e59c4fed600e4242b4dc99bbab0b4c7, type: 3}
-  type3: {fileID: 2800000, guid: ce571e160e3333d4ca405d0da63cbf17, type: 3}
-  hintEnable: {fileID: 2800000, guid: e2f2b5028a2943d4a828f46e4f9974ee, type: 3}
-  hintDisable: {fileID: 2800000, guid: efd1f16905ac31f4d80c65c05e59127a, type: 3}
 --- !u!1001 &1645514322
 Prefab:
   m_ObjectHideFlags: 0
@@ -31045,7 +31006,7 @@ GameObject:
   - 4: {fileID: 1929546488}
   - 114: {fileID: 1929546489}
   m_Layer: 0
-  m_Name: Background
+  m_Name: _Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34292,6 +34253,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2144051202}
+  - 114: {fileID: 2144051203}
   m_Layer: 0
   m_Name: _HUD
   m_TagString: Untagged
@@ -34312,6 +34274,28 @@ Transform:
   - {fileID: 1645012915}
   - {fileID: 708821828}
   m_Father: {fileID: 0}
+--- !u!114 &2144051203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144051201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9975edaa0a9d540867dfddfbed2a5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameInfo: {fileID: 1645012914}
+  pauseInfo: {fileID: 708821827}
+  cardsInfo: {fileID: 678309462}
+  timeInfo: {fileID: 828347690}
+  typeInfo: {fileID: 121012636}
+  hintButton: {fileID: 328714547}
+  type1: {fileID: 2800000, guid: d02f8f6865f49504f934bdb182561b4e, type: 3}
+  type2: {fileID: 2800000, guid: 2e59c4fed600e4242b4dc99bbab0b4c7, type: 3}
+  type3: {fileID: 2800000, guid: ce571e160e3333d4ca405d0da63cbf17, type: 3}
+  hintEnable: {fileID: 2800000, guid: e2f2b5028a2943d4a828f46e4f9974ee, type: 3}
+  hintDisable: {fileID: 2800000, guid: efd1f16905ac31f4d80c65c05e59127a, type: 3}
 --- !u!1001 &2147180723
 Prefab:
   m_ObjectHideFlags: 0
