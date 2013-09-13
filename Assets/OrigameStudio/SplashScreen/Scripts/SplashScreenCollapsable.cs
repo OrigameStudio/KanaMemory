@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SplashScreenCollapsable : MonoBehaviour {
 
+	public AudioSource sound;
+
 	public int	nextScene = -1;
 	public bool	exitApplication = false;
 
@@ -59,6 +61,9 @@ public class SplashScreenCollapsable : MonoBehaviour {
 
 	public virtual void Hit(Vector3? hitPoint){
 		
-		/* ... */
+		if(this.sound != null){
+
+			this.sound.Play();
+		}
 	}
 }

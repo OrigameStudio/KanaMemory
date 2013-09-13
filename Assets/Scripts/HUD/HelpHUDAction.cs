@@ -3,8 +3,8 @@ public enum HelpHUDAction{
 	
 	StudyHiragana,
 	StudyKatakana,
-	Exit,
 	ConfirmExit,
+	Exit,
 	Stay,
 	Previous,
 	Next,

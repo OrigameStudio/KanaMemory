@@ -8,6 +8,8 @@ public class HomeControl : SplashScreenControl{
 	public int	HelpScene	= 2;
 	public int	StartScene	= 3;
 
+	public AudioSource gong;
+
 	public void Exit(){
 
 		this.exitApplication = true;
@@ -27,6 +29,8 @@ public class HomeControl : SplashScreenControl{
 	}
 	
 	public void OnAction(HomeHUDAction action){
+
+		this.gong.Play();
 
 		switch(action){
 

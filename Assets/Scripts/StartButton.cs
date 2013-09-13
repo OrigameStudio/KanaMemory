@@ -21,6 +21,8 @@ public class StartButton : SplashScreenCollapsable{
 				game.type = this.gameType;
 			}
 
+			this.sound.Play();
+
 			this.wasHit = true;
 		}
 	}
