@@ -38,7 +38,7 @@ public class HelpControl : MonoBehaviour{
 
 	public int escapeScene = 1;
 
-	public AudioSource sounds;
+	public AudioSource steps;
 	public AudioSource voice;
 
 	//public GUIText info;
@@ -56,6 +56,8 @@ public class HelpControl : MonoBehaviour{
 		this.Welcome.SetActive(true);
 		this.Navigation.SetActive(false);
 		this.Goodbye.SetActive(false);
+
+		this.steps.Play();
 	}
 
 	void Update(){
@@ -113,7 +115,7 @@ public class HelpControl : MonoBehaviour{
 		this.UpdateSwitchIcon();
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 
 		this.UpdateCurrentTarget();
 	}
@@ -132,7 +134,7 @@ public class HelpControl : MonoBehaviour{
 		this.UpdateSwitchIcon();
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 
 		this.UpdateCurrentTarget();
 	}
@@ -163,12 +165,12 @@ public class HelpControl : MonoBehaviour{
 		this.UpdateSwitchIcon();
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 
 		this.UpdateCurrentTarget();
 	}
 
-	public void SwitchToHiragana(){
+	public void StudyHiragana(){
 
 		this.Welcome.SetActive(false);
 		this.Navigation.SetActive(true);
@@ -181,12 +183,12 @@ public class HelpControl : MonoBehaviour{
 		this.positionIndex = this.firstHiraganaIndex;
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 
 		this.UpdateCurrentTarget();
 	}
 
-	public void SwitchToKatakana(){
+	public void StudyKatakana(){
 
 		this.Welcome.SetActive(false);
 		this.Navigation.SetActive(true);
@@ -199,7 +201,7 @@ public class HelpControl : MonoBehaviour{
 		this.positionIndex = this.firstKatakanaIndex;
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 
 		this.UpdateCurrentTarget();
 	}
@@ -215,7 +217,7 @@ public class HelpControl : MonoBehaviour{
 		this.rotateAs.target	= this.exitPosition.transform.rotation;
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 	}
 
 	public void Stay(){
@@ -229,7 +231,7 @@ public class HelpControl : MonoBehaviour{
 		this.rotateAs.target	= this.enterPosition.transform.rotation;
 
 		this.observer.animation.Play();
-		this.sounds.Play();
+		this.steps.Play();
 	}
 
 	public void ToggleZoom(){
@@ -254,6 +256,8 @@ public class HelpControl : MonoBehaviour{
 
 		this.moveTo.target		= this.outsidePosition.transform.position;
 		this.rotateAs.target	= this.outsidePosition.transform.rotation;
+
+		this.steps.Play();
 	}
 
 	public void Exited(){
@@ -267,12 +271,12 @@ public class HelpControl : MonoBehaviour{
 			
 			case HelpHUDAction.StudyHiragana:
 
-				this.SwitchToHiragana();
+				this.StudyHiragana();
 				break;
 
 			case HelpHUDAction.StudyKatakana:
 
-				this.SwitchToKatakana();
+				this.StudyKatakana();
 				break;
 			
 			case HelpHUDAction.Exit:
