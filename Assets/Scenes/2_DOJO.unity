@@ -26279,8 +26279,8 @@ MonoBehaviour:
   enterPosition: {fileID: 500372402}
   exitPosition: {fileID: 1582567427}
   outsidePosition: {fileID: 1340119016}
-  moveSpeed: .0399999991
-  rotateSpeed: .0500000007
+  moveSpeed: .0199999996
+  rotateSpeed: .0399999991
   zoomIcon: {fileID: 1752362203}
   zoomOutTexture: {fileID: 2800000, guid: 12ac1fd9d654f8a4b8b932664ea1cf98, type: 3}
   zoomInTexture: {fileID: 2800000, guid: f097175e98a06a549b3a1047cb1be7e6, type: 3}
