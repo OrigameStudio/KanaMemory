@@ -22,7 +22,7 @@ AnimationClip:
         inSlope: -.590340972
         outSlope: -.590340972
         tangentMode: 0
-      - time: 1.48333335
+      - time: 1.41666663
         value: 0
         inSlope: -.681350946
         outSlope: Infinity
@@ -67,7 +67,7 @@ AnimationClip:
         inSlope: -.590340972
         outSlope: -.590340972
         tangentMode: 0
-      - time: 1.48333335
+      - time: 1.41666663
         value: 0
         inSlope: -.681350946
         outSlope: Infinity
