@@ -1442,7 +1442,7 @@ GameObject:
   - 4: {fileID: 75140979}
   - 114: {fileID: 75140980}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: ConfirmExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5986,6 +5986,91 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.5, z: 1}
   m_Center: {x: 0, y: -.25, z: 0}
+--- !u!1 &393897021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 393897022}
+  - 82: {fileID: 393897023}
+  m_Layer: 0
+  m_Name: Steps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &393897022
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393897021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1167805934}
+--- !u!82 &393897023
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 393897021}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 696d9b848558fd94c8dde25a3100402c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .75
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &400443424
 GameObject:
   m_ObjectHideFlags: 0
@@ -7490,7 +7575,7 @@ GameObject:
   - 4: {fileID: 459479623}
   - 114: {fileID: 459479624}
   m_Layer: 0
-  m_Name: Exit
+  m_Name: ConfirmExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14090,7 +14175,7 @@ AudioSource:
   m_GameObject: {fileID: 1052331567}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 696d9b848558fd94c8dde25a3100402c, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: .75
   m_Pitch: 1
@@ -16075,6 +16160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 78200764}
+  - {fileID: 393897022}
   - {fileID: 1835033156}
   - {fileID: 1840115348}
   - {fileID: 1487283243}
@@ -18415,7 +18501,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1340119015}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
-  m_LocalPosition: {x: -.5, y: 1.64999998, z: -6}
+  m_LocalPosition: {x: -.5, y: 1.64999998, z: -7.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1983942498}
@@ -18429,7 +18515,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1340119018
 MonoBehaviour:
@@ -20515,7 +20601,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483425305}
-  m_LocalRotation: {x: -.45451948, y: .54167527, z: -.45451948, w: -.54167527}
+  m_LocalRotation: {x: -.454519361, y: .541675389, z: -.4545196, w: -.54167515}
   m_LocalPosition: {x: -12, y: -3.25, z: 0}
   m_LocalScale: {x: 40, y: 12, z: 1}
   m_Children: []
@@ -22292,7 +22378,7 @@ GameObject:
   - 4: {fileID: 1693015000}
   - 114: {fileID: 1693015002}
   m_Layer: 0
-  m_Name: ConfirmExit
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25314,7 +25400,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 4b4eb725e1fb24c49875984dc2ce0ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .25
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -26193,8 +26279,8 @@ MonoBehaviour:
   enterPosition: {fileID: 500372402}
   exitPosition: {fileID: 1582567427}
   outsidePosition: {fileID: 1340119016}
-  moveSpeed: .0299999993
-  rotateSpeed: .0399999991
+  moveSpeed: .0399999991
+  rotateSpeed: .0500000007
   zoomIcon: {fileID: 1752362203}
   zoomOutTexture: {fileID: 2800000, guid: 12ac1fd9d654f8a4b8b932664ea1cf98, type: 3}
   zoomInTexture: {fileID: 2800000, guid: f097175e98a06a549b3a1047cb1be7e6, type: 3}
@@ -26207,7 +26293,7 @@ MonoBehaviour:
   observer: {fileID: 1167805933}
   mainCamera: {fileID: 1487283242}
   escapeScene: 1
-  sounds: {fileID: 1052331569}
+  steps: {fileID: 393897023}
   voice: {fileID: 1835033157}
 --- !u!1 &1984399572
 GameObject:
