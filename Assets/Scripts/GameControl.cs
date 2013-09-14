@@ -81,7 +81,7 @@ public class GameControl : MonoBehaviour{
 
 	public void PauseGame(){
 
-		if(!this.isPaused){
+		if(!this.isPaused && !this.isTicking){
 
 			Debug.Log("Pause");
 
