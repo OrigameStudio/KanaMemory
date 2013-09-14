@@ -8,7 +8,9 @@ public class HomeControl : SplashScreenControl{
 	public int	HelpScene	= 2;
 	public int	StartScene	= 3;
 
-	public AudioSource gong;
+	public HUDText loadingMessage;
+
+	public AudioSource sound;
 
 	public void Exit(){
 
@@ -18,19 +20,23 @@ public class HomeControl : SplashScreenControl{
 	
 	public void Dojo(){
 
+		this.loadingMessage.enabled = true;
+
 		this.nextScene = this.HelpScene;
 		this.Skip(null);
+
+		this.sound.Play();
 	}
 	
 	public void Play(){
 
 		this.nextScene = this.StartScene;
 		this.Skip(null);
+
+		this.sound.Play();
 	}
 	
 	public void OnAction(HomeHUDAction action){
-
-		this.gong.Play();
 
 		switch(action){
 
