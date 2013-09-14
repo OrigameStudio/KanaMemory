@@ -3930,6 +3930,8 @@ MonoBehaviour:
   sound: {fileID: 921738024}
   nextScene: -1
   exitApplication: 0
+  destroyColliderOnCollapse: 1
+  destroyAnimationOnCollapse: 1
 --- !u!65 &1165031654
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4267,6 +4269,8 @@ MonoBehaviour:
   sound: {fileID: 921738024}
   nextScene: -1
   exitApplication: 0
+  destroyColliderOnCollapse: 1
+  destroyAnimationOnCollapse: 1
 --- !u!111 &1228857701
 Animation:
   m_ObjectHideFlags: 0

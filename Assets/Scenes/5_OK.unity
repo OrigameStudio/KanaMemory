@@ -785,8 +785,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a779a27072932438627994e8656ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
   nextScene: -1
   exitApplication: 0
+  destroyColliderOnCollapse: 1
+  destroyAnimationOnCollapse: 1
 --- !u!65 &1070940946
 BoxCollider:
   m_ObjectHideFlags: 0

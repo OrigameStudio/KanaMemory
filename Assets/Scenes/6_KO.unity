@@ -704,6 +704,8 @@ MonoBehaviour:
   sound: {fileID: 0}
   nextScene: -1
   exitApplication: 0
+  destroyColliderOnCollapse: 1
+  destroyAnimationOnCollapse: 1
 --- !u!65 &1070940946
 BoxCollider:
   m_ObjectHideFlags: 0
