@@ -130,6 +130,8 @@ public class GameControl : MonoBehaviour{
 
 				if( this.memoryGame.GetSecondsLeft() <= 10 ){
 
+					this.hud.exitButton.enabled = false;
+
 					this.sounds.clock.Play();
 
 					this.isTicking = true;

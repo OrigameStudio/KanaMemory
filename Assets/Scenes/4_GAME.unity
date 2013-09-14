@@ -9522,6 +9522,7 @@ MonoBehaviour:
   timeInfo: {fileID: 828347690}
   typeInfo: {fileID: 121012636}
   hintButton: {fileID: 328714547}
+  exitButton: {fileID: 1430250131}
   type1: {fileID: 2800000, guid: d02f8f6865f49504f934bdb182561b4e, type: 3}
   type2: {fileID: 2800000, guid: 2e59c4fed600e4242b4dc99bbab0b4c7, type: 3}
   type3: {fileID: 2800000, guid: ce571e160e3333d4ca405d0da63cbf17, type: 3}

@@ -12,6 +12,7 @@ public class GameHUD : MonoBehaviour{
 	public HUDText		timeInfo;
 	public HUDTexture	typeInfo;
 	public HUDTexture	hintButton;
+	public HUDTexture	exitButton;
 
 	public Texture2D	type1;
 	public Texture2D	type2;
