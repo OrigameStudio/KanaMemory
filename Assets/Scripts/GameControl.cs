@@ -142,6 +142,8 @@ public class GameControl : MonoBehaviour{
 
 			}else if(this.memoryGame.status == GameStatus.Failure){
 
+				this.sounds.timeOut.Play();
+
 				this.animation.Play("Game@Failure");
 			}
 		}

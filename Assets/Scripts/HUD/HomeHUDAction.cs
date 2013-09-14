@@ -2,6 +2,6 @@
 public enum HomeHUDAction{
 
 	Play,
-	Help,
+	Dojo,
 	Exit
 }

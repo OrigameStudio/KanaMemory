@@ -16,7 +16,7 @@ public class HomeControl : SplashScreenControl{
 		this.Skip(null);
 	}
 	
-	public void Help(){
+	public void Dojo(){
 
 		this.nextScene = this.HelpScene;
 		this.Skip(null);
@@ -39,9 +39,9 @@ public class HomeControl : SplashScreenControl{
 				this.Exit();
 				break;
 
-			case HomeHUDAction.Help:
+			case HomeHUDAction.Dojo:
 
-				this.Help();
+				this.Dojo();
 				break;
 			
 			case HomeHUDAction.Play:
