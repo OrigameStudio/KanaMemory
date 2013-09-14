@@ -1,12 +1,20 @@
+
 using UnityEngine;
 using System.Collections;
 
-public class SplashScreenCollapsable : MonoBehaviour {
+
+public class SplashCollapsable : MonoBehaviour {
 
 	public AudioSource sound;
 
-	public int	nextScene = -1;
-	public bool	exitApplication = false;
+	public int		nextScene			= -1;
+	public bool		exitApplication		= false;
+
+	public bool		destroyColliderOnCollapse	= true;
+	public bool		destroyAnimationOnCollapse	= true;
+
+	protected bool	wasHit				= false;
+	protected bool	isCollapsed			= false;
 
 	void Start(){
 
@@ -46,6 +54,8 @@ public class SplashScreenCollapsable : MonoBehaviour {
 
 	public virtual void Collapse(Vector3? hitPoint, float explosionForce, float explosionRadius){
 
+		this.isCollapsed = true;
+
 		this.IsKinematic(this.gameObject, false);
 		this.UseGravity(this.gameObject, true);
 
@@ -54,16 +64,29 @@ public class SplashScreenCollapsable : MonoBehaviour {
 			this.Explode(this.gameObject, hitPoint.Value, explosionForce, explosionRadius);
 		}
 
-		Object.Destroy(this.gameObject.animation);
-		Object.Destroy(this.gameObject.collider);
+		if(this.destroyColliderOnCollapse){
+
+			Object.Destroy(this.gameObject.collider);
+		}
+
+		if(this.destroyAnimationOnCollapse){
+
+			Object.Destroy(this.gameObject.animation);
+		}
+
 		Object.Destroy(this);
 	}
 
 	public virtual void Hit(Vector3? hitPoint){
-		
+
 		if(this.sound != null){
 
 			this.sound.Play();
+		}
+
+		if(!this.isCollapsed){
+
+			this.wasHit = true;
 		}
 	}
 }

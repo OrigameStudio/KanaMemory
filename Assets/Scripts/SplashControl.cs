@@ -1,7 +1,9 @@
+
 using UnityEngine;
 using System.Collections;
 
-public enum SplashScreenStatus{
+
+public enum SplashStatus{
 
 	fadingIn	= 0,
 	ready		= 1,
@@ -9,19 +11,19 @@ public enum SplashScreenStatus{
 	finished	= 3
 };
 
-public class SplashScreenControl : MonoBehaviour{
+public class SplashControl : MonoBehaviour{
 
-	private	SplashScreenStatus			status = SplashScreenStatus.fadingIn;
-	public	float						explosionForce;
-	public	float						explosionRadius;
-	public	SplashScreenCollapsable[]	collapsableObjects;
-	public	SplashScreenLight[]			lights;
-	public	int							nextScene = -1;
-	public	Color						ambientLight = Color.black;
-	public	string						skipAnimationClip;
-	public	bool						escapeExitsApplication;
+	private	SplashStatus			status = SplashStatus.fadingIn;
+	public	float					explosionForce;
+	public	float					explosionRadius;
+	public	SplashCollapsable[]		collapsableObjects;
+	public	SplashLight[]			lights;
+	public	int						nextScene = -1;
+	public	Color					ambientLight = Color.black;
+	public	string					skipAnimationClip;
+	public	bool					escapeExitsApplication;
 
-	protected	bool					exitApplication = false;
+	protected	bool				exitApplication = false;
 
 	void Start(){
 
@@ -39,7 +41,7 @@ public class SplashScreenControl : MonoBehaviour{
 
 			if( Physics.Raycast(ray, out hit) ){
 
-				SplashScreenCollapsable collapsable = hit.collider.gameObject.GetComponent<SplashScreenCollapsable>();
+				SplashCollapsable collapsable = hit.collider.gameObject.GetComponent<SplashCollapsable>();
 
 				if(collapsable != null ){
 
@@ -72,12 +74,12 @@ public class SplashScreenControl : MonoBehaviour{
 
 	public void Skip(Vector3? hitPoint){
 
-		if(this.status == SplashScreenStatus.ready || this.status == SplashScreenStatus.fadingOut){
+		if(this.status == SplashStatus.ready || this.status == SplashStatus.fadingOut){
 
 			this.Collapse(hitPoint);
 		}
 
-		if(this.status == SplashScreenStatus.ready){
+		if(this.status == SplashStatus.ready){
 
 			if(this.animation.isPlaying){
 
@@ -94,7 +96,7 @@ public class SplashScreenControl : MonoBehaviour{
 
 	public void Collapse(Vector3? hitPoint){
 
-		foreach(SplashScreenCollapsable collapsableObject in this.collapsableObjects){
+		foreach(SplashCollapsable collapsableObject in this.collapsableObjects){
 
 			collapsableObject.Collapse(hitPoint, explosionForce, explosionRadius);
 		}
@@ -102,9 +104,9 @@ public class SplashScreenControl : MonoBehaviour{
 
 	public void FadeIn(){
 
-		this.status = SplashScreenStatus.fadingIn;
+		this.status = SplashStatus.fadingIn;
 
-		foreach(SplashScreenLight light in lights){
+		foreach(SplashLight light in lights){
 
 			light.FadeIn();
 		}
@@ -112,9 +114,9 @@ public class SplashScreenControl : MonoBehaviour{
 
 	public void FadeOut(){
 
-		this.status = SplashScreenStatus.fadingOut;
+		this.status = SplashStatus.fadingOut;
 
-		foreach(SplashScreenLight light in lights){
+		foreach(SplashLight light in lights){
 
 			light.FadeOut();
 		}
@@ -122,14 +124,14 @@ public class SplashScreenControl : MonoBehaviour{
 
 	public void Ready(){
 
-		this.status = SplashScreenStatus.ready;
+		this.status = SplashStatus.ready;
 
 		this.audio.Play();
 	}
 
 	private void Finished(){
 
-		this.status = SplashScreenStatus.finished;
+		this.status = SplashStatus.finished;
 
 		if(this.exitApplication){
 
