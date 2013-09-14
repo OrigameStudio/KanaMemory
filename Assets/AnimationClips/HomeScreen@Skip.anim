@@ -37,40 +37,40 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.r
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: .686274529
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.g
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -87,47 +87,80 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.b
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: .784313738
+        inSlope: -.522875845
+        outSlope: -.522875845
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.522875845
+        outSlope: -.522875845
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: color.r
-    path: _HUD/Play
+    attribute: color.a
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: 1
+        inSlope: -.666666687
+        outSlope: -.666666687
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Dojo
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .686274529
+        inSlope: -.457516342
+        outSlope: -.457516342
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.g
     path: _HUD/Play
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.75602359e-39
+        outSlope: 3.75602359e-39
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.r
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -146,7 +179,159 @@ AnimationClip:
     attribute: color.b
     path: _HUD/Play
     classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .784313738
+        inSlope: -.522875845
+        outSlope: -.522875845
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.522875845
+        outSlope: -.522875845
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: -.248290405
+        outSlope: -.248290405
+        tangentMode: 0
+      - time: 1.5
+        value: .784313738
+        inSlope: 2.35294104
+        outSlope: 2.35294104
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Loading
+    classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: -.252159834
+        outSlope: -.252159834
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 2.99999976
+        outSlope: 2.99999976
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/ButtonExit
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/Dojo
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -191,40 +376,40 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: 0
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: 0
+        outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.r
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: .686274529
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.g
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -241,47 +426,80 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.b
-    path: _HUD/Help
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: .784313738
+        inSlope: -.522875845
+        outSlope: -.522875845
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.522875845
+        outSlope: -.522875845
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: color.r
-    path: _HUD/Play
+    attribute: color.a
+    path: _HUD/Dojo
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .87843138
-        inSlope: -.58562094
-        outSlope: -.58562094
+        value: 1
+        inSlope: -.666666687
+        outSlope: -.666666687
         tangentMode: 10
       - time: 1.5
         value: 0
-        inSlope: -.58562094
-        outSlope: -.58562094
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Dojo
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .686274529
+        inSlope: -.457516342
+        outSlope: -.457516342
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.457516342
+        outSlope: -.457516342
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: color.g
     path: _HUD/Play
     classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 3.75602359e-39
+        outSlope: 3.75602359e-39
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.r
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -300,7 +518,159 @@ AnimationClip:
     attribute: color.b
     path: _HUD/Play
     classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .784313738
+        inSlope: -.522875845
+        outSlope: -.522875845
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.522875845
+        outSlope: -.522875845
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: -.666666687
+        outSlope: -.666666687
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: -.248290405
+        outSlope: -.248290405
+        tangentMode: 0
+      - time: 1.5
+        value: .784313738
+        inSlope: 2.35294104
+        outSlope: 2.35294104
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Loading
+    classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.16666663
+        value: 0
+        inSlope: -.252159834
+        outSlope: -.252159834
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 2.99999976
+        outSlope: 2.99999976
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/ButtonExit
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/Play
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/Dojo
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: 0
