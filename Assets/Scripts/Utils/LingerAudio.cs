@@ -5,11 +5,6 @@ public class LingerAudio : MonoBehaviour{
 
 	private bool played;
 
-	void Start(){
-
-		GameObject.DontDestroyOnLoad(this.gameObject);
-	}
-
 	void Update(){
 
 		if(this.played){
@@ -19,9 +14,11 @@ public class LingerAudio : MonoBehaviour{
 				GameObject.Destroy(this.gameObject);
 			}
 
-		}else{
+		}else if(this.audio.isPlaying){
 
-			this.played = this.audio.isPlaying;
+			this.played = true;
+
+			GameObject.DontDestroyOnLoad(this.gameObject);
 		}
 	}
 }
