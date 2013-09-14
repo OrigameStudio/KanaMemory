@@ -3,8 +3,8 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HomeControl : SplashScreenControl{
-	
+public class HomeControl : SplashControl{
+
 	public int	HelpScene	= 2;
 	public int	StartScene	= 3;
 
@@ -17,7 +17,7 @@ public class HomeControl : SplashScreenControl{
 		this.exitApplication = true;
 		this.Skip(null);
 	}
-	
+
 	public void Dojo(){
 
 		this.loadingMessage.enabled = true;
@@ -27,7 +27,7 @@ public class HomeControl : SplashScreenControl{
 
 		this.sound.Play();
 	}
-	
+
 	public void Play(){
 
 		this.nextScene = this.StartScene;
@@ -35,7 +35,7 @@ public class HomeControl : SplashScreenControl{
 
 		this.sound.Play();
 	}
-	
+
 	public void OnAction(HomeHUDAction action){
 
 		switch(action){
@@ -49,7 +49,7 @@ public class HomeControl : SplashScreenControl{
 
 				this.Dojo();
 				break;
-			
+
 			case HomeHUDAction.Play:
 
 				this.Play();
