@@ -39,13 +39,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 0
         inSlope: 1.56862748
         outSlope: 1.56862748
-        tangentMode: 10
+        tangentMode: 1
       - time: 1.5
         value: .784313738
         inSlope: 3.13725495
@@ -63,13 +63,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 0
         inSlope: 2
         outSlope: 2
-        tangentMode: 10
+        tangentMode: 1
       - time: 1.5
         value: 1
         inSlope: 4
@@ -87,13 +87,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: .800000012
-        outSlope: .800000012
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 1
-        inSlope: .800000012
+        inSlope: Infinity
         outSlope: .800000012
-        tangentMode: 10
+        tangentMode: 1
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Enabled
@@ -146,13 +146,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 0
         inSlope: 1.56862748
         outSlope: 1.56862748
-        tangentMode: 10
+        tangentMode: 1
       - time: 1.5
         value: .784313738
         inSlope: 3.13725495
@@ -170,13 +170,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 0
         inSlope: 2
         outSlope: 2
-        tangentMode: 10
+        tangentMode: 1
       - time: 1.5
         value: 1
         inSlope: 4
@@ -194,13 +194,13 @@ AnimationClip:
       - time: 0
         value: 0
         inSlope: .800000012
-        outSlope: .800000012
-        tangentMode: 10
+        outSlope: Infinity
+        tangentMode: 1
       - time: 1.25
         value: 1
-        inSlope: .800000012
+        inSlope: Infinity
         outSlope: .800000012
-        tangentMode: 10
+        tangentMode: 1
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Enabled
