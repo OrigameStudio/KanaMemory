@@ -3,9 +3,9 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HelpExitTrigger : MonoBehaviour{
+public class DojoExitTrigger : MonoBehaviour{
 
-	public HelpControl control;
+	public DojoControl control;
 
 	public bool isInDojo = false;
 

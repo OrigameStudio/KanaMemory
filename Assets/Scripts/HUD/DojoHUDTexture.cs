@@ -3,10 +3,10 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HelpHUDTexture : HUDTexture{
+public class DojoHUDTexture : HUDTexture{
 
-	public HelpControl control;
-	public HelpHUDAction action;
+	public DojoControl control;
+	public DojoHUDAction action;
 
 	public override void OnClick(int mouseButton){
 

@@ -1,5 +1,5 @@
 
-public enum HelpHUDAction{
+public enum DojoHUDAction{
 	
 	StudyHiragana,
 	StudyKatakana,

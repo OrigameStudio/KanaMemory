@@ -3,10 +3,10 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HelpHUDText : HUDText{
+public class DojoHUDText : HUDText{
 
-	public HelpControl control;
-	public HelpHUDAction action;
+	public DojoControl control;
+	public DojoHUDAction action;
 
 	public override void OnClick(int mouseButton){
 

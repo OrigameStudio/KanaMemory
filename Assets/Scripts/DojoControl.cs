@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections;
 
 
-public class HelpControl : MonoBehaviour{
+public class DojoControl : MonoBehaviour{
 
 	public GameObject Welcome;
 	public GameObject Navigation;
@@ -265,51 +265,51 @@ public class HelpControl : MonoBehaviour{
 		Application.LoadLevel(this.escapeScene);
 	}
 	
-	public void OnAction(HelpHUDAction action){
+	public void OnAction(DojoHUDAction action){
 
 		switch(action){
 			
-			case HelpHUDAction.StudyHiragana:
+			case DojoHUDAction.StudyHiragana:
 
 				this.StudyHiragana();
 				break;
 
-			case HelpHUDAction.StudyKatakana:
+			case DojoHUDAction.StudyKatakana:
 
 				this.StudyKatakana();
 				break;
 			
-			case HelpHUDAction.Exit:
+			case DojoHUDAction.Exit:
 
 				this.Exit();
 				break;
 			
-			case HelpHUDAction.ConfirmExit:
+			case DojoHUDAction.ConfirmExit:
 
 				this.ConfirmExit();
 				break;
 
-			case HelpHUDAction.Stay:
+			case DojoHUDAction.Stay:
 
 				this.Stay();
 				break;
 
-			case HelpHUDAction.Previous:
+			case DojoHUDAction.Previous:
 
 				this.Previous();
 				break;
 
-			case HelpHUDAction.Next:
+			case DojoHUDAction.Next:
 
 				this.Next();
 				break;
 
-			case HelpHUDAction.Switch:
+			case DojoHUDAction.Switch:
 
 				this.Switch();
 				break;
 
-			case HelpHUDAction.Zoom:
+			case DojoHUDAction.Zoom:
 
 				this.ToggleZoom();
 				break;
