@@ -310,7 +310,7 @@ GameObject:
   - 4: {fileID: 466758271}
   - 82: {fileID: 466758273}
   - 111: {fileID: 466758274}
-  - 114: {fileID: 466758272}
+  - 114: {fileID: 466758275}
   m_Layer: 0
   m_Name: _Control
   m_TagString: Untagged
@@ -330,30 +330,6 @@ Transform:
   m_Children:
   - {fileID: 213592991}
   m_Father: {fileID: 0}
---- !u!114 &466758272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466758270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b77e22417d4ae94e98e63668385eac2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionForce: 1000
-  explosionRadius: .100000001
-  collapsableObjects:
-  - {fileID: 1926890623}
-  - {fileID: 1171610219}
-  - {fileID: 564857764}
-  lights:
-  - {fileID: 946007604}
-  - {fileID: 2068537028}
-  nextScene: 1
-  ambientLight: {r: 0, g: 0, b: 0, a: 1}
-  skipAnimationClip: StartScreen@Skip
-  escapeExitsApplication: 0
 --- !u!82 &466758273
 AudioSource:
   m_ObjectHideFlags: 0
@@ -431,6 +407,33 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &466758275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466758270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de3b968e676448438bfe7a6ff239d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  game: {fileID: 0}
+  explosionForce: 1000
+  explosionRadius: .100000001
+  buttons:
+  - {fileID: 1926890623}
+  - {fileID: 1171610219}
+  - {fileID: 564857764}
+  lights:
+  - {fileID: 946007604}
+  - {fileID: 2068537028}
+  homeScene: 1
+  gameScene: 4
+  startGame: 0
+  ambientLight: {r: 0, g: 0, b: 0, a: 1}
+  skipAnimationClip: StartScreen@Skip
+  sound: {fileID: 1594911371}
 --- !u!1 &564857761
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,10 +443,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 564857762}
   - 65: {fileID: 564857763}
-  - 114: {fileID: 564857764}
   - 54: {fileID: 564857765}
+  - 114: {fileID: 564857764}
   m_Layer: 0
-  m_Name: Button_Game3
+  m_Name: Button_GameType3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,9 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca65f91c724fce84d966a31981178b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1594911371}
-  nextScene: 4
-  exitApplication: 0
   gameType: 2
 --- !u!54 &564857765
 Rigidbody:
@@ -499,8 +499,8 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -974,10 +974,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1171610217}
   - 65: {fileID: 1171610218}
-  - 114: {fileID: 1171610219}
   - 54: {fileID: 1171610220}
+  - 114: {fileID: 1171610219}
   m_Layer: 0
-  m_Name: Button_Game2
+  m_Name: Button_GameType2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,7 +990,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1171610216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.82500005, y: 0, z: .150000006}
+  m_LocalPosition: {x: 1.85000002, y: 0, z: .150000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1819035398}
@@ -1019,9 +1019,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca65f91c724fce84d966a31981178b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1594911371}
-  nextScene: 4
-  exitApplication: 0
   gameType: 1
 --- !u!54 &1171610220
 Rigidbody:
@@ -1033,8 +1030,8 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1447,10 +1444,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 1926890621}
   - 65: {fileID: 1926890622}
-  - 114: {fileID: 1926890623}
   - 54: {fileID: 1926890624}
+  - 114: {fileID: 1926890623}
   m_Layer: 0
-  m_Name: Button_Game1
+  m_Name: Button_GameType1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,7 +1460,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926890620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.82500005, y: 0, z: .150000006}
+  m_LocalPosition: {x: -1.85000002, y: 0, z: .150000006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1085619035}
@@ -1492,9 +1489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca65f91c724fce84d966a31981178b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 1594911371}
-  nextScene: 4
-  exitApplication: 0
   gameType: 0
 --- !u!54 &1926890624
 Rigidbody:
@@ -1506,8 +1500,8 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
