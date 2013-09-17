@@ -11,6 +11,8 @@ public class GameAvailableLanguages : MonoBehaviour{
 
 	public GameLanguage[] languages;
 
+	private int currentLanguage;
+
 	private static GameAvailableLanguages instance;
 	public static GameAvailableLanguages FindInstance(){
 
@@ -28,7 +30,9 @@ public class GameAvailableLanguages : MonoBehaviour{
 
 			SystemLanguage systemLanguage = Application.systemLanguage;
 
-			foreach(GameLanguage language in this.languages){
+			for(this.currentLanguage = 0; this.currentLanguage < this.languages.Length; this.currentLanguage++){
+
+				GameLanguage language = this.languages[this.currentLanguage];
 
 				if(language.system == systemLanguage){
 
@@ -38,5 +42,17 @@ public class GameAvailableLanguages : MonoBehaviour{
 		}
 
 		return(this.defaultLanguage);
+	}
+
+	public GameLanguage GetNextGameLanguage(){
+
+		this.currentLanguage++;
+
+		if(this.currentLanguage >= this.languages.Length){
+
+			this.currentLanguage = 0;
+		}
+
+		return( this.languages[this.currentLanguage] );
 	}
 }

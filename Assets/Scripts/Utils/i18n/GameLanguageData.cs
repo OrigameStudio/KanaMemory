@@ -6,6 +6,9 @@ using System.Collections;
 [System.Serializable]
 public class GameLanguageData{
 
+	public string		name			= "English";
+	public Texture2D	texture;
+
 	public string		loading			= "Loading...";
 
 	/* home */
