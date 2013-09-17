@@ -53,7 +53,7 @@ public class StartControl : MonoBehaviour{
 
 	void Update(){
 
-		if( !this.startGame && Input.GetMouseButtonDown(0) ){
+		if( this.status == StartStatus.ready && !this.startGame && Input.GetMouseButtonDown(0) ){
 
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
