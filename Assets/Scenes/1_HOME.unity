@@ -1085,7 +1085,7 @@ MonoBehaviour:
   rectangle:
     left: .100000001
     top: .349999994
-    width: .800000012
+    width: .5
     height: .200000003
   padding:
     top: 0
@@ -1374,9 +1374,9 @@ MonoBehaviour:
   debugColor: {r: 1, g: 0, b: 1, a: 1}
   orientation: 0
   rectangle:
-    left: .200000003
+    left: .400000006
     top: .925000012
-    width: .600000024
+    width: .200000003
     height: .075000003
   padding:
     top: 0
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   rectangle:
     left: .100000001
     top: .550000012
-    width: .800000012
+    width: .300000012
     height: .200000003
   padding:
     top: 0
