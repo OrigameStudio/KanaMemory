@@ -439,6 +439,91 @@ MonoBehaviour:
     vertical: 0
   control: {fileID: 466758275}
   action: 0
+--- !u!1001 &351510625
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_Name
+      value: _Game
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+  m_RootGameObject: {fileID: 458038584}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &374791138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 374791139}
+  - 114: {fileID: 374791140}
+  m_Layer: 0
+  m_Name: _i18n
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374791139
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374791138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &374791140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374791138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a40622c81bde0d49b9357b8a2148a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  play: {fileID: 2133026529}
+  dojo: {fileID: 1030814192}
+  loading: {fileID: 251987254}
 --- !u!1 &413964130
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,8 +605,8 @@ Transform:
 --- !u!1 &458038584
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+  m_PrefabInternal: {fileID: 351510625}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458038586}
@@ -536,14 +621,37 @@ GameObject:
 --- !u!114 &458038585
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: 72e7e9b3ce7d22040b80be13be02ef21,
+    type: 2}
+  m_PrefabInternal: {fileID: 351510625}
   m_GameObject: {fileID: 458038584}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8fa03e09f4a23a429c7bdde061f2ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  language:
+    loading: Loading...
+    play: PLAY
+    dojo: DOJO
+    welcome: 'WELCOME TO
+
+      THE DOJO'
+    studyHiragana: 'STUDY
+
+      HIRAGANA'
+    studyKatakana: 'STUDY
+
+      KATAKANA'
+    goodbye: 
+    exit: YES
+    stay: NO
+    newGame: 8
+    confirmQuitGame: QUIT?
+    quitGame: YES
+    keepPlaying: NO
+    Mesh_OK: {fileID: 0}
+    Mesh_KO: {fileID: 0}
   status: 0
   type: 0
   difficulty: 1
@@ -561,8 +669,8 @@ MonoBehaviour:
 --- !u!4 &458038586
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+  m_PrefabInternal: {fileID: 351510625}
   m_GameObject: {fileID: 458038584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1045,6 +1153,52 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1070940941}
   m_Mesh: {fileID: 4300000, guid: b14abd37f9561c649832926ffd989693, type: 3}
+--- !u!1 &1278145531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1278145532}
+  - 114: {fileID: 1278145533}
+  m_Layer: 0
+  m_Name: _Languages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1278145532
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1278145531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1524819329}
+  - {fileID: 1752736337}
+  m_Father: {fileID: 0}
+--- !u!114 &1278145533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1278145531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLanguage: {fileID: 1524819330}
+  forceDefaultLanguage: 0
+  languages:
+  - {fileID: 1524819330}
+  - {fileID: 1752736338}
 --- !u!1 &1304239173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1261,72 @@ MonoBehaviour:
     vertical: 0
   control: {fileID: 466758275}
   action: 2
+--- !u!1 &1524819328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1524819329}
+  - 114: {fileID: 1524819330}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1524819329
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1524819328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278145532}
+--- !u!114 &1524819330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1524819328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 10
+  caption: English
+  texture: {fileID: 0}
+  data:
+    loading: Loading...
+    play: PLAY
+    dojo: DOJO
+    welcome: 'WELCOME TO
+
+      THE DOJO'
+    studyHiragana: 'STUDY
+
+      HIRAGANA'
+    studyKatakana: 'STUDY
+
+      KATAKANA'
+    goodbye: 'EXIT
+
+      DOJO?'
+    exit: YES
+    stay: NO
+    newGame: New Game
+    confirmQuitGame: QUIT?
+    quitGame: YES
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
+    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
 --- !u!1001 &1648637388
 Prefab:
   m_ObjectHideFlags: 0
@@ -1215,6 +1435,70 @@ Prefab:
   m_RootGameObject: {fileID: 186224826}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1752736336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1752736337}
+  - 114: {fileID: 1752736338}
+  m_Layer: 0
+  m_Name: Spanish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1752736337
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1752736336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1278145532}
+--- !u!114 &1752736338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 2053588196}
+  m_GameObject: {fileID: 1752736336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 34
+  caption: "Espa\xF1ol"
+  texture: {fileID: 0}
+  data:
+    loading: Cargando...
+    play: JUGAR
+    dojo: DOJO
+    welcome: 'BIENVENIDO
+
+      AL DOJO'
+    studyHiragana: 'ESTUDIAR
+
+      HIRAGANA'
+    studyKatakana: 'ESTUDIAR
+
+      KATAKANA'
+    goodbye: "\xBFSALIR\nDEL DOJO?"
+    exit: "S\xCD"
+    stay: NO
+    newGame: Nueva partida
+    confirmQuitGame: "\xBFABANDONAR?"
+    quitGame: "S\xCD"
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100008, guid: 88fc2fbbd5439ec41864bcf45bba8488, type: 2}
+    Mesh_KO: {fileID: 100000, guid: dc78886641051fd4aa4c58c249b3a0b8, type: 2}
 --- !u!1 &1881037145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1561,46 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 186224827}
+--- !u!1001 &2053588196
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_RootGameObject: {fileID: 1278145531}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2068537026
 GameObject:
   m_ObjectHideFlags: 0

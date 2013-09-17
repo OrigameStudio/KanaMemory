@@ -24930,6 +24930,50 @@ Transform:
   - {fileID: 72565506}
   - {fileID: 1932263009}
   m_Father: {fileID: 2123793147}
+--- !u!1 &1888195937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1888195939}
+  - 114: {fileID: 1888195940}
+  m_Layer: 0
+  m_Name: _i18n
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1888195939
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888195937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1888195940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888195937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 120d44523ef06de4895120652b088a9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  welcome: {fileID: 185028050}
+  studyHiragana: {fileID: 1638590291}
+  studyKatakana: {fileID: 1279143872}
+  goodbye: {fileID: 1576031998}
+  exit: {fileID: 1693015002}
+  stay: {fileID: 1359611684}
 --- !u!1 &1890937548
 GameObject:
   m_ObjectHideFlags: 0

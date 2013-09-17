@@ -499,7 +499,7 @@ GameObject:
   - 4: {fileID: 139474498}
   - 114: {fileID: 139474496}
   m_Layer: 0
-  m_Name: _Quit
+  m_Name: _ConfirmQuitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2188,6 +2188,7 @@ GameObject:
   - 4: {fileID: 628095889}
   - 114: {fileID: 628095890}
   - 111: {fileID: 628095891}
+  - 114: {fileID: 628095892}
   m_Layer: 0
   m_Name: _GameControl
   m_TagString: Untagged
@@ -2290,6 +2291,20 @@ Animation:
   m_UserAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &628095892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628095888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc6143d30678ab4d84d453f36c4ca40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confirmQuitGame: {fileID: 139474496}
+  quitGame: {fileID: 810544601}
+  keepPlaying: {fileID: 1183079557}
 --- !u!1001 &635457833
 Prefab:
   m_ObjectHideFlags: 0
@@ -3124,7 +3139,7 @@ GameObject:
   - 4: {fileID: 810544603}
   - 114: {fileID: 810544601}
   m_Layer: 0
-  m_Name: Yes
+  m_Name: QuitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5086,7 +5101,7 @@ GameObject:
   - 4: {fileID: 1183079556}
   - 114: {fileID: 1183079557}
   m_Layer: 0
-  m_Name: No
+  m_Name: KeepPlaying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
