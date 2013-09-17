@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: _Languages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: Spanish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  - {fileID: 400004}
+  m_Father: {fileID: 0}
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLanguage: {fileID: 11400002}
+  forceDefaultLanguage: 0
+  languages:
+  - {fileID: 11400002}
+  - {fileID: 11400004}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 10
+  caption: English
+  texture: {fileID: 0}
+  data:
+    loading: Loading...
+    play: PLAY
+    dojo: DOJO
+    welcome: 'WELCOME TO
+
+      THE DOJO'
+    studyHiragana: 'STUDY
+
+      HIRAGANA'
+    studyKatakana: 'STUDY
+
+      KATAKANA'
+    goodbye: 'EXIT
+
+      DOJO?'
+    exit: YES
+    stay: NO
+    newGame: New Game
+    confirmQuitGame: QUIT?
+    quitGame: YES
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
+    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 34
+  caption: "Espa\xF1ol"
+  texture: {fileID: 0}
+  data:
+    loading: Cargando...
+    play: JUGAR
+    dojo: DOJO
+    welcome: 'BIENVENIDO
+
+      AL DOJO'
+    studyHiragana: 'ESTUDIAR
+
+      HIRAGANA'
+    studyKatakana: 'ESTUDIAR
+
+      KATAKANA'
+    goodbye: "\xBFSALIR\nDEL DOJO?"
+    exit: "S\xCD"
+    stay: NO
+    newGame: Nueva partida
+    confirmQuitGame: "\xBFABANDONAR?"
+    quitGame: "S\xCD"
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100008, guid: 88fc2fbbd5439ec41864bcf45bba8488, type: 2}
+    Mesh_KO: {fileID: 100000, guid: dc78886641051fd4aa4c58c249b3a0b8, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
