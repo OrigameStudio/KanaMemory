@@ -3,5 +3,7 @@ public enum HomeHUDAction{
 
 	Play,
 	Dojo,
-	Exit
+	Exit,
+	About,
+	SwitchLanguage
 }

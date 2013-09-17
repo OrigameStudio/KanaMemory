@@ -12,6 +12,10 @@ public class HomeControl : SplashControl{
 
 	public AudioSource sound;
 
+	public HomeI18n homeI18n;
+
+	public GameAvailableLanguages availableLanguages;
+
 	public void Exit(){
 
 		this.exitApplication = true;
@@ -36,6 +40,20 @@ public class HomeControl : SplashControl{
 		this.sound.Play();
 	}
 
+	public void About(){
+
+		/* ... */
+	}
+
+	public void SwitchLanguage(){
+
+		GameLanguage language;
+
+		language = this.availableLanguages.GetNextGameLanguage();
+
+		this.homeI18n.UpdateLanguage(language);
+	}
+
 	public void OnAction(HomeHUDAction action){
 
 		switch(action){
@@ -53,6 +71,16 @@ public class HomeControl : SplashControl{
 			case HomeHUDAction.Play:
 
 				this.Play();
+				break;
+
+			case HomeHUDAction.About:
+
+				this.About();
+				break;
+
+			case HomeHUDAction.SwitchLanguage:
+
+				this.SwitchLanguage();
 				break;
 		}
 
