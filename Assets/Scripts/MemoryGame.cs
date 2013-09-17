@@ -5,6 +5,7 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
+	public GameLanguageData		language;
 	public GameStatus			status		= GameStatus.Ready;
 	public GameType				type		= GameType.GameType1;
 	public GameDifficulty		difficulty	= GameDifficulty.MEDIUM;
@@ -25,7 +26,7 @@ public class MemoryGame : MonoBehaviour{
 		return(MemoryGame.instance);
 	}
 
-	void Start(){
+	void Awake(){
 
 		MemoryGame.GetInstance();
 
@@ -34,6 +35,8 @@ public class MemoryGame : MonoBehaviour{
 			GameObject.Destroy(this.gameObject);
 
 		}else{
+
+			this.language = ( GameAvailableLanguages.FindInstance() ).GetGameLanguage().data;
 
 			GameObject.DontDestroyOnLoad(this.gameObject);
 		}
