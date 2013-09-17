@@ -38,38 +38,28 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 0
+        inSlope: .800000012
         outSlope: Infinity
         tangentMode: 1
       - time: 1.25
-        value: 0
-        inSlope: 1.56862748
-        outSlope: 1.56862748
-        tangentMode: 1
-      - time: 1.5
-        value: .784313738
-        inSlope: 3.13725495
-        outSlope: 3.13725495
+        value: 1
+        inSlope: .800000012
+        outSlope: .800000012
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: color.a
-    path: Loading
+    attribute: m_Enabled
+    path: _HUD/Loading
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: Infinity
-        tangentMode: 1
       - time: 1.25
         value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 1
+        inSlope: 4
+        outSlope: 4
+        tangentMode: 10
       - time: 1.5
         value: 1
         inSlope: 4
@@ -77,27 +67,65 @@ AnimationClip:
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: shadowColor.a
-    path: Loading
+    attribute: debugColor.a
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 3.20000005
+        outSlope: 3.20000005
+        tangentMode: 10
+      - time: 1.5
+        value: .800000012
+        inSlope: 3.20000005
+        outSlope: 3.20000005
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Loading
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
-        inSlope: .800000012
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.25
         value: 1
-        inSlope: Infinity
-        outSlope: .800000012
-        tangentMode: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: Loading
+    attribute: color.a
+    path: _HUD/NewGame
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/NewGame
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_SampleRate: 60
@@ -145,38 +173,28 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 0
+        inSlope: .800000012
         outSlope: Infinity
         tangentMode: 1
       - time: 1.25
-        value: 0
-        inSlope: 1.56862748
-        outSlope: 1.56862748
-        tangentMode: 1
-      - time: 1.5
-        value: .784313738
-        inSlope: 3.13725495
-        outSlope: 3.13725495
+        value: 1
+        inSlope: .800000012
+        outSlope: .800000012
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: color.a
-    path: Loading
+    attribute: m_Enabled
+    path: _HUD/Loading
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: Infinity
-        tangentMode: 1
       - time: 1.25
         value: 0
-        inSlope: 2
-        outSlope: 2
-        tangentMode: 1
+        inSlope: 4
+        outSlope: 4
+        tangentMode: 10
       - time: 1.5
         value: 1
         inSlope: 4
@@ -184,27 +202,65 @@ AnimationClip:
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: shadowColor.a
-    path: Loading
+    attribute: debugColor.a
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1.25
+        value: 0
+        inSlope: 3.20000005
+        outSlope: 3.20000005
+        tangentMode: 10
+      - time: 1.5
+        value: .800000012
+        inSlope: 3.20000005
+        outSlope: 3.20000005
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/Loading
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
-        inSlope: .800000012
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.25
         value: 1
-        inSlope: Infinity
-        outSlope: .800000012
-        tangentMode: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: Loading
+    attribute: color.a
+    path: _HUD/NewGame
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/NewGame
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_EulerEditorCurves: []
