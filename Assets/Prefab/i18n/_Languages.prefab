@@ -111,12 +111,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   system: 10
-  caption: English
-  texture: {fileID: 0}
   data:
+    name: English
+    texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
     loading: Loading...
     play: PLAY
-    dojo: DOJO
+    dojo: STUDY
     welcome: 'WELCOME TO
 
       THE DOJO'
@@ -149,12 +149,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   system: 34
-  caption: "Espa\xF1ol"
-  texture: {fileID: 0}
   data:
+    name: "Espa\xF1ol"
+    texture: {fileID: 2800000, guid: 9be5f9e2f9a11d041be6244b13ce71f8, type: 3}
     loading: Cargando...
     play: JUGAR
-    dojo: DOJO
+    dojo: ESTUDIAR
     welcome: 'BIENVENIDO
 
       AL DOJO'
