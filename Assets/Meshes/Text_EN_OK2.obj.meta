@@ -1,20 +1,25 @@
 fileFormatVersion: 2
-guid: 1f2da3c9d621ae74c8aa1202987097c4
+guid: ca0ef26c7836d734584f2b9e6cdcf738
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
     100000: default
     100002: //RootNode
-    100004: Text_OK_YouDidIt
+    100004: Text_OK_Great
+    100006: Text_EN_OK2
     400000: default
     400002: //RootNode
-    400004: Text_OK_YouDidIt
+    400004: Text_OK_Great
+    400006: Text_EN_OK2
     2300000: default
-    2300002: Text_OK_YouDidIt
+    2300002: Text_OK_Great
+    2300004: Text_EN_OK2
     3300000: default
-    3300002: Text_OK_YouDidIt
+    3300002: Text_OK_Great
+    3300004: Text_EN_OK2
     4300000: default
-    4300002: Text_OK_YouDidIt
+    4300002: Text_OK_Great
+    4300004: Text_EN_OK2
     9500000: //RootNode
   materials:
     importMaterials: 0

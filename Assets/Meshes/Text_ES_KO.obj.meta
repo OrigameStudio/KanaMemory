@@ -1,15 +1,20 @@
 fileFormatVersion: 2
-guid: 86768c3b3040193458e194b9c63ff9e9
+guid: 533174b762e5d9e44bb3687dd97dea7d
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: OK
+    100000: default
     100002: //RootNode
-    400000: OK
+    100004: Text_ES_KO
+    400000: default
     400002: //RootNode
-    2300000: OK
-    3300000: OK
-    4300000: OK
+    400004: Text_ES_KO
+    2300000: default
+    2300002: Text_ES_KO
+    3300000: default
+    3300002: Text_ES_KO
+    4300000: default
+    4300002: Text_ES_KO
     9500000: //RootNode
   materials:
     importMaterials: 0

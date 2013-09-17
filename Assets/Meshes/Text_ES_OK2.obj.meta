@@ -1,15 +1,20 @@
 fileFormatVersion: 2
-guid: 518b775e231406e4094b460d475dce33
+guid: d59f9c8c4052f9a41bfc7cbdcf6b43a3
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: Start
+    100000: Text_EN_OK2
     100002: //RootNode
-    400000: Start
+    100004: Text_ES_OK2
+    400000: Text_EN_OK2
     400002: //RootNode
-    2300000: Start
-    3300000: Start
-    4300000: Start
+    400004: Text_ES_OK2
+    2300000: Text_EN_OK2
+    2300002: Text_ES_OK2
+    3300000: Text_EN_OK2
+    3300002: Text_ES_OK2
+    4300000: Text_EN_OK2
+    4300002: Text_ES_OK2
     9500000: //RootNode
   materials:
     importMaterials: 0
@@ -27,7 +32,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

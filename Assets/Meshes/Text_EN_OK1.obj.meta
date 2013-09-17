@@ -1,15 +1,25 @@
 fileFormatVersion: 2
-guid: 8d79106749d1bd349bce5ed083b3ee03
+guid: 1f2da3c9d621ae74c8aa1202987097c4
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: Play
+    100000: default
     100002: //RootNode
-    400000: Play
+    100004: Text_OK_YouDidIt
+    100006: Text_EN_OK1
+    400000: default
     400002: //RootNode
-    2300000: Play
-    3300000: Play
-    4300000: Play
+    400004: Text_OK_YouDidIt
+    400006: Text_EN_OK1
+    2300000: default
+    2300002: Text_OK_YouDidIt
+    2300004: Text_EN_OK1
+    3300000: default
+    3300002: Text_OK_YouDidIt
+    3300004: Text_EN_OK1
+    4300000: default
+    4300002: Text_OK_YouDidIt
+    4300004: Text_EN_OK1
     9500000: //RootNode
   materials:
     importMaterials: 0
