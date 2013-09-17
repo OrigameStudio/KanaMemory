@@ -34,7 +34,7 @@ public class SplashControl : MonoBehaviour{
 
 	void Update(){
 
-		if( Input.GetMouseButtonDown(0) ){
+		if( this.status == SplashStatus.ready && Input.GetMouseButtonDown(0) ){
 
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
