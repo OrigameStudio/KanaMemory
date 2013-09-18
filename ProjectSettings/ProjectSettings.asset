@@ -71,8 +71,8 @@ PlayerSettings:
     Others: 1
   iPhoneBundleIdentifier: com.origamestudio.kanamemory
   productGUID: 25511ae292f7a264da114d4113d6ad9c
-  iPhoneBundleVersion: 1.1
-  AndroidBundleVersionCode: 11
+  iPhoneBundleVersion: 1.2
+  AndroidBundleVersionCode: 12
   AndroidMinSdkVersion: 6
   AndroidPreferredInstallLocation: 1
   aotOptions: 
