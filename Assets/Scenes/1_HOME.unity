@@ -375,7 +375,7 @@ MonoBehaviour:
   shadowColor: {r: .5, g: .5, b: .5, a: 1}
   alignment: 4
   crop: 0
-  wordWrap: 1
+  wordWrap: 0
   shadowOffset: 2
 --- !u!1 &290495744
 GameObject:
