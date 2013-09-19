@@ -5770,6 +5770,14 @@ Prefab:
       propertyPath: m_Name
       value: Card0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .899999976
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .899999976
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d4d44c72b816e4240b11d6aef9daefa0, type: 2}
   m_RootGameObject: {fileID: 1654401358}
@@ -7163,7 +7171,7 @@ Transform:
   m_GameObject: {fileID: 1654401358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .899999976, y: 1, z: .899999976}
   m_Children:
   - {fileID: 1885955486}
   m_Father: {fileID: 941592666}
