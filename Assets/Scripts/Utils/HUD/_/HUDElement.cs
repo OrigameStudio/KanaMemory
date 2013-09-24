@@ -40,7 +40,10 @@ public class HUDElement : MonoBehaviour{
 
 			this.DrawBox(this.rectangle, this.debugColor);
 
-			this.DrawBox(this.padding.Pad(this.rectangle), Color.white);
+			if(this.padding.left != 0 || this.padding.top != 0 || this.padding.right != 0 || this.padding.bottom != 0){
+
+				this.DrawBox(this.padding.Pad(this.rectangle), Color.white);
+			}
 		}
 	}
 
