@@ -10,6 +10,6 @@ public class GameHUDText : HUDText{
 
 	public override void OnClick(int mouseButton){
 
-		this.control.onAction(this.action);
+		this.control.OnAction(this.action);
 	}
 }

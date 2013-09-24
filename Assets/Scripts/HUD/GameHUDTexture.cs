@@ -10,6 +10,6 @@ public class GameHUDTexture : HUDTexture{
 
 	public override void OnClick(int mouseButton){
 
-		this.control.onAction(this.action);
+		this.control.OnAction(this.action);
 	}
 }

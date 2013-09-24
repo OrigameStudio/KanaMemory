@@ -248,7 +248,7 @@ public class GameControl : MonoBehaviour{
 		}
 	}
 	
-	public void onAction(GameHUDAction action){
+	public void OnAction(GameHUDAction action){
 		
 		switch(action){
 			
