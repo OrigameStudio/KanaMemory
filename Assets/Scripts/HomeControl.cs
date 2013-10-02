@@ -7,6 +7,7 @@ public class HomeControl : SplashControl{
 
 	public int	HelpScene	= 2;
 	public int	StartScene	= 3;
+	public int	AboutScene	= 7;
 
 	public HUDText loadingMessage;
 
@@ -42,7 +43,10 @@ public class HomeControl : SplashControl{
 
 	public void About(){
 
-		/* ... */
+		this.nextScene = this.AboutScene;
+		this.Skip(null);
+
+		this.sound.Play();
 	}
 
 	public void SwitchLanguage(){

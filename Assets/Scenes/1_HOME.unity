@@ -392,7 +392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &290495745
 Transform:
   m_ObjectHideFlags: 0
@@ -813,6 +813,7 @@ MonoBehaviour:
   escapeExitsApplication: 1
   HelpScene: 2
   StartScene: 3
+  AboutScene: 7
   loadingMessage: {fileID: 251987254}
   sound: {fileID: 143965619}
   homeI18n: {fileID: 374791140}

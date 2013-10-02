@@ -559,6 +559,30 @@ AnimationClip:
     path: _HUD/Play
     classID: 114
     script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 0
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/ButtonAbout
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -1125,6 +1149,30 @@ AnimationClip:
     path: _HUD/Play
     classID: 114
     script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 0
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/ButtonAbout
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: .5
