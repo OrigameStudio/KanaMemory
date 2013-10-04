@@ -36,4 +36,7 @@ public class GameLanguageData{
 
 	/* ko */
 	public GameObject	Mesh_KO;
+
+	/* about */
+	public string		rateThisApp		= "Rate this app";
 }
