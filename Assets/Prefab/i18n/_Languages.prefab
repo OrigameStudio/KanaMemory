@@ -137,6 +137,7 @@ MonoBehaviour:
     keepPlaying: NO
     Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
     Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
+    rateThisApp: Rate this app
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,6 +174,7 @@ MonoBehaviour:
     keepPlaying: NO
     Mesh_OK: {fileID: 100008, guid: 88fc2fbbd5439ec41864bcf45bba8488, type: 2}
     Mesh_KO: {fileID: 100000, guid: dc78886641051fd4aa4c58c249b3a0b8, type: 2}
+    rateThisApp: "Punt\xFAa esta aplicaci\xF3n"
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
