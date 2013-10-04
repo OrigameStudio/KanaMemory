@@ -6,7 +6,7 @@ using System.Collections;
 public class AboutControl : SplashControl{
 
 	public string tumblr	= "http://origamestudio.tumblr.com/";
-	public string mail		= "mailto://origamestudio@gmail.com";
+	public string mail		= "mailto:origamestudio@gmail.com?subject=KanaMemory";
 	public string facebook	= "http://www.facebook.com/OrigameStudio";
 	public string twitter	= "http://twitter.com/OrigameStudio";
 	public string rateApp	= "market://details?id=com.origamestudio.kanamemory";

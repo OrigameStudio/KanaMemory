@@ -1314,9 +1314,9 @@ MonoBehaviour:
   nextScene: 1
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
   skipAnimationClip: AboutScreen@Skip
-  escapeExitsApplication: 1
+  escapeExitsApplication: 0
   tumblr: http://origamestudio.tumblr.com/
-  mail: mailto://origamestudio@gmail.com
+  mail: mailto:origamestudio@gmail.com?subject=KanaMemory
   facebook: http://www.facebook.com/OrigameStudio
   twitter: http://twitter.com/OrigameStudio
   rateApp: market://details?id=com.origamestudio.kanamemory
