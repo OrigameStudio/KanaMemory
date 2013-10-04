@@ -42,7 +42,13 @@ public class HUDElement : MonoBehaviour{
 
 			if(this.padding.left != 0 || this.padding.top != 0 || this.padding.right != 0 || this.padding.bottom != 0){
 
-				this.DrawBox(this.padding.Pad(this.rectangle), Color.white);
+				Color inverse = new Color(
+					1 - this.debugColor.r,
+					1 - this.debugColor.g,
+					1 - this.debugColor.b
+				);
+
+				this.DrawBox(this.padding.Pad(this.rectangle), inverse);
 			}
 		}
 	}
