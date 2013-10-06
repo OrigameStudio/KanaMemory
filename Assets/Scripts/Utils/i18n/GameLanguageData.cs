@@ -25,6 +25,15 @@ public class GameLanguageData{
 
 	/* start */
 	public string		newGame			= "New Game";
+	public string		difficulty		= "DIFFICULTY";
+	public string		easy			= "EASY";
+	public string		medium			= "MEDIUM";
+	public string		hard			= "HARD";
+	public string		boardSize		= "BOARD SIZE";
+	public string		small			= "SMALL";
+	public string		regular			= "REGULAR";
+	public string		big				= "BIG";
+	public string		gameType		= "GAME TYPE";
 
 	/* game */
 	public string		confirmQuitGame	= "QUIT?";

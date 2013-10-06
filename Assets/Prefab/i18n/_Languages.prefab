@@ -132,6 +132,15 @@ MonoBehaviour:
     exit: YES
     stay: NO
     newGame: New Game
+    difficulty: DIFFICULTY
+    easy: EASY
+    medium: MEDIUM
+    hard: HARD
+    boardSize: BOARD SIZE
+    small: SMALL
+    regular: REGULAR
+    big: BIG
+    gameType: GAME TYPE
     confirmQuitGame: QUIT?
     quitGame: YES
     keepPlaying: NO
@@ -169,6 +178,15 @@ MonoBehaviour:
     exit: "S\xCD"
     stay: NO
     newGame: Nueva partida
+    difficulty: DIFICULTAD
+    easy: "F\xC1CIL"
+    medium: NORMAL
+    hard: "DIF\xCDCIL"
+    boardSize: "TAMA\xD1O"
+    small: "PEQUE\xD1O"
+    regular: MEDIANO
+    big: GRANDE
+    gameType: TIPO DE JUEGO
     confirmQuitGame: "\xBFABANDONAR?"
     quitGame: "S\xCD"
     keepPlaying: NO

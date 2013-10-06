@@ -286,6 +286,52 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: .5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &226938553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 226938554}
+  - 114: {fileID: 226938555}
+  m_Layer: 0
+  m_Name: _Languages
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &226938554
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 226938553}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 381018026}
+  - {fileID: 1587832591}
+  m_Father: {fileID: 0}
+--- !u!114 &226938555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 226938553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLanguage: {fileID: 381018025}
+  forceDefaultLanguage: 0
+  languages:
+  - {fileID: 381018025}
+  - {fileID: 1587832592}
 --- !u!1 &250761928
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,6 +524,10 @@ Prefab:
       propertyPath: m_Name
       value: _Game
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: boardSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
   m_RootGameObject: {fileID: 458038584}
@@ -526,6 +576,82 @@ MonoBehaviour:
   loading: {fileID: 251987254}
   languageName: {fileID: 1470727321}
   languageIcon: {fileID: 1336642111}
+--- !u!1 &381018024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 381018026}
+  - 114: {fileID: 381018025}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &381018025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 381018024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 10
+  data:
+    name: English
+    texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
+    loading: Loading...
+    play: PLAY
+    dojo: STUDY
+    welcome: 'WELCOME TO
+
+      THE DOJO'
+    studyHiragana: 'STUDY
+
+      HIRAGANA'
+    studyKatakana: 'STUDY
+
+      KATAKANA'
+    goodbye: 'EXIT
+
+      DOJO?'
+    exit: YES
+    stay: NO
+    newGame: New Game
+    difficulty: DIFFICULTY
+    easy: EASY
+    medium: MEDIUM
+    hard: HARD
+    boardSize: BOARD SIZE
+    small: SMALL
+    regular: REGULAR
+    big: BIG
+    gameType: GAME TYPE
+    confirmQuitGame: QUIT?
+    quitGame: YES
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
+    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
+    rateThisApp: Rate this app
+--- !u!4 &381018026
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 381018024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 226938554}
 --- !u!1 &413964130
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +779,15 @@ MonoBehaviour:
     exit: YES
     stay: NO
     newGame: 8
+    difficulty: 
+    easy: 
+    medium: 
+    hard: 
+    boardSize: 
+    small: 
+    regular: 
+    big: 
+    gameType: 
     confirmQuitGame: QUIT?
     quitGame: YES
     keepPlaying: NO
@@ -662,7 +797,7 @@ MonoBehaviour:
   status: 0
   type: 0
   difficulty: 1
-  boardSize: 2
+  boardSize: 1
   hint: 0
   cards:
     total: 0
@@ -818,7 +953,7 @@ MonoBehaviour:
   loadingMessage: {fileID: 251987254}
   sound: {fileID: 143965619}
   homeI18n: {fileID: 374791140}
-  availableLanguages: {fileID: 1278145533}
+  availableLanguages: {fileID: 226938555}
 --- !u!1 &629579282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,52 +1298,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1070940941}
   m_Mesh: {fileID: 4300000, guid: b14abd37f9561c649832926ffd989693, type: 3}
---- !u!1 &1278145531
-GameObject:
+--- !u!1001 &1108671855
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1278145532}
-  - 114: {fileID: 1278145533}
-  m_Layer: 0
-  m_Name: _Languages
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1278145532
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1278145531}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1524819329}
-  - {fileID: 1752736337}
-  m_Father: {fileID: 0}
---- !u!114 &1278145533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: b5a37fca3dc21d143a99691f989f1a65,
-    type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1278145531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultLanguage: {fileID: 1524819330}
-  forceDefaultLanguage: 0
-  languages:
-  - {fileID: 1524819330}
-  - {fileID: 1752736338}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_RootGameObject: {fileID: 226938553}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1304239173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,73 +1528,80 @@ MonoBehaviour:
   shadowOffset: 2
   control: {fileID: 466758275}
   action: 4
---- !u!1 &1524819328
+--- !u!1 &1587832590
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
+  m_PrefabParentObject: {fileID: 100004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1524819329}
-  - 114: {fileID: 1524819330}
+  - 4: {fileID: 1587832591}
+  - 114: {fileID: 1587832592}
   m_Layer: 0
-  m_Name: English
+  m_Name: Spanish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1524819329
+--- !u!4 &1587832591
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1524819328}
+  m_PrefabParentObject: {fileID: 400004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 1587832590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1278145532}
---- !u!114 &1524819330
+  m_Father: {fileID: 226938554}
+--- !u!114 &1587832592
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: b5a37fca3dc21d143a99691f989f1a65,
+  m_PrefabParentObject: {fileID: 11400004, guid: b5a37fca3dc21d143a99691f989f1a65,
     type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1524819328}
+  m_PrefabInternal: {fileID: 1108671855}
+  m_GameObject: {fileID: 1587832590}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  system: 10
+  system: 34
   data:
-    name: English
-    texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
-    loading: Loading...
-    play: PLAY
-    dojo: STUDY
-    welcome: 'WELCOME TO
+    name: "Espa\xF1ol"
+    texture: {fileID: 2800000, guid: 9be5f9e2f9a11d041be6244b13ce71f8, type: 3}
+    loading: Cargando...
+    play: JUGAR
+    dojo: ESTUDIAR
+    welcome: 'BIENVENIDO
 
-      THE DOJO'
-    studyHiragana: 'STUDY
+      AL DOJO'
+    studyHiragana: 'ESTUDIAR
 
       HIRAGANA'
-    studyKatakana: 'STUDY
+    studyKatakana: 'ESTUDIAR
 
       KATAKANA'
-    goodbye: 'EXIT
-
-      DOJO?'
-    exit: YES
+    goodbye: "\xBFSALIR\nDEL DOJO?"
+    exit: "S\xCD"
     stay: NO
-    newGame: New Game
-    confirmQuitGame: QUIT?
-    quitGame: YES
+    newGame: Nueva partida
+    difficulty: DIFICULTAD
+    easy: "F\xC1CIL"
+    medium: NORMAL
+    hard: "DIF\xCDCIL"
+    boardSize: "TAMA\xD1O"
+    small: "PEQUE\xD1O"
+    regular: MEDIANO
+    big: GRANDE
+    gameType: TIPO DE JUEGO
+    confirmQuitGame: "\xBFABANDONAR?"
+    quitGame: "S\xCD"
     keepPlaying: NO
-    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
-    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
-    rateThisApp: Rate this app
+    Mesh_OK: {fileID: 100008, guid: 88fc2fbbd5439ec41864bcf45bba8488, type: 2}
+    Mesh_KO: {fileID: 100000, guid: dc78886641051fd4aa4c58c249b3a0b8, type: 2}
+    rateThisApp: "Punt\xFAa esta aplicaci\xF3n"
 --- !u!1001 &1648637388
 Prefab:
   m_ObjectHideFlags: 0
@@ -1572,111 +1708,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
   m_RootGameObject: {fileID: 186224826}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1 &1752736336
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1752736337}
-  - 114: {fileID: 1752736338}
-  m_Layer: 0
-  m_Name: Spanish
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1752736337
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1752736336}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1278145532}
---- !u!114 &1752736338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: b5a37fca3dc21d143a99691f989f1a65,
-    type: 2}
-  m_PrefabInternal: {fileID: 1841772227}
-  m_GameObject: {fileID: 1752736336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  system: 34
-  data:
-    name: "Espa\xF1ol"
-    texture: {fileID: 2800000, guid: 9be5f9e2f9a11d041be6244b13ce71f8, type: 3}
-    loading: Cargando...
-    play: JUGAR
-    dojo: ESTUDIAR
-    welcome: 'BIENVENIDO
-
-      AL DOJO'
-    studyHiragana: 'ESTUDIAR
-
-      HIRAGANA'
-    studyKatakana: 'ESTUDIAR
-
-      KATAKANA'
-    goodbye: "\xBFSALIR\nDEL DOJO?"
-    exit: "S\xCD"
-    stay: NO
-    newGame: Nueva partida
-    confirmQuitGame: "\xBFABANDONAR?"
-    quitGame: "S\xCD"
-    keepPlaying: NO
-    Mesh_OK: {fileID: 100008, guid: 88fc2fbbd5439ec41864bcf45bba8488, type: 2}
-    Mesh_KO: {fileID: 100000, guid: dc78886641051fd4aa4c58c249b3a0b8, type: 2}
-    rateThisApp: "Punt\xFAa esta aplicaci\xF3n"
---- !u!1001 &1841772227
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_RootGameObject: {fileID: 1278145531}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &1881037145
