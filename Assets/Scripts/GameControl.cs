@@ -5,6 +5,8 @@ using System.Collections;
 
 public class GameControl : MonoBehaviour{
 
+	public AdMobPlugin				adMob;
+
 	public GameControlPositions		positions;
 	public GameMusic				music;
 	public GameControlSounds		sounds;
@@ -62,6 +64,9 @@ public class GameControl : MonoBehaviour{
 		Debug.Log("board.pairs: " + board.pairs + ", board.seconds: " + board.seconds);
 
 		this.hud.Resume();
+
+		this.adMob.target.keywords = this.memoryGame.language.keywords;
+		this.adMob.SetTarget();
 	}
 
 	public void Succeed(){

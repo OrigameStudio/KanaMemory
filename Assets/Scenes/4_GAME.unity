@@ -1656,7 +1656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b28784631fe9144cbf8c24e130d68d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 2
+  size: 1
   pairs: 15
   seconds: 240
 --- !u!1 &525263518
@@ -2227,6 +2227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25dd92780436d947ae2380e3f01bc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  adMob: {fileID: 1743261343}
   positions:
     board: {fileID: 1018511067}
     card1: {fileID: 971992970}
@@ -2243,11 +2244,9 @@ MonoBehaviour:
     success: 5
     failure: 6
   boards:
-    tiny: {fileID: 0}
-    small: {fileID: 0}
-    medium: {fileID: 519841579}
-    big: {fileID: 0}
-    huge: {fileID: 0}
+    small: {fileID: 519841579}
+    regular: {fileID: 519841579}
+    big: {fileID: 519841579}
   decks:
     easy:
     - {fileID: 11400028, guid: 0e26ab024c887984c900519996e1833b, type: 2}
@@ -7011,7 +7010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: setTargetOnStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: texts.Array.data[0]
@@ -7699,7 +7698,7 @@ MonoBehaviour:
   verticalPosition: 2
   refreshInterval: 30
   loadOnStart: 1
-  setTargetOnStart: 1
+  setTargetOnStart: 0
   loadOnReconfigure: 1
   target:
     gender: 0
