@@ -9,7 +9,7 @@ public class MemoryGame : MonoBehaviour{
 	public GameStatus			status		= GameStatus.Ready;
 	public GameType				type		= GameType.GameType1;
 	public GameDifficulty		difficulty	= GameDifficulty.MEDIUM;
-	public BoardSize			boardSize	= BoardSize.MEDIUM;
+	public BoardSize			boardSize	= BoardSize.REGULAR;
 	public bool					hint		= false;
 	public MemoryGameStatsCards	cards;
 	public int					games;

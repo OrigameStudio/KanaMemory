@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class Board : MonoBehaviour{
 
-	public BoardSize	size	= BoardSize.MEDIUM;
+	public BoardSize	size	= BoardSize.REGULAR;
 	public int			pairs	= 15;
 	public int			seconds	= 300;
 
