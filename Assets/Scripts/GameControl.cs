@@ -144,6 +144,8 @@ public class GameControl : MonoBehaviour{
 
 			}else if(this.memoryGame.status == GameStatus.Failure){
 
+				Handheld.Vibrate();
+
 				this.sounds.timeOut.Play();
 
 				this.animation.Play("Game@Failure");
