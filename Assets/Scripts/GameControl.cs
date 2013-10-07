@@ -42,7 +42,7 @@ public class GameControl : MonoBehaviour{
 			return;
 		}
 
-		board = this.boards.FindBoard(this.memoryGame.boardSize);
+		board = this.boards.InstantiateBoard(this.memoryGame.boardSize);
 
 		if(board == null){
 

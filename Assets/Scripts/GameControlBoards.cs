@@ -2,22 +2,42 @@
 using UnityEngine;
 using System.Collections;
 
+
 [System.Serializable]
 public class GameControlBoards{
 
-	public Board small;
-	public Board regular;
-	public Board big;
+	public GameObject small;
+	public GameObject regular;
+	public GameObject big;
 
-	public Board FindBoard(BoardSize size){
+	public Board InstantiateBoard(BoardSize size){
+
+		GameObject	prefab	= null;
+		Board		board	= null;
 
 		switch(size){
 
-			case BoardSize.SMALL:	return(this.small);
-			case BoardSize.REGULAR:	return(this.regular);
-			case BoardSize.BIG:		return(this.big);
+			case BoardSize.SMALL:
+
+				prefab = this.small;
+				break;
+
+			case BoardSize.REGULAR:
+
+				prefab = this.regular;
+				break;
+
+			case BoardSize.BIG:
+
+				prefab = this.big;
+				break;
 		}
 
-		return(null);
+		if(prefab != null){
+
+			board = ( (GameObject)GameObject.Instantiate(prefab) ).GetComponent<Board>();
+		}
+
+		return(board);
 	}
 }
