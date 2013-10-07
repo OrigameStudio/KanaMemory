@@ -6,14 +6,14 @@ using System.Collections;
 [System.Serializable]
 public class GameControlBoards{
 
-	public GameObject small;
-	public GameObject regular;
-	public GameObject big;
+	public Board small;
+	public Board regular;
+	public Board big;
 
 	public Board InstantiateBoard(BoardSize size){
 
-		GameObject	prefab	= null;
-		Board		board	= null;
+		Board prefab	= null;
+		Board board		= null;
 
 		switch(size){
 
@@ -35,7 +35,7 @@ public class GameControlBoards{
 
 		if(prefab != null){
 
-			board = ( (GameObject)GameObject.Instantiate(prefab) ).GetComponent<Board>();
+			board = (Board)GameObject.Instantiate(prefab);
 		}
 
 		return(board);
