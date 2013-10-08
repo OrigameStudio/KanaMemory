@@ -133,13 +133,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .686274529
-        inSlope: -.457516342
-        outSlope: -.457516342
+        inSlope: -.549019635
+        outSlope: -.549019635
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.457516342
-        outSlope: -.457516342
+        inSlope: -.549019635
+        outSlope: -.549019635
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -169,7 +169,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -185,13 +185,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .784313738
-        inSlope: -.522875845
-        outSlope: -.522875845
+        inSlope: -.627451003
+        outSlope: -.627451003
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.522875845
-        outSlope: -.522875845
+        inSlope: -.627451003
+        outSlope: -.627451003
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -204,13 +204,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
-        inSlope: -.666666687
-        outSlope: -.666666687
+        inSlope: -.800000012
+        outSlope: -.800000012
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.666666687
-        outSlope: -.666666687
+        inSlope: -.800000012
+        outSlope: -.800000012
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -283,7 +283,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -370,6 +370,101 @@ AnimationClip:
     path: _HUD/ButtonAbout
     classID: 114
     script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .5
+        inSlope: -.400000006
+        outSlope: -.400000006
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.400000006
+        outSlope: -.400000006
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.b
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.g
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.r
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -510,13 +605,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .686274529
-        inSlope: -.457516342
-        outSlope: -.457516342
+        inSlope: -.549019635
+        outSlope: -.549019635
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.457516342
-        outSlope: -.457516342
+        inSlope: -.549019635
+        outSlope: -.549019635
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -546,7 +641,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -562,13 +657,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: .784313738
-        inSlope: -.522875845
-        outSlope: -.522875845
+        inSlope: -.627451003
+        outSlope: -.627451003
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.522875845
-        outSlope: -.522875845
+        inSlope: -.627451003
+        outSlope: -.627451003
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -581,13 +676,13 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
-        inSlope: -.666666687
-        outSlope: -.666666687
+        inSlope: -.800000012
+        outSlope: -.800000012
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
-        inSlope: -.666666687
-        outSlope: -.666666687
+        inSlope: -.800000012
+        outSlope: -.800000012
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -660,7 +755,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
+      - time: 1.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -747,6 +842,101 @@ AnimationClip:
     path: _HUD/ButtonAbout
     classID: 114
     script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .5
+        inSlope: -.400000006
+        outSlope: -.400000006
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.400000006
+        outSlope: -.400000006
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: shadowColor.a
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.b
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.g
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      - time: 1.25
+        value: 0
+        inSlope: -.800000012
+        outSlope: -.800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.r
+    path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: 0

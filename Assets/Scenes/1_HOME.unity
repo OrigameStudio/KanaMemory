@@ -74,61 +74,6 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!1 &28050439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: fbf961b172f74fa4697c078d54aec14e, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 28050440}
-  - 33: {fileID: 28050442}
-  - 23: {fileID: 28050441}
-  m_Layer: 0
-  m_Name: KanaMemory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &28050440
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: fbf961b172f74fa4697c078d54aec14e, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 28050439}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 1.94707184e-07}
-  m_LocalPosition: {x: -4.1500001, y: 1.5, z: 5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
---- !u!23 &28050441
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: fbf961b172f74fa4697c078d54aec14e,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 28050439}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: dc2722533b8a2c04db3eaa8ee3053aba, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
---- !u!33 &28050442
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: fbf961b172f74fa4697c078d54aec14e,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 28050439}
-  m_Mesh: {fileID: 4300002, guid: f684ab3956ea7364ca4e59ccef668c63, type: 3}
 --- !u!1 &143965617
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +749,7 @@ Transform:
   - {fileID: 1304239174}
   - {fileID: 290495745}
   - {fileID: 1030814190}
+  - {fileID: 2088125367}
   - {fileID: 1470727320}
   - {fileID: 1336642110}
   - {fileID: 251987253}
@@ -2123,6 +2069,70 @@ Light:
   m_ShadowAngle: 0
   m_IndirectIntensity: 1
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &2088125366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2088125367}
+  - 114: {fileID: 2088125368}
+  m_Layer: 0
+  m_Name: KanaMemory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2088125367
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088125366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &2088125368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2088125366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 0
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 0
+  rectangle:
+    left: .0500000007
+    top: .0500000007
+    width: .899999976
+    height: .275000006
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 0
+  text: Kana Memory
+  font:
+    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    style: 0
+    size: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  shadowColor: {r: 0, g: 0, b: 0, a: .501960814}
+  alignment: 4
+  crop: 0
+  wordWrap: 0
+  shadowOffset: 5
 --- !u!1 &2133026526
 GameObject:
   m_ObjectHideFlags: 0
