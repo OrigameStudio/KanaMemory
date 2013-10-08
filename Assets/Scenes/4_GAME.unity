@@ -118,9 +118,9 @@ MonoBehaviour:
   orientation: 1
   rectangle:
     left: .400000006
-    top: .0199999996
+    top: .00999999978
     width: .200000003
-    height: .119999997
+    height: .0799999982
   padding:
     top: 0
     left: 0
@@ -547,6 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc6143d30678ab4d84d453f36c4ca40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: {fileID: 1592693181}
   confirmQuitGame: {fileID: 139474496}
   quitGame: {fileID: 810544601}
   keepPlaying: {fileID: 1183079557}
@@ -1475,6 +1476,70 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1 &1592693179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1592693180}
+  - 114: {fileID: 1592693181}
+  m_Layer: 0
+  m_Name: DifficultyInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1592693180
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592693179}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1645012915}
+--- !u!114 &1592693181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1592693179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 2
+  debug: 0
+  debugColor: {r: 0, g: 1, b: 0, a: 1}
+  orientation: 1
+  rectangle:
+    left: .349999994
+    top: .0925000012
+    width: .300000012
+    height: .075000003
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 0
+  text: MEDIUM
+  font:
+    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    style: 0
+    size: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  shadowColor: {r: 0, g: 0, b: 0, a: 1}
+  alignment: 4
+  crop: 0
+  wordWrap: 0
+  shadowOffset: 0
 --- !u!1 &1607574650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1728,7 @@ Transform:
   - {fileID: 678309461}
   - {fileID: 828347688}
   - {fileID: 121012634}
+  - {fileID: 1592693180}
   m_Father: {fileID: 2144051202}
 --- !u!1 &1743261340
 GameObject:
