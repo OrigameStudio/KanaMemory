@@ -22,12 +22,12 @@ AnimationClip:
         inSlope: -1
         outSlope: Infinity
         tangentMode: 1
-      - time: 1.5
+      - time: 1
         value: 0
-        inSlope: -.333333343
-        outSlope: -.333333343
+        inSlope: -.5
+        outSlope: -.5
         tangentMode: 10
-      - time: 3
+      - time: 2
         value: 0
         inSlope: Infinity
         outSlope: 0
@@ -46,12 +46,12 @@ AnimationClip:
         inSlope: 1
         outSlope: Infinity
         tangentMode: 1
-      - time: 1.5
+      - time: 1
         value: 1
-        inSlope: .333333343
-        outSlope: .333333343
+        inSlope: .5
+        outSlope: .5
         tangentMode: 10
-      - time: 3
+      - time: 2
         value: 1
         inSlope: Infinity
         outSlope: 0
@@ -91,12 +91,12 @@ AnimationClip:
         inSlope: -1
         outSlope: Infinity
         tangentMode: 1
-      - time: 1.5
+      - time: 1
         value: 0
-        inSlope: -.333333343
-        outSlope: -.333333343
+        inSlope: -.5
+        outSlope: -.5
         tangentMode: 10
-      - time: 3
+      - time: 2
         value: 0
         inSlope: Infinity
         outSlope: 0
@@ -115,12 +115,12 @@ AnimationClip:
         inSlope: 1
         outSlope: Infinity
         tangentMode: 1
-      - time: 1.5
+      - time: 1
         value: 1
-        inSlope: .333333343
-        outSlope: .333333343
+        inSlope: .5
+        outSlope: .5
         tangentMode: 10
-      - time: 3
+      - time: 2
         value: 1
         inSlope: Infinity
         outSlope: 0
