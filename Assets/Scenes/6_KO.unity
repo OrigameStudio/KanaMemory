@@ -326,7 +326,7 @@ MonoBehaviour:
   - {fileID: 2068537028}
   nextScene: 1
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
-  skipAnimationClip: SplashScreen@Skip
+  skipAnimationClip: KOScreen@Skip
   escapeExitsApplication: 0
 --- !u!82 &466758273
 AudioSource:
@@ -397,7 +397,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 64c673fe87f335748be5ad4a060ebf86, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 64c673fe87f335748be5ad4a060ebf86, type: 2}
-  - {fileID: 7400000, guid: f28eec1c4889a1b46a424b6bcaffdc38, type: 2}
+  - {fileID: 7400000, guid: e114978639ced4d4cbac3ce073d4d20f, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
