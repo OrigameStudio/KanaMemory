@@ -125,4 +125,20 @@ public class HUDElement : MonoBehaviour{
 			}
 		}
 	}
+
+	public static void DisableRender(HUDElement[] elements){
+
+		foreach(HUDElement element in elements){
+
+			element.doNotRender = true;
+		}
+	}
+
+	public static void EnableRender(HUDElement[] elements){
+
+		foreach(HUDElement element in elements){
+
+			element.doNotRender = false;
+		}
+	}
 }
