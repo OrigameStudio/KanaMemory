@@ -56,132 +56,37 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/1. RateApp
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/2. Mail
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/3. Tumblr
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/4. Twitter
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/4. Twitter
+    attribute: doNotRender
+    path: _HUD/Icons/1. RateApp
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/3. Tumblr
-    classID: 114
-    script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
+    attribute: doNotRender
     path: _HUD/Icons/2. Mail
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
@@ -189,21 +94,116 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/1. RateApp
+    attribute: doNotRender
+    path: _HUD/Icons/3. Tumblr
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Icons/4. Twitter
+    classID: 114
+    script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/1. RateApp
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/2. Mail
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/3. Tumblr
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/4. Twitter
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -267,132 +267,37 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/1. RateApp
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/2. Mail
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/3. Tumblr
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Values/4. Twitter
-    classID: 114
-    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/4. Twitter
+    attribute: doNotRender
+    path: _HUD/Icons/1. RateApp
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/3. Tumblr
-    classID: 114
-    script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
+    attribute: doNotRender
     path: _HUD/Icons/2. Mail
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
@@ -400,21 +305,116 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 1.5
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/Icons/1. RateApp
+    attribute: doNotRender
+    path: _HUD/Icons/3. Tumblr
     classID: 114
     script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Icons/4. Twitter
+    classID: 114
+    script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/1. RateApp
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/2. Mail
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/3. Tumblr
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/Values/4. Twitter
+    classID: 114
+    script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: 0

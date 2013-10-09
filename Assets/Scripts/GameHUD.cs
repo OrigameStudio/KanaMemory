@@ -5,8 +5,8 @@ using System.Collections;
 
 public class GameHUD : MonoBehaviour{
 	
-	public GameObject	gameInfo;
-	public GameObject	pauseInfo;
+	public HUDElement[]	gameInfo;
+	public HUDElement[]	pauseInfo;
 
 	public HUDText		cardsInfo;
 	public HUDText		timeInfo;
@@ -68,14 +68,14 @@ public class GameHUD : MonoBehaviour{
 	}
 		
 	public void Pause(){
-
-		this.gameInfo.SetActive(false);
-		this.pauseInfo.SetActive(true);
+		
+		HUDElement.DisableRender(this.gameInfo);
+		HUDElement.EnableRender(this.pauseInfo);
 	}
 
 	public void Resume(){
-
-		this.gameInfo.SetActive(true);
-		this.pauseInfo.SetActive(false);
+		
+		HUDElement.EnableRender(this.gameInfo);
+		HUDElement.DisableRender(this.pauseInfo);
 	}
 }

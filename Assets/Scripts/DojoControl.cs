@@ -5,9 +5,9 @@ using System.Collections;
 
 public class DojoControl : MonoBehaviour{
 
-	public GameObject Welcome;
-	public GameObject Navigation;
-	public GameObject Goodbye;
+	public HUDElement[] Welcome;
+	public HUDElement[] Navigation;
+	public HUDElement[] Goodbye;
 	private bool isLearning;
 
 	public Transform[] zoomedInPositions;
@@ -53,9 +53,9 @@ public class DojoControl : MonoBehaviour{
 		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.enterPosition.transform.position, this.moveSpeed);
 		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.enterPosition.transform.rotation, this.rotateSpeed, true);
 
-		this.Welcome.SetActive(true);
-		this.Navigation.SetActive(false);
-		this.Goodbye.SetActive(false);
+		HUDElement.EnableRender(this.Welcome);
+		HUDElement.DisableRender(this.Navigation);
+		HUDElement.DisableRender(this.Goodbye);
 
 		this.steps.Play();
 	}
@@ -172,8 +172,9 @@ public class DojoControl : MonoBehaviour{
 
 	public void StudyHiragana(){
 
-		this.Welcome.SetActive(false);
-		this.Navigation.SetActive(true);
+		HUDElement.DisableRender(this.Welcome);
+		HUDElement.EnableRender(this.Navigation);
+
 		this.isLearning = true;
 
 		this.switchIcon.texture = this.switchToKatakanaTexture;
@@ -190,8 +191,9 @@ public class DojoControl : MonoBehaviour{
 
 	public void StudyKatakana(){
 
-		this.Welcome.SetActive(false);
-		this.Navigation.SetActive(true);
+		HUDElement.DisableRender(this.Welcome);
+		HUDElement.EnableRender(this.Navigation);
+
 		this.isLearning = true;
 
 		this.switchIcon.texture = this.switchToHiraganaTexture;
@@ -208,9 +210,10 @@ public class DojoControl : MonoBehaviour{
 
 	public void ConfirmExit(){
 
-		this.Welcome.SetActive(false);
-		this.Navigation.SetActive(false);
-		this.Goodbye.SetActive(true);
+		HUDElement.DisableRender(this.Welcome);
+		HUDElement.DisableRender(this.Navigation);
+		HUDElement.EnableRender(this.Goodbye);
+
 		this.isLearning = false;
 
 		this.moveTo.target		= this.exitPosition.transform.position;
@@ -222,9 +225,10 @@ public class DojoControl : MonoBehaviour{
 
 	public void Stay(){
 
-		this.Goodbye.SetActive(false);
-		this.Navigation.SetActive(false);
-		this.Welcome.SetActive(true);
+		HUDElement.DisableRender(this.Goodbye);
+		HUDElement.DisableRender(this.Navigation);
+		HUDElement.EnableRender(this.Welcome);
+
 		this.isLearning = false;
 
 		this.moveTo.target		= this.enterPosition.transform.position;
@@ -252,7 +256,7 @@ public class DojoControl : MonoBehaviour{
 
 	public void Exit(){
 
-		this.Goodbye.SetActive(false);
+		HUDElement.DisableRender(this.Goodbye);
 
 		this.moveTo.target		= this.outsidePosition.transform.position;
 		this.rotateAs.target	= this.outsidePosition.transform.rotation;
@@ -264,11 +268,11 @@ public class DojoControl : MonoBehaviour{
 
 		Application.LoadLevel(this.escapeScene);
 	}
-	
+
 	public void OnAction(DojoHUDAction action){
 
 		switch(action){
-			
+
 			case DojoHUDAction.StudyHiragana:
 
 				this.StudyHiragana();
@@ -278,12 +282,12 @@ public class DojoControl : MonoBehaviour{
 
 				this.StudyKatakana();
 				break;
-			
+
 			case DojoHUDAction.Exit:
 
 				this.Exit();
 				break;
-			
+
 			case DojoHUDAction.ConfirmExit:
 
 				this.ConfirmExit();

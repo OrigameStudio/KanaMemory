@@ -264,25 +264,6 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/ButtonExit
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
       - time: 1.25
         value: 0
         inSlope: 0
@@ -313,63 +294,6 @@ AnimationClip:
     path: _HUD/Dojo
     classID: 114
     script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/LanguageIcon
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/LanguageName
-    classID: 114
-    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/ButtonAbout
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -465,6 +389,82 @@ AnimationClip:
     path: _HUD/KanaMemory
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/ButtonAbout
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/ButtonExit
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/LanguageIcon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/LanguageName
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -736,25 +736,6 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/ButtonExit
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
       - time: 1.25
         value: 0
         inSlope: 0
@@ -785,63 +766,6 @@ AnimationClip:
     path: _HUD/Dojo
     classID: 114
     script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/LanguageIcon
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/LanguageName
-    classID: 114
-    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Enabled
-    path: _HUD/ButtonAbout
-    classID: 114
-    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -937,6 +861,82 @@ AnimationClip:
     path: _HUD/KanaMemory
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/ButtonAbout
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/ButtonExit
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/LanguageIcon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: doNotRender
+    path: _HUD/LanguageName
+    classID: 114
+    script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: 0

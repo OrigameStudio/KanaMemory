@@ -135,7 +135,7 @@ public class GameControl : MonoBehaviour{
 
 				if( this.memoryGame.GetSecondsLeft() <= 10 ){
 
-					this.hud.exitButton.enabled = false;
+					this.hud.exitButton.doNotRender = true;
 
 					this.sounds.clock.Play();
 
