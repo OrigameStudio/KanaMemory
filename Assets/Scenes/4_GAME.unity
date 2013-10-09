@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -161,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -290,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564eee0b666fd174cb766908c5ac9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -589,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -672,6 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -749,6 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1154,6 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1367,6 +1374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564eee0b666fd174cb766908c5ac9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1514,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 0, g: 1, b: 0, a: 1}
@@ -1944,6 +1953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -2105,8 +2115,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9975edaa0a9d540867dfddfbed2a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameInfo: {fileID: 1645012914}
-  pauseInfo: {fileID: 708821827}
+  gameInfo:
+  - {fileID: 678309462}
+  - {fileID: 1592693181}
+  - {fileID: 1430250131}
+  - {fileID: 328714547}
+  - {fileID: 828347690}
+  - {fileID: 121012636}
+  pauseInfo:
+  - {fileID: 1929546489}
+  - {fileID: 139474496}
+  - {fileID: 1183079557}
+  - {fileID: 810544601}
   cardsInfo: {fileID: 678309462}
   timeInfo: {fileID: 828347690}
   typeInfo: {fileID: 121012636}

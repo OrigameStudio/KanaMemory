@@ -1470,6 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -3711,6 +3712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -7054,6 +7056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -7603,6 +7606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -17460,6 +17464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47321cda0a6552e49b597159137bde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -17672,6 +17677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -18864,6 +18870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47321cda0a6552e49b597159137bde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -21391,6 +21398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -21705,6 +21713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -21846,6 +21855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47321cda0a6552e49b597159137bde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -22406,6 +22416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47321cda0a6552e49b597159137bde43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -22660,6 +22671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -22943,6 +22955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -23180,6 +23193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6776f5bc8b9df8458e5a8967d8d0c58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -26303,9 +26317,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86962a0bf787e3643b4e189916882e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Welcome: {fileID: 1333053621}
-  Navigation: {fileID: 993807637}
-  Goodbye: {fileID: 968617339}
+  Welcome:
+  - {fileID: 437371545}
+  - {fileID: 185028050}
+  - {fileID: 459479624}
+  - {fileID: 1638590291}
+  - {fileID: 1279143872}
+  Navigation:
+  - {fileID: 75140980}
+  - {fileID: 1736264882}
+  - {fileID: 1607749526}
+  - {fileID: 1296430887}
+  - {fileID: 1752362203}
+  Goodbye:
+  - {fileID: 1713574673}
+  - {fileID: 1576031998}
+  - {fileID: 1693015002}
+  - {fileID: 1359611684}
   zoomedInPositions:
   - {fileID: 908658428}
   - {fileID: 1074717124}

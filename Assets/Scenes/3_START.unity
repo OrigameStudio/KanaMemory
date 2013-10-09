@@ -1186,6 +1186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -2558,7 +2559,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 740502515}
-  - 111: {fileID: 740502516}
   m_Layer: 0
   m_Name: Fugu-1_Easy
   m_TagString: Untagged
@@ -2578,24 +2578,6 @@ Transform:
   m_Children:
   - {fileID: 651078349}
   m_Father: {fileID: 958275399}
---- !u!111 &740502516
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100006, guid: 6e36cf7e2e0194d41a10458ad7707c90,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 740502514}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: eac938b3c34f35c46bfae6114bce4684, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &753486302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2861,6 +2843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -3283,7 +3266,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 958275398}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -.608761489, z: 0, w: .793353379}
   m_LocalPosition: {x: -1.79999995, y: -.100000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3529,6 +3512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -4976,6 +4960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -6079,6 +6064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -6145,6 +6131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -6561,7 +6548,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1881746387}
-  - 111: {fileID: 1881746388}
   m_Layer: 0
   m_Name: Fugu-2_Medium
   m_TagString: Untagged
@@ -6581,24 +6567,6 @@ Transform:
   m_Children:
   - {fileID: 1201064357}
   m_Father: {fileID: 958275399}
---- !u!111 &1881746388
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100006, guid: 6e36cf7e2e0194d41a10458ad7707c90,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1881746386}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: eac938b3c34f35c46bfae6114bce4684, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &1888234555
 GameObject:
   m_ObjectHideFlags: 0
@@ -7037,7 +7005,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2021806401}
-  - 111: {fileID: 2021806402}
   m_Layer: 0
   m_Name: Fugu-3_Hard
   m_TagString: Untagged
@@ -7057,24 +7024,6 @@ Transform:
   m_Children:
   - {fileID: 290501664}
   m_Father: {fileID: 958275399}
---- !u!111 &2021806402
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100006, guid: 6e36cf7e2e0194d41a10458ad7707c90,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2021806400}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: eac938b3c34f35c46bfae6114bce4684, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &2032546033
 GameObject:
   m_ObjectHideFlags: 0
@@ -7496,6 +7445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
