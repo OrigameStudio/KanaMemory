@@ -16,37 +16,6 @@ public class HUDText : HUDElement{
 	public bool				wordWrap		= true;
 	public int				shadowOffset	= 0;
 
-	//public GUIStyle stylette;
-
-	/*
-	public HUDScaleModeEnum	scaleMode	= HUDScaleModeEnum.ScaleToFit;
-	public bool				alphaBlend	= true;
-	public float			imageAspect	= 0;
-	public HUDAlignment		alignment	= new HUDAlignment(HUDAlignmentX.Center, HUDAlignmentY.Middle);
-	*/
-
-	/*
-	public float GetImageAspect(){
-
-		if(this.imageAspect != 0f){
-
-			return(this.imageAspect);
-		}
-
-		if(this.texture == null){
-
-			return(0f);
-		}
-
-		return(this.texture.width / this.texture.height);
-	}
-
-	public Rect GetImageRectangle(){
-
-		return( new Rect(0, 0, this.texture.width, this.texture.height) );
-	}
-	*/
-
 	public void AutoFontSize(GUIStyle style, Rect rectangle){
 
 		GUIContent content = new GUIContent(this.text);
@@ -77,7 +46,7 @@ public class HUDText : HUDElement{
 
 	void OnGUI(){
 
-		if( !this.Applies() ) return;
+		if( !this.Applies() || this.doNotRender ) return;
 
 		GUI.depth = this.guiDepth;
 

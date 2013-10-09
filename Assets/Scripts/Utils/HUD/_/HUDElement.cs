@@ -6,6 +6,7 @@ using System.Collections;
 [ExecuteInEditMode]
 public class HUDElement : MonoBehaviour{
 
+	public bool				doNotRender	= false;
 	public int				guiDepth	= 0;
 	public bool				debug		= false;
 	public Color			debugColor	= Color.magenta;
@@ -36,7 +37,7 @@ public class HUDElement : MonoBehaviour{
 
 	public virtual void DebugOnGUI(){
 
-		if(this.debug){
+		if(this.debug && !this.doNotRender){
 
 			this.DrawBox(this.rectangle, this.debugColor);
 
@@ -55,7 +56,7 @@ public class HUDElement : MonoBehaviour{
 
 	public bool IsLandscape(){
 
-		return(Screen.width > Screen.height);
+		return(Screen.width >= Screen.height);
 	}
 
 	public bool IsPortrait(){

@@ -36,7 +36,7 @@ public class HUDTexture : HUDElement{
 
 		GUI.depth = this.guiDepth;
 
-		if( !this.Applies() ) return;
+		if( !this.Applies() || this.doNotRender ) return;
 
 		this.DebugOnGUI();
 
