@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -179,7 +178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -409,7 +407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -476,7 +473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -608,7 +604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -750,7 +745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1061,7 +1055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1255,7 +1248,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b651521b4a0fe49baa8cdd30e2b781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1323,6 +1315,9 @@ MonoBehaviour:
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
   skipAnimationClip: AboutScreen@Skip
   escapeExitsApplication: 0
+  showActivityIndicator: 0
+  androidActivityIndicator: -1
+  iOsActivityIndicator: -1
   tumblr: http://origamestudio.tumblr.com/
   mail: mailto:origamestudio@gmail.com?subject=KanaMemory
   facebook: http://www.facebook.com/OrigameStudio
@@ -1594,7 +1589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fe5b2c7adb2ab488bd86632d1a34e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}

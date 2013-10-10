@@ -328,6 +328,9 @@ MonoBehaviour:
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
   skipAnimationClip: KOScreen@Skip
   escapeExitsApplication: 0
+  showActivityIndicator: 0
+  androidActivityIndicator: -1
+  iOsActivityIndicator: -1
 --- !u!82 &466758273
 AudioSource:
   m_ObjectHideFlags: 0

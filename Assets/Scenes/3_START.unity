@@ -1186,7 +1186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1546,6 +1545,9 @@ MonoBehaviour:
   sizeSmall: {fileID: 1443967383}
   sizeRegular: {fileID: 473132033}
   sizeBig: {fileID: 1021943690}
+  showActivityIndicator: 0
+  androidActivityIndicator: 0
+  iOsActivityIndicator: 0
 --- !u!1 &473132033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,7 +2279,6 @@ Transform:
   - {fileID: 441879724}
   - {fileID: 958275399}
   - {fileID: 2037436517}
-  - {fileID: 1540234160}
   m_Father: {fileID: 163958672}
 --- !u!1 &662138445
 GameObject:
@@ -2843,7 +2844,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -3266,7 +3266,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 958275398}
-  m_LocalRotation: {x: 0, y: -.608761489, z: 0, w: .793353379}
+  m_LocalRotation: {x: 0, y: -.258819044, z: 0, w: .965925813}
   m_LocalPosition: {x: -1.79999995, y: -.100000001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3512,7 +3512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -4960,7 +4959,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -5217,75 +5215,6 @@ Transform:
   m_Children:
   - {fileID: 634972835}
   m_Father: {fileID: 691246090}
---- !u!1 &1540234159
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100040, guid: d6e187ece3dd29f4ea3b2a639f5e47f4, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1540234160}
-  - 23: {fileID: 1540234162}
-  - 102: {fileID: 1540234161}
-  m_Layer: 0
-  m_Name: DifficultyValue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1540234160
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400040, guid: d6e187ece3dd29f4ea3b2a639f5e47f4, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540234159}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .200000048, y: -.600000024, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
-  m_Children: []
-  m_Father: {fileID: 651205117}
---- !u!102 &1540234161
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10200000, guid: d6e187ece3dd29f4ea3b2a639f5e47f4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540234159}
-  m_Text: EASY
-  m_OffsetZ: -.00999999978
-  m_CharacterSize: .075000003
-  m_LineSpacing: 1
-  m_Anchor: 4
-  m_Alignment: 1
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 0
-  m_Font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278190080
---- !u!23 &1540234162
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300002, guid: d6e187ece3dd29f4ea3b2a639f5e47f4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1540234159}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 01b550dbe0af32644a34b4f171feaddd, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
 --- !u!1 &1541621144
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,7 +5993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -6131,7 +6059,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -7445,7 +7372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}

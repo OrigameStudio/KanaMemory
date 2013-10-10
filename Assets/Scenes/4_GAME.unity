@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -162,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -292,7 +290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564eee0b666fd174cb766908c5ac9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -592,7 +589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -676,7 +672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -754,7 +749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1160,7 +1154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 0, a: 1}
@@ -1374,7 +1367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 564eee0b666fd174cb766908c5ac9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
@@ -1522,7 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 2
   debug: 0
   debugColor: {r: 0, g: 1, b: 0, a: 1}
@@ -1953,7 +1944,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45e8a9a39c6ba04aba35b09a79f02d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doNotRender: 0
   guiDepth: 1
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
