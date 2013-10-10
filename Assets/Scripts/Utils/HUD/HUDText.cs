@@ -20,24 +20,7 @@ public class HUDText : HUDElement{
 	private string currentGUIStyleId = null;
 	private string currentRectId = null;
 
-#if UNITY_EDITOR
-
-	public int				debugFontSize	= -1;
-	public int				debugFontCalls	= -1;
-	public int				debugFontFrame	= -1;
-	public string			debugGUIStyleId	= null;
-	public string			debugRectId		= null;
-	public int				debugChanges	= -1;
-
-#endif
-
 	void Start(){
-
-#if UNITY_EDITOR
-
-			this.debugChanges = 0;
-
-#endif
 
 		// Precalculate GUIStyle
 		this.SetText(this.text);
@@ -54,27 +37,6 @@ public class HUDText : HUDElement{
 
 		this.Prepare();
 	}
-
-	/*
-	private string GetGUIStyleId(Rect rectangle){
-
-		return(
-			this.text			+ "<" +
-			( this.font.family == null ? "null" : this.font.family.name)
-								+ "|" +
-			this.font.style		+ "," +
-			this.font.size		+ ">" +
-			//this.crop			+ "/" +
-			this.wordWrap		+ "@" +
-			//rectangle.x		+ "," +
-			//rectangle.y		+ ":" +
-			rectangle.width		+ "x" +
-			rectangle.height 	+ "@" +
-			Screen.width		+ "x" +
-			Screen.height
-		);
-	}
-	*/
 
 	private string GetGUIStyleId(){
 
@@ -135,26 +97,12 @@ public class HUDText : HUDElement{
 		int size = (sameRect ? this.currentGUIStyle.fontSize + 1 : 1);
 		int step = (sameRect ? 4 : 16);
 
-		Debug.Log("LET'S START WITH: " + size + " @ " + step + " (" + sameRect + ")");
-
-#if UNITY_EDITOR
-
-		this.debugFontCalls = 0;
-
-#endif
-
 		if(this.wordWrap){
 
 			float guiHeight = rectangle.height - 1;
 
 			for(style.fontSize = size; rectangle.height > guiHeight; size += step){
 
-#if UNITY_EDITOR
-
-				this.debugFontCalls++;
-
-				Debug.Log("LET'S TRY WITH: " + size);
-#endif
 				style.fontSize = size;
 				guiHeight = style.CalcHeight(content, rectangle.width);
 			}
@@ -163,13 +111,6 @@ public class HUDText : HUDElement{
 
 				for(size = style.fontSize - 1; rectangle.height < guiHeight; size--){
 
-#if UNITY_EDITOR
-
-					this.debugFontCalls++;
-
-					Debug.Log("LET'S TRY AGAIN BACKWARDS WITH: " + size);
-
-#endif
 					style.fontSize = size;
 					guiHeight = style.CalcHeight(content, rectangle.width);
 				}
@@ -181,13 +122,6 @@ public class HUDText : HUDElement{
 
 			for(style.fontSize = size; rectangle.width > guiSize.x && rectangle.height > guiSize.y; size += step){
 
-#if UNITY_EDITOR
-
-				Debug.Log("LET'S TRY WITH: " + size);
-
-				this.debugFontCalls++;
-
-#endif
 				style.fontSize = size;
 				guiSize = style.CalcSize(content);
 			}
@@ -196,20 +130,11 @@ public class HUDText : HUDElement{
 
 				for(size = style.fontSize - 1; rectangle.width < guiSize.x || rectangle.height < guiSize.y; size--){
 
-#if UNITY_EDITOR
-
-					Debug.Log("LET'S TRY AGAIN BACKWARDS WITH: " + size);
-
-					this.debugFontCalls++;
-
-#endif
 					style.fontSize = size;
 					guiSize = style.CalcSize(content);
 				}
 			}
 		}
-
-		Debug.Log("WE FOUND: " + style.fontSize);
 	}
 
 	private GUIStyle GetCurrentGUIStyle(Rect rectangle){
@@ -224,16 +149,6 @@ public class HUDText : HUDElement{
 			this.currentGUIStyle	= this.CalculateGUIStyle(rectangle, sameRect);
 			this.currentGUIStyleId	= styleId;
 			this.currentRectId		= rectId;
-
-#if UNITY_EDITOR
-
-			this.debugChanges++;
-			this.debugFontFrame		= Time.frameCount;
-			this.debugFontSize		= this.currentGUIStyle.fontSize;
-			this.debugGUIStyleId	= this.currentGUIStyleId;
-			this.debugRectId		= this.currentRectId;
-
-#endif
 		}
 
 		return(this.currentGUIStyle);
