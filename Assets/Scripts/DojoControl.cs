@@ -41,8 +41,6 @@ public class DojoControl : MonoBehaviour{
 	public AudioSource steps;
 	public AudioSource voice;
 
-	//public GUIText info;
-
 	private	MoveTo		moveTo;
 	private	RotateAs	rotateAs;
 
