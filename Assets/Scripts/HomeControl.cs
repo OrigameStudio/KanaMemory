@@ -19,6 +19,8 @@ public class HomeControl : SplashControl{
 
 	public void Exit(){
 
+		this.DiscardActivityIndicator();
+
 		this.exitApplication = true;
 		this.Skip(null);
 	}
@@ -30,12 +32,12 @@ public class HomeControl : SplashControl{
 		this.nextScene = this.HelpScene;
 		this.Skip(null);
 
-		this.showActivityIndicator = true;
-
 		this.sound.Play();
 	}
 
 	public void Play(){
+
+		this.DiscardActivityIndicator();
 
 		this.nextScene = this.StartScene;
 		this.Skip(null);
@@ -44,6 +46,8 @@ public class HomeControl : SplashControl{
 	}
 
 	public void About(){
+
+		this.DiscardActivityIndicator();
 
 		this.nextScene = this.AboutScene;
 		this.Skip(null);
