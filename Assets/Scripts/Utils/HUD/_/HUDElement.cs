@@ -7,8 +7,14 @@ using System.Collections;
 public class HUDElement : MonoBehaviour{
 
 	public int				guiDepth	= 0;
+
+#if UNITY_EDITOR
+
 	public bool				debug		= false;
 	public Color			debugColor	= Color.magenta;
+
+#endif
+
 	public HUDOrientation	orientation	= HUDOrientation.Any;
 	public HUDRectangle		rectangle	= new HUDRectangle(0, 0, 1, 1);
 	public HUDPadding		padding		= new HUDPadding(0, 0, 0, 0);
@@ -34,7 +40,9 @@ public class HUDElement : MonoBehaviour{
 		GUI.skin.box.normal.background = tmp;
 	}
 
-	public virtual void DebugOnGUI(){
+	protected virtual void DebugOnGUI(){
+
+#if UNITY_EDITOR
 
 		if(this.debug){
 
@@ -51,6 +59,9 @@ public class HUDElement : MonoBehaviour{
 				this.DrawBox(this.padding.Pad(this.rectangle), inverse);
 			}
 		}
+
+#endif
+
 	}
 
 	public bool IsLandscape(){
