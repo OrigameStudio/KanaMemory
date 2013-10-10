@@ -156,7 +156,7 @@ public class HUDText : HUDElement{
 
 	void OnGUI(){
 
-		if( !this.Applies() || this.doNotRender ) return;
+		if( !this.Applies() ) return;
 
 		Rect position;
 		GUIStyle style;

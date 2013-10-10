@@ -18,25 +18,6 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
-        inSlope: 1
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: doNotRender
-    path: Caption
-    classID: 114
-    script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
         value: 1
         inSlope: -1
         outSlope: Infinity
@@ -44,16 +25,40 @@ AnimationClip:
       - time: 1
         value: 0
         inSlope: -.5
-        outSlope: Infinity
-        tangentMode: 1
+        outSlope: -.5
+        tangentMode: 10
       - time: 2
         value: 0
-        inSlope: 0
+        inSlope: Infinity
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 1
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: doNotRender
+    attribute: m_Enabled
+    path: Caption
+    classID: 114
+    script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 1
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 1
+        value: 1
+        inSlope: .5
+        outSlope: .5
+        tangentMode: 10
+      - time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: 0
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
     path: Value
     classID: 114
     script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
@@ -82,25 +87,6 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0
-        inSlope: 1
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1
-        value: 1
-        inSlope: 1
-        outSlope: 1
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: doNotRender
-    path: Caption
-    classID: 114
-    script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
         value: 1
         inSlope: -1
         outSlope: Infinity
@@ -108,16 +94,40 @@ AnimationClip:
       - time: 1
         value: 0
         inSlope: -.5
-        outSlope: Infinity
-        tangentMode: 1
+        outSlope: -.5
+        tangentMode: 10
       - time: 2
         value: 0
-        inSlope: 0
+        inSlope: Infinity
         outSlope: 0
-        tangentMode: 10
+        tangentMode: 1
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: doNotRender
+    attribute: m_Enabled
+    path: Caption
+    classID: 114
+    script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 1
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 1
+        value: 1
+        inSlope: .5
+        outSlope: .5
+        tangentMode: 10
+      - time: 2
+        value: 1
+        inSlope: Infinity
+        outSlope: 0
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
     path: Value
     classID: 114
     script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}

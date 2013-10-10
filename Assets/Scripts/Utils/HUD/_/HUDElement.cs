@@ -6,7 +6,6 @@ using System.Collections;
 [ExecuteInEditMode]
 public class HUDElement : MonoBehaviour{
 
-	public bool				doNotRender	= false;
 	public int				guiDepth	= 0;
 	public bool				debug		= false;
 	public Color			debugColor	= Color.magenta;
@@ -37,7 +36,7 @@ public class HUDElement : MonoBehaviour{
 
 	public virtual void DebugOnGUI(){
 
-		if(this.debug && !this.doNotRender){
+		if(this.debug){
 
 			this.DrawBox(this.rectangle, this.debugColor);
 
@@ -130,7 +129,7 @@ public class HUDElement : MonoBehaviour{
 
 		foreach(HUDElement element in elements){
 
-			element.doNotRender = true;
+			element.enabled = false;
 		}
 	}
 
@@ -138,7 +137,7 @@ public class HUDElement : MonoBehaviour{
 
 		foreach(HUDElement element in elements){
 
-			element.doNotRender = false;
+			element.enabled = true;
 		}
 	}
 }

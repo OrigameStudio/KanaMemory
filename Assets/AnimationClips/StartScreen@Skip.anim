@@ -36,6 +36,25 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .800000012
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 1.25
+        value: 1
+        inSlope: .800000012
+        outSlope: .800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
       - time: 1.25
         value: 0
         inSlope: 4
@@ -664,30 +683,6 @@ AnimationClip:
     path: _HUD/BoardSize/Value
     classID: 114
     script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: -.800000012
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.25
-        value: 0
-        inSlope: -.400000006
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: doNotRender
-    path: _HUD/Loading
-    classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -731,6 +726,25 @@ AnimationClip:
   - curve:
       serializedVersion: 2
       m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .800000012
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 1.25
+        value: 1
+        inSlope: .800000012
+        outSlope: .800000012
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: _HUD/Loading
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
       - time: 1.25
         value: 0
         inSlope: 4
@@ -1359,30 +1373,6 @@ AnimationClip:
     path: _HUD/BoardSize/Value
     classID: 114
     script: {fileID: 11500000, guid: d5aa1d8040c994545874676a9bd32b86, type: 3}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 1
-        inSlope: -.800000012
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.25
-        value: 0
-        inSlope: -.400000006
-        outSlope: Infinity
-        tangentMode: 1
-      - time: 1.5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: doNotRender
-    path: _HUD/Loading
-    classID: 114
-    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_EulerEditorCurves: []
   m_Events:
   - time: 0

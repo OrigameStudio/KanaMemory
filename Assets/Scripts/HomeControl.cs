@@ -25,7 +25,7 @@ public class HomeControl : SplashControl{
 
 	public void Dojo(){
 
-		this.loadingMessage.doNotRender = false;
+		this.loadingMessage.enabled = true;
 
 		this.nextScene = this.HelpScene;
 		this.Skip(null);
