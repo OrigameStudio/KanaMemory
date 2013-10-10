@@ -17,11 +17,11 @@ public class DojoI18n : MonoBehaviour{
 
 	public void UpdateLanguage(GameLanguageData language){
 
-		this.welcome.text		= language.welcome;
-		this.studyHiragana.text	= language.studyHiragana;
-		this.studyKatakana.text	= language.studyKatakana;
-		this.goodbye.text		= language.goodbye;
-		this.exit.text			= language.exit;
-		this.stay.text			= language.stay;
+		this.welcome.SetText(language.welcome);
+		this.studyHiragana.SetText(language.studyHiragana);
+		this.studyKatakana.SetText(language.studyKatakana);
+		this.goodbye.SetText(language.goodbye);
+		this.exit.SetText(language.exit);
+		this.stay.SetText(language.stay);
 	}
 }

@@ -25,10 +25,10 @@ public class HomeI18n : MonoBehaviour {
 			this.game.language = language.data;
 		}
 
-		this.play.text = this.game.language.play;
-		this.dojo.text = this.game.language.dojo;
-		this.loading.text = this.game.language.loading;
-		this.languageName.text = this.game.language.name;
+		this.play.SetText(this.game.language.play);
+		this.dojo.SetText(this.game.language.dojo);
+		this.loading.SetText(this.game.language.loading);
+		this.languageName.SetText(this.game.language.name);
 		this.languageIcon.texture = this.game.language.texture;
 	}
 }

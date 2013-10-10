@@ -40,8 +40,8 @@ public class GameHUD : MonoBehaviour{
 			seconds -= (minutes * 60);
 		}
 		
-		this.cardsInfo.text		= this.memoryGame.cards.matches + "/" + this.memoryGame.cards.total;
-		this.timeInfo.text		= string.Format("{0}:{1:d2}", minutes, seconds);
+		this.cardsInfo.SetText( this.memoryGame.cards.matches + "/" + this.memoryGame.cards.total );
+		this.timeInfo.SetText( string.Format("{0}:{1:d2}", minutes, seconds) );
 		
 		this.hintButton.texture	= (this.memoryGame.hint ? this.hintDisable : this.hintEnable);
 

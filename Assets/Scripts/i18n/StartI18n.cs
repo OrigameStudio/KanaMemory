@@ -18,28 +18,28 @@ public class StartI18n : MonoBehaviour{
 
 	public void UpdateLanguage(MemoryGame game){
 
-		this.newGame.text		= game.language.newGame;
-		this.loading.text		= game.language.loading;
+		this.newGame.SetText(game.language.newGame);
+		this.loading.SetText(game.language.loading);
 
-		this.gameType.text		= game.language.gameType;
-		this.difficulty.text	= game.language.difficulty;
-		this.boardSize.text		= game.language.boardSize;
+		this.gameType.SetText(game.language.gameType);
+		this.difficulty.SetText(game.language.difficulty);
+		this.boardSize.SetText(game.language.boardSize);
 
 		switch(game.difficulty){
 
 			case GameDifficulty.EASY:
 
-				this.difficultyValue.text = game.language.easy;
+				this.difficultyValue.SetText(game.language.easy);
 				break;
 
 			case GameDifficulty.MEDIUM:
 
-				this.difficultyValue.text = game.language.medium;
+				this.difficultyValue.SetText(game.language.medium);
 				break;
 
 			case GameDifficulty.HARD:
 
-				this.difficultyValue.text = game.language.hard;
+				this.difficultyValue.SetText(game.language.hard);
 				break;
 		}
 
@@ -47,17 +47,17 @@ public class StartI18n : MonoBehaviour{
 
 			case BoardSize.SMALL:
 
-				this.boardSizeValue.text = game.language.small;
+				this.boardSizeValue.SetText(game.language.small);
 				break;
 
 			case BoardSize.REGULAR:
 
-				this.boardSizeValue.text = game.language.regular;
+				this.boardSizeValue.SetText(game.language.regular);
 				break;
 
 			case BoardSize.BIG:
 
-				this.boardSizeValue.text = game.language.big;
+				this.boardSizeValue.SetText(game.language.big);
 				break;
 		}
 	}

@@ -14,6 +14,6 @@ public class AboutI18n : MonoBehaviour{
 
 	public void UpdateLanguage(GameLanguageData language){
 
-		this.rateThisApp.text = language.rateThisApp;
+		this.rateThisApp.SetText(language.rateThisApp);
 	}
 }
