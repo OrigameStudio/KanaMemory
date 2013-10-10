@@ -746,7 +746,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 828347686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb29632bfa149ff4d96b103dac1288e6, type: 3}
+  m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   guiDepth: 2
@@ -775,8 +775,6 @@ MonoBehaviour:
   crop: 0
   wordWrap: 0
   shadowOffset: 4
-  control: {fileID: 628095890}
-  action: 1
 --- !u!1 &926780545
 GameObject:
   m_ObjectHideFlags: 0
