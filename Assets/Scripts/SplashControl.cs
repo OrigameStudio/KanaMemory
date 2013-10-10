@@ -22,6 +22,19 @@ public class SplashControl : MonoBehaviour{
 	public	Color					ambientLight = Color.black;
 	public	string					skipAnimationClip;
 	public	bool					escapeExitsApplication;
+	public	bool					showActivityIndicator = false;
+
+#if UNITY_ANDROID || UNITY_EDITOR
+
+	public AndroidActivityIndicatorStyle androidActivityIndicator = AndroidActivityIndicatorStyle.DontShow;
+
+#endif
+
+#if UNITY_IPHONE || UNITY_EDITOR
+
+	public iOSActivityIndicatorStyle iOsActivityIndicator = iOSActivityIndicatorStyle.DontShow;
+
+#endif
 
 	protected	bool				exitApplication = false;
 
@@ -70,6 +83,23 @@ public class SplashControl : MonoBehaviour{
 
 			this.Skip(null);
 		}
+	}
+
+	public IEnumerator StartActivityIndicator(){
+
+#if UNITY_ANDROID
+
+		Handheld.SetActivityIndicatorStyle(this.androidActivityIndicator);
+		Handheld.StartActivityIndicator();
+
+#elif UNITY_IPHONE
+
+		Handheld.SetActivityIndicatorStyle(this.iOsActivityIndicator);
+		Handheld.StartActivityIndicator();
+
+#endif
+
+		yield return new WaitForSeconds(0);
 	}
 
 	public void Skip(Vector3? hitPoint){
@@ -140,6 +170,11 @@ public class SplashControl : MonoBehaviour{
 			Application.Quit();
 
 		}else{
+
+			if(this.showActivityIndicator){
+
+				this.StartCoroutine( this.StartActivityIndicator() );
+			}
 
 			Application.LoadLevel(this.nextScene);
 		}

@@ -36,6 +36,20 @@ public class StartControl : MonoBehaviour{
 	public	GameObject				sizeRegular;
 	public	GameObject				sizeBig;
 
+	public	bool					showActivityIndicator = false;
+
+#if UNITY_ANDROID || UNITY_EDITOR
+
+	public AndroidActivityIndicatorStyle androidActivityIndicator = AndroidActivityIndicatorStyle.DontShow;
+
+#endif
+
+#if UNITY_IPHONE || UNITY_EDITOR
+
+	public iOSActivityIndicatorStyle iOsActivityIndicator = iOSActivityIndicatorStyle.DontShow;
+
+#endif
+
 	private MemoryGame game;
 
 	void Start(){
@@ -82,6 +96,23 @@ public class StartControl : MonoBehaviour{
 
 			this.Skip();
 		}
+	}
+
+	public IEnumerator StartActivityIndicator(){
+
+#if UNITY_ANDROID
+
+		Handheld.SetActivityIndicatorStyle(this.androidActivityIndicator);
+		Handheld.StartActivityIndicator();
+
+#elif UNITY_IPHONE
+
+		Handheld.SetActivityIndicatorStyle(this.iOsActivityIndicator);
+		Handheld.StartActivityIndicator();
+
+#endif
+
+		yield return new WaitForSeconds(0);
 	}
 
 	public void Skip(){
@@ -133,6 +164,11 @@ public class StartControl : MonoBehaviour{
 		this.status = StartStatus.finished;
 
 		if(this.startGame){
+
+			if(this.showActivityIndicator){
+
+				this.StartCoroutine( this.StartActivityIndicator() );
+			}
 
 			Application.LoadLevel(this.gameScene);
 

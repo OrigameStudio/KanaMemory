@@ -30,6 +30,8 @@ public class HomeControl : SplashControl{
 		this.nextScene = this.HelpScene;
 		this.Skip(null);
 
+		this.showActivityIndicator = true;
+
 		this.sound.Play();
 	}
 
