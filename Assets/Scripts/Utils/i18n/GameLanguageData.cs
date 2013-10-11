@@ -29,7 +29,7 @@ public class GameLanguageData{
 	public string		easy			= "EASY";
 	public string		medium			= "MEDIUM";
 	public string		hard			= "HARD";
-	public string		boardSize		= "BOARD SIZE";
+	public string		boardSize		= "SIZE";
 	public string		small			= "SMALL";
 	public string		regular			= "REGULAR";
 	public string		big				= "BIG";

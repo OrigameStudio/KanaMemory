@@ -575,7 +575,7 @@ MonoBehaviour:
     easy: EASY
     medium: MEDIUM
     hard: HARD
-    boardSize: BOARD SIZE
+    boardSize: SIZE
     small: SMALL
     regular: REGULAR
     big: BIG
