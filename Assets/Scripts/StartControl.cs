@@ -26,7 +26,8 @@ public class StartControl : MonoBehaviour{
 	public	bool					startGame = false;
 	public	Color					ambientLight = Color.black;
 	public	string					skipAnimationClip;
-	public	AudioSource				sound;
+	public	AudioSource				selectSound;
+	public	AudioSource				startSound;
 
 	public	GameObject				difficultyEasy;
 	public	GameObject				difficultyMedium;
@@ -173,12 +174,14 @@ public class StartControl : MonoBehaviour{
 			clickedButton.rigidbody.AddExplosionForce(explosionForce, hitPoint.Value, explosionRadius);
 		}
 
-		this.sound.Play();
+		this.startSound.Play();
 
 		this.Skip();
 	}
 
 	public void SwitchDifficultyLevel(){
+
+		this.selectSound.Play();
 
 		switch(this.game.difficulty){
 
@@ -203,6 +206,8 @@ public class StartControl : MonoBehaviour{
 	}
 
 	public void SwitchBoardSize(){
+
+		this.selectSound.Play();
 
 		switch(this.game.boardSize){
 
