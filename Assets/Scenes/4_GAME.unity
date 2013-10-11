@@ -763,7 +763,7 @@ MonoBehaviour:
     left: 4
     bottom: 0
     right: 0
-  isClickable: 1
+  isClickable: 0
   text: 00:00
   font:
     family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
