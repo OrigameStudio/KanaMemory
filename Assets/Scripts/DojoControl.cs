@@ -9,6 +9,7 @@ public class DojoControl : MonoBehaviour{
 	public HUDElement[] Navigation;
 	public HUDElement[] Goodbye;
 	private bool isLearning;
+	private bool isLeaving;
 
 	public Transform[] zoomedInPositions;
 	public Transform[] zoomedOutPositions;
@@ -60,9 +61,16 @@ public class DojoControl : MonoBehaviour{
 
 	void Update(){
 
-		if( Input.GetKey(KeyCode.Escape) ){
+		if( Input.GetKeyDown(KeyCode.Escape) ){
 
-			this.ConfirmExit();
+			if(this.isLeaving){
+
+				this.Stay();
+
+			}else{
+
+				this.ConfirmExit();
+			}
 
 		}else if( this.isLearning && Input.GetMouseButtonDown(0) ){
 
@@ -213,6 +221,7 @@ public class DojoControl : MonoBehaviour{
 		HUDElement.EnableRender(this.Goodbye);
 
 		this.isLearning = false;
+		this.isLeaving = true;
 
 		this.moveTo.target		= this.exitPosition.transform.position;
 		this.rotateAs.target	= this.exitPosition.transform.rotation;
@@ -228,6 +237,7 @@ public class DojoControl : MonoBehaviour{
 		HUDElement.EnableRender(this.Welcome);
 
 		this.isLearning = false;
+		this.isLeaving = false;
 
 		this.moveTo.target		= this.enterPosition.transform.position;
 		this.rotateAs.target	= this.enterPosition.transform.rotation;
