@@ -1163,6 +1163,55 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 301914919}
   m_Mesh: {fileID: 4300016, guid: dfe6d517281682a4e94692bf584657ba, type: 3}
+--- !u!1 &312558355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_PrefabInternal: {fileID: 1118268085}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 312558357}
+  - 114: {fileID: 312558356}
+  m_Layer: 0
+  m_Name: _HanheldActivityIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &312558356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1118268085}
+  m_GameObject: {fileID: 312558355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1121ab96028e44889d27237fe282ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show: 0
+  dummyTexture: {fileID: 2800000, guid: c43006270fa81294ea00ea30c239d561, type: 3}
+  dummyPosition:
+    serializedVersion: 2
+    x: 8
+    y: 8
+    width: 72
+    height: 72
+  androidActivityIndicator: 0
+  iOsActivityIndicator: 0
+--- !u!4 &312558357
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_PrefabInternal: {fileID: 1118268085}
+  m_GameObject: {fileID: 312558355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &336432190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,6 +1670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   i18n: {fileID: 466758272}
+  loading: {fileID: 1433264740}
   explosionForce: 1500
   explosionRadius: .100000001
   buttons:
@@ -1643,9 +1693,7 @@ MonoBehaviour:
   sizeSmall: {fileID: 1443967383}
   sizeRegular: {fileID: 473132033}
   sizeBig: {fileID: 1021943690}
-  showActivityIndicator: 0
-  androidActivityIndicator: 0
-  iOsActivityIndicator: 0
+  activityIndicator: {fileID: 312558356}
 --- !u!1 &473132033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,6 +4155,54 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1106949256}
   m_Mesh: {fileID: 4300010, guid: 37b2c0e85f04a1141a8cbdfcb2b11253, type: 3}
+--- !u!1001 &1118268085
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: androidActivityIndicator
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: iOsActivityIndicator
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_RootGameObject: {fileID: 312558355}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1124823968
 GameObject:
   m_ObjectHideFlags: 0
@@ -5149,7 +5245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1433264740
 MonoBehaviour:
   m_ObjectHideFlags: 0

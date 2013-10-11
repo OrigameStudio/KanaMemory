@@ -16,6 +16,8 @@ public class StartControl : MonoBehaviour{
 
 	public	StartI18n				i18n;
 
+	public	HUDElement				loading;
+
 	private	StartStatus				status = StartStatus.fadingIn;
 	public	float					explosionForce = 1000f;
 	public	float					explosionRadius = 0.1f;
@@ -177,6 +179,8 @@ public class StartControl : MonoBehaviour{
 		this.startSound.Play();
 
 		this.Skip();
+
+		this.loading.enabled = true;
 	}
 
 	public void SwitchDifficultyLevel(){
