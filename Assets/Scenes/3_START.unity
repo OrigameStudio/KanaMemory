@@ -3692,7 +3692,7 @@ MonoBehaviour:
     bottom: 0
     right: 0
   isClickable: 0
-  text: GAME TYPE
+  text: GAME MODE
   font:
     family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     style: 0

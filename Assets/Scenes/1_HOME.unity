@@ -579,7 +579,7 @@ MonoBehaviour:
     small: SMALL
     regular: REGULAR
     big: BIG
-    gameType: GAME TYPE
+    gameType: GAME MODE
     confirmQuitGame: QUIT?
     quitGame: YES
     keepPlaying: NO
@@ -1669,7 +1669,7 @@ MonoBehaviour:
     small: "PEQUE\xD1O"
     regular: MEDIANO
     big: GRANDE
-    gameType: TIPO DE JUEGO
+    gameType: MODO DE JUEGO
     confirmQuitGame: "\xBFABANDONAR?"
     quitGame: "S\xCD"
     keepPlaying: NO
