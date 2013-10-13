@@ -26268,6 +26268,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1983942498}
   - 114: {fileID: 1983942500}
+  - 114: {fileID: 1983942499}
   m_Layer: 0
   m_Name: _Control
   m_TagString: Untagged
@@ -26292,6 +26293,22 @@ Transform:
   - {fileID: 1340119016}
   - {fileID: 664055959}
   m_Father: {fileID: 0}
+--- !u!114 &1983942499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1983942497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b4f19b1579292439139e3ed287812b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSwiping: 0
+  total: {x: 0, y: 0}
+  delta: {x: 0, y: 0}
+  startPosition: {x: 0, y: 0}
+  currentPosition: {x: 0, y: 0}
 --- !u!114 &1983942500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26303,6 +26320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86962a0bf787e3643b4e189916882e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swipe: {fileID: 1983942499}
   Welcome:
   - {fileID: 437371545}
   - {fileID: 185028050}
@@ -26337,8 +26355,11 @@ MonoBehaviour:
   enterPosition: {fileID: 500372402}
   exitPosition: {fileID: 1582567427}
   outsidePosition: {fileID: 1340119016}
-  moveSpeed: .0199999996
-  rotateSpeed: .0399999991
+  moveSpeed: 1
+  rotateSpeed: 2
+  zoomSpeed: 4
+  zoomIn: 15
+  zoomOut: 60
   zoomIcon: {fileID: 1752362203}
   zoomOutTexture: {fileID: 2800000, guid: 12ac1fd9d654f8a4b8b932664ea1cf98, type: 3}
   zoomInTexture: {fileID: 2800000, guid: f097175e98a06a549b3a1047cb1be7e6, type: 3}

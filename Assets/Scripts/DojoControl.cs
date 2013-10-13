@@ -3,7 +3,9 @@ using UnityEngine;
 using System.Collections;
 
 
-public class DojoControl : MonoBehaviour{
+public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
+
+	public SwipeControl swipe;
 
 	public HUDElement[] Welcome;
 	public HUDElement[] Navigation;
@@ -20,6 +22,10 @@ public class DojoControl : MonoBehaviour{
 
 	public float moveSpeed		= 0.1f;
 	public float rotateSpeed	= 0.01f;
+	public float zoomSpeed		= 1f;
+
+	public float zoomIn			= 15f;
+	public float zoomOut		= 60f;
 
 	public HUDTexture zoomIcon;
 	private bool isZoomed		= false;
@@ -44,6 +50,7 @@ public class DojoControl : MonoBehaviour{
 
 	private	MoveTo		moveTo;
 	private	RotateAs	rotateAs;
+	private Zoomer		zoomer;
 
 	private	Transform	currentTarget;
 
@@ -51,12 +58,18 @@ public class DojoControl : MonoBehaviour{
 
 		this.moveTo		= MoveTo.Add(this.observer.gameObject, this.enterPosition.transform.position, this.moveSpeed);
 		this.rotateAs	= RotateAs.Add(this.observer.gameObject, this.enterPosition.transform.rotation, this.rotateSpeed, true);
+		this.zoomer		= Zoomer.Add(this.observer.gameObject, this.mainCamera, this.zoomIn, this.zoomOut, this.zoomSpeed, this.rotateAs);
 
 		HUDElement.EnableRender(this.Welcome);
 		HUDElement.DisableRender(this.Navigation);
 		HUDElement.DisableRender(this.Goodbye);
 
 		this.steps.Play();
+
+		if(this.swipe != null){
+
+			this.swipe.AddListener( new SwipeListenerAdapter(this, 0.3f) );
+		}
 	}
 
 	void Update(){
@@ -77,7 +90,7 @@ public class DojoControl : MonoBehaviour{
 			Ray ray;
 			RaycastHit info;
 
-			ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			ray = this.mainCamera.ScreenPointToRay(Input.mousePosition);
 
 			if( Physics.Raycast(ray, out info) ){
 
@@ -87,6 +100,12 @@ public class DojoControl : MonoBehaviour{
 
 					// Read aloud
 					this.voice.PlayOneShot(card.sound);
+
+					if(this.isZoomed){
+
+						// Look at it; zoom in; zoom out
+						this.zoomer.ZoomIn(card.transform);
+					}
 				}
 			}
 		}
@@ -107,7 +126,25 @@ public class DojoControl : MonoBehaviour{
 		this.rotateAs.target	= this.currentTarget.rotation;
 	}
 
+	public void SwipeLeft(float x, TouchData touch){
+
+		if(this.isLearning){
+
+			this.Next();
+		}
+	}
+
+	public void SwipeRight(float x, TouchData touch){
+
+		if(this.isLearning){
+
+			this.Previous();
+		}
+	}
+
 	public void Next(){
+
+		this.ZoomOut();
 
 		if(this.positionIndex == 5){
 
@@ -127,6 +164,8 @@ public class DojoControl : MonoBehaviour{
 	}
 
 	public void Previous(){
+
+		this.ZoomOut();
 
 		if(this.positionIndex == 0){
 
@@ -159,6 +198,8 @@ public class DojoControl : MonoBehaviour{
 
 	public void Switch(){
 
+		this.ZoomOut();
+
 		if(this.positionIndex < 3){
 
 			this.positionIndex += 3;
@@ -185,7 +226,7 @@ public class DojoControl : MonoBehaviour{
 
 		this.switchIcon.texture = this.switchToKatakanaTexture;
 
-		this.isZoomed = false;
+		this.ZoomOut();
 
 		this.positionIndex = this.firstHiraganaIndex;
 
@@ -204,7 +245,7 @@ public class DojoControl : MonoBehaviour{
 
 		this.switchIcon.texture = this.switchToHiraganaTexture;
 
-		this.isZoomed = false;
+		this.ZoomOut();
 
 		this.positionIndex = this.firstKatakanaIndex;
 
@@ -260,6 +301,21 @@ public class DojoControl : MonoBehaviour{
 		this.isZoomed = !this.isZoomed;
 
 		UpdateCurrentTarget();
+	}
+
+	public void ZoomOut(){
+
+		if(this.zoomer.isZoomingIn){
+
+			this.zoomer.ZoomOut();
+		}
+
+		if(this.isZoomed){
+
+			this.isZoomed = false;
+
+			this.zoomIcon.texture = this.zoomInTexture;
+		}
 	}
 
 	public void Exit(){
