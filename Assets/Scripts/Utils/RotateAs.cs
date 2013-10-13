@@ -13,11 +13,11 @@ public class RotateAs : MonoBehaviour{
 
 		if(spherical){
 
-			this.gameObject.transform.rotation = Quaternion.Slerp(this.gameObject.transform.rotation, this.target, this.speed);
+			this.gameObject.transform.rotation = Quaternion.Slerp(this.gameObject.transform.rotation, this.target, Time.deltaTime * this.speed);
 
 		}else{
 
-			this.gameObject.transform.rotation = Quaternion.Lerp(this.gameObject.transform.rotation, this.target, this.speed);
+			this.gameObject.transform.rotation = Quaternion.Lerp(this.gameObject.transform.rotation, this.target, Time.deltaTime * this.speed);
 		}
 	}
 

@@ -11,11 +11,11 @@ public class MoveTo : MonoBehaviour{
 
 		if(spherical){
 
-			this.gameObject.transform.position = Vector3.Slerp(this.gameObject.transform.position, this.target, this.speed);
+			this.gameObject.transform.position = Vector3.Slerp(this.gameObject.transform.position, this.target, Time.deltaTime * this.speed);
 
 		}else{
 
-			this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, this.target, this.speed);
+			this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, this.target, Time.deltaTime * this.speed);
 		}
 	}
 
