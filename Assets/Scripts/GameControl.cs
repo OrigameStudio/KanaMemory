@@ -151,6 +151,8 @@ public class GameControl : MonoBehaviour{
 
 				Handheld.Vibrate();
 
+				this.sounds.clock.Stop();
+
 				this.sounds.timeOut.Play();
 
 				this.animation.Play("Game@Failure");
