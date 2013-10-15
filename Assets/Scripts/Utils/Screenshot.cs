@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class Screenshot : MonoBehaviour{
 
 	public bool		captureNow	= false;
@@ -30,6 +31,11 @@ public class Screenshot : MonoBehaviour{
 
 		if(!UnityEditor.EditorApplication.isPaused){
 
+			if(this.waitForFile != null){
+
+				this.WaitForFile();
+			}
+
 			if(this.isCapturing){
 
 				this.Capture();
@@ -45,6 +51,11 @@ public class Screenshot : MonoBehaviour{
 
 		if(UnityEditor.EditorApplication.isPaused){
 
+			if(this.waitForFile != null){
+
+				this.WaitForFile();
+			}
+
 			if(this.isCapturing){
 
 				this.Capture();
@@ -52,30 +63,9 @@ public class Screenshot : MonoBehaviour{
 			}else if(this.captureNow){
 
 				this.StartCapturing();
-				//this.StartCoroutine( this.CaptureAll() );
 			}
 		}
 	}
-
-	/*
-	private IEnumerator CaptureAll(){
-
-		print("OJETE");
-
-		this.StartCapturing();
-
-		while(this.isCapturing){
-
-			print("CALOR...");
-
-			this.Capture();
-
-			yield return( new WaitForSeconds(1f) );
-		}
-
-		this.captureNow = false;
-	}
-	*/
 
 	private void Capture(){
 
@@ -85,16 +75,7 @@ public class Screenshot : MonoBehaviour{
 
 			this.StopCapturing();
 
-		}else if(this.waitForFile != null){
-
-			if( System.IO.File.Exists(this.waitForFile) ){
-
-				Debug.Log("Screenshot captured: " + this.waitForFile);
-
-				this.waitForFile = null;
-			}
-
-		}else{
+		}else if(this.waitForFile == null){
 
 			int		sizeValue	= this.captured + 1;
 			string	sizeName	= this.sizes[this.captured];
@@ -107,6 +88,16 @@ public class Screenshot : MonoBehaviour{
 			this.waitForFile = filePath;
 
 			this.captured++;
+		}
+	}
+
+	private void WaitForFile(){
+
+		if( System.IO.File.Exists(this.waitForFile) ){
+
+			Debug.Log("Screenshot captured: " + this.waitForFile);
+
+			this.waitForFile = null;
 		}
 	}
 
