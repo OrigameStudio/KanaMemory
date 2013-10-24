@@ -39,38 +39,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   language:
-    loading: Loading...
-    play: PLAY
-    dojo: DOJO
-    welcome: 'WELCOME TO
-
-      THE DOJO'
-    studyHiragana: 'STUDY
-
-      HIRAGANA'
-    studyKatakana: 'STUDY
-
-      KATAKANA'
-    goodbye: 
-    exit: YES
-    stay: NO
-    newGame: 8
-    confirmQuitGame: QUIT?
-    quitGame: YES
-    keepPlaying: NO
-    Mesh_OK1: {fileID: 0}
-    Mesh_OK2: {fileID: 0}
-    Mesh_KO1: {fileID: 0}
   status: 0
   type: 0
   difficulty: 1
-  boardSize: 2
+  boardSize: 1
   hint: 0
   cards:
     total: 0
     matches: 0
     failures: 0
   games: 0
+  gamesWon: 0
+  gamesLost: 0
   time:
     start: 0
     total: 0
