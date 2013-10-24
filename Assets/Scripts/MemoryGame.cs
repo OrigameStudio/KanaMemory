@@ -5,7 +5,7 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
-	public static string TOTAL_GAMES	= "TotalGames";
+	public static string GAMES_PLAYED	= "GamesPlayed";
 	public static string GAMES_WON		= "GamesWon";
 	public static string GAMES_LOST		= "GamesLost";
 
@@ -16,7 +16,7 @@ public class MemoryGame : MonoBehaviour{
 	public BoardSize			boardSize	= BoardSize.REGULAR;
 	public bool					hint		= false;
 	public MemoryGameStatsCards	cards;
-	public int					games;
+	public int					gamesPlayed;
 	public int					gamesWon;
 	public int					gamesLost;
 	public MemoryGameStatsTime	time;
@@ -42,9 +42,9 @@ public class MemoryGame : MonoBehaviour{
 
 		}else{
 
-			this.language = ( GameAvailableLanguages.FindInstance() ).GetGameLanguage().data;
+			this.language	= ( GameAvailableLanguages.FindInstance() ).GetGameLanguage().data;
 
-			this.games		= PlayerPrefs.GetInt(TOTAL_GAMES);
+			this.gamesPlayed= PlayerPrefs.GetInt(GAMES_PLAYED);
 			this.gamesWon	= PlayerPrefs.GetInt(GAMES_WON);
 			this.gamesLost	= PlayerPrefs.GetInt(GAMES_LOST);
 
@@ -122,8 +122,8 @@ public class MemoryGame : MonoBehaviour{
 
 		this.status = GameStatus.Failure;
 
-		this.games++;
-		PlayerPrefs.SetInt(TOTAL_GAMES, this.games);
+		this.gamesPlayed++;
+		PlayerPrefs.SetInt(GAMES_PLAYED, this.gamesPlayed);
 
 		this.gamesLost++;
 		PlayerPrefs.SetInt(GAMES_LOST, this.gamesLost);
@@ -134,8 +134,8 @@ public class MemoryGame : MonoBehaviour{
 
 		this.status = GameStatus.Success;
 
-		this.games++;
-		PlayerPrefs.SetInt(TOTAL_GAMES, this.games);
+		this.gamesPlayed++;
+		PlayerPrefs.SetInt(GAMES_PLAYED, this.gamesPlayed);
 
 		this.gamesWon++;
 		PlayerPrefs.SetInt(GAMES_WON, this.gamesWon);
