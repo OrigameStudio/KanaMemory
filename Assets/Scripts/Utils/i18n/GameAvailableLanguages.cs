@@ -5,6 +5,8 @@ using System.Collections;
 
 public class GameAvailableLanguages : MonoBehaviour{
 
+	public static string PREFERRED_LANGUAGE = "PreferredLanguage";
+
 	public GameLanguage defaultLanguage;
 
 	public bool forceDefaultLanguage = false;
@@ -24,20 +26,69 @@ public class GameAvailableLanguages : MonoBehaviour{
 		return(GameAvailableLanguages.instance);
 	}
 
+	void Start(){
+
+		this.GetGameLanguage();
+	}
+
+	public void SavePreferredLanguage(){
+
+		PlayerPrefs.SetInt(PREFERRED_LANGUAGE, this.currentLanguage);
+	}
+
+	private GameLanguage GetPreferredLanguage(){
+
+		int preferredLanguage;
+
+		preferredLanguage = PlayerPrefs.GetInt(PREFERRED_LANGUAGE, -1);
+
+		if(preferredLanguage >= 0 && preferredLanguage < this.languages.Length){
+
+			GameLanguage lang = this.languages[preferredLanguage];
+
+			this.currentLanguage = preferredLanguage;
+
+			Debug.Log("User preferred language: " + preferredLanguage + " (" + lang.system + ")");
+
+			return(lang);
+		}
+
+		return(null);
+	}
+
+	private GameLanguage FindGameLanguage(SystemLanguage systemLanguage){
+
+		for(this.currentLanguage = 0; this.currentLanguage < this.languages.Length; this.currentLanguage++){
+
+			GameLanguage language = this.languages[this.currentLanguage];
+
+			if(language.system == systemLanguage){
+
+				return(language);
+			}
+		}
+
+		return(null);
+	}
+
 	public GameLanguage GetGameLanguage(){
+
+		GameLanguage language;
 
 		if(!this.forceDefaultLanguage){
 
-			SystemLanguage systemLanguage = Application.systemLanguage;
+			language = this.GetPreferredLanguage();
 
-			for(this.currentLanguage = 0; this.currentLanguage < this.languages.Length; this.currentLanguage++){
+			if(language != null){
 
-				GameLanguage language = this.languages[this.currentLanguage];
+				return(language);
+			}
 
-				if(language.system == systemLanguage){
+			language = this.FindGameLanguage(Application.systemLanguage);
 
-					return(language);
-				}
+			if(language != null){
+
+				return(language);
 			}
 		}
 

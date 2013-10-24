@@ -17,6 +17,8 @@ public class HomeControl : SplashControl{
 
 	public GameAvailableLanguages availableLanguages;
 
+	private bool switchedLanguage;
+
 	public void Exit(){
 
 		this.DiscardActivityIndicator();
@@ -62,6 +64,8 @@ public class HomeControl : SplashControl{
 		language = this.availableLanguages.GetNextGameLanguage();
 
 		this.homeI18n.UpdateLanguage(language);
+
+		this.switchedLanguage = true;
 	}
 
 	public void OnAction(HomeHUDAction action){
@@ -91,8 +95,12 @@ public class HomeControl : SplashControl{
 			case HomeHUDAction.SwitchLanguage:
 
 				this.SwitchLanguage();
-				break;
+				return;
 		}
 
+		if(this.switchedLanguage){
+
+			this.availableLanguages.SavePreferredLanguage();
+		}
 	}
 }
