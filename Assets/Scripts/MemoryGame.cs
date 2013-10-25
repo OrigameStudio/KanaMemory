@@ -5,9 +5,11 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
-	public static string GAMES_PLAYED	= "GamesPlayed";
-	public static string GAMES_WON		= "GamesWon";
-	public static string GAMES_LOST		= "GamesLost";
+	public static string GAMES_PLAYED			= "GamesPlayed";
+	public static string GAMES_WON				= "GamesWon";
+	public static string GAMES_LOST				= "GamesLost";
+	public static string PREFERRED_DIFFICULTY	= "PreferredDifficulty";
+	public static string PREFERRED_BOARD_SIZE	= "PreferredBoardSize";
 
 	public GameLanguageData		language;
 	public GameStatus			status		= GameStatus.Ready;
@@ -48,11 +50,75 @@ public class MemoryGame : MonoBehaviour{
 			this.gamesWon	= PlayerPrefs.GetInt(GAMES_WON);
 			this.gamesLost	= PlayerPrefs.GetInt(GAMES_LOST);
 
+			this.LoadGamePrefs();
+
 			GameObject.DontDestroyOnLoad(this.gameObject);
 		}
 	}
 
+	private void LoadGamePrefs(){
+
+		GameDifficulty preferredGameDifficulty = this.difficulty;
+		BoardSize preferredBoardSize = this.boardSize;
+
+		try{
+
+			preferredGameDifficulty = (GameDifficulty)PlayerPrefs.GetInt(PREFERRED_DIFFICULTY, -1);
+
+		}catch(System.Exception error){
+
+			Debug.LogError("LoadGamePrefs: " + error);
+		}
+
+		try{
+
+			preferredBoardSize = (BoardSize)PlayerPrefs.GetInt(PREFERRED_BOARD_SIZE, -1);
+
+		}catch(System.Exception error){
+
+			Debug.LogError("LoadGamePrefs: " + error);
+		}
+
+		switch(preferredGameDifficulty){
+
+			case GameDifficulty.EASY:
+				this.difficulty = GameDifficulty.EASY;
+				break;
+
+			case GameDifficulty.MEDIUM:
+				this.difficulty = GameDifficulty.MEDIUM;
+				break;
+
+			case GameDifficulty.HARD:
+				this.difficulty = GameDifficulty.HARD;
+				break;
+		}
+
+		switch(preferredBoardSize){
+
+			case BoardSize.SMALL:
+				this.boardSize = BoardSize.SMALL;
+				break;
+
+			case BoardSize.REGULAR:
+				this.boardSize = BoardSize.REGULAR;
+				break;
+
+			case BoardSize.BIG:
+				this.boardSize = BoardSize.BIG;
+				break;
+		}
+	}
+
+	private void SaveGamePrefs(){
+
+		PlayerPrefs.SetInt(PREFERRED_DIFFICULTY, (int)this.difficulty);
+		PlayerPrefs.SetInt(PREFERRED_BOARD_SIZE, (int)this.boardSize);
+	}
+
 	public void StartGame(int pairs, int seconds){
+
+		this.SaveGamePrefs();
 
 		this.time.Reset(seconds);
 		this.cards.Reset(pairs);
