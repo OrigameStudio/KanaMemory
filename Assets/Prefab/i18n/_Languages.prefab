@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400002}
   m_Layer: 0
-  m_Name: English
+  m_Name: Japanese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,6 +41,54 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: French
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: Portuguese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400010}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: Spanish
   m_TagString: Untagged
@@ -58,8 +106,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400006}
+  - {fileID: 400010}
   - {fileID: 400002}
   - {fileID: 400004}
+  - {fileID: 400008}
   m_Father: {fileID: 0}
 --- !u!4 &400002
 Transform:
@@ -83,6 +134,39 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,11 +178,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultLanguage: {fileID: 11400002}
+  defaultLanguage: {fileID: 11400006}
   forceDefaultLanguage: 0
   languages:
-  - {fileID: 11400002}
+  - {fileID: 11400006}
+  - {fileID: 11400010}
   - {fileID: 11400004}
+  - {fileID: 11400008}
+  - {fileID: 11400002}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,10 +197,237 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  system: 22
+  data:
+    name: "\u306B\u307B\u3093\u3054"
+    texture: {fileID: 2800000, guid: 898638fbd8e084a4bb718c19e3d32702, type: 3}
+    font: {fileID: 12800000, guid: 2f6049b72665ce54eb65aefbcfb09ced, type: 3}
+    loading: "\u304A\u307E\u3061\u304F\u3060\u3055\u3044\u3002\u3002\u3002"
+    play: "\u3042\u305D\u3073"
+    dojo: "\u3079\u3093\u304D\u3087\u3046"
+    welcome: "\u3069\u3046\u3058\u3087\u3046\r\u3078\n\u3088\u3046\u3053\u305D"
+    studyHiragana: "\u3072\u3089\u304C\u306A\u306E\r\n\u3079\u3093\u304D\u3087\u3046"
+    studyKatakana: "\u30AB\u30BF\u30AB\u30CA\u306E\r\n\u3079\u3093\u304D\u3087\u3046"
+    goodbye: "\u3069\u3046\u3058\u3087\u3046\u304B\u3089\r\n\u3067\u305F\u3044\u3067\u3059\u304B\uFF1F"
+    exit: "\u306F\u3044"
+    stay: "\u3044\u3044\u3048"
+    newGame: "\u3042\u305F\u3089\u3057\u3044\u30B2\u30FC\u30E0"
+    difficulty: "\u30AC\u30A4\u30C9"
+    easy: "\u304B\u3093\u305F\u3093"
+    medium: "\u307E\u3042\u307E\u3042..."
+    hard: "\u3080\u305A\u304B\u3057\u3044"
+    boardSize: "\u30B5\u30A4\u30BA"
+    small: "\u3061\u3044\u3055\u3044"
+    regular: "\u3061\u3085\u3046\u304C\u305F"
+    big: "\u304A\u304A\u304D\u3044"
+    gameType: "\u30E2\u30FC\u30C9"
+    confirmQuitGame: "\u30AD\u30E3\u30F3\u30BB\u30EB\r\n\u3057\u305F\u3044\u304B\uFF1F"
+    quitGame: "\u306F\u3044"
+    keepPlaying: "\u3044\u3044\u3048"
+    Mesh_OK: {fileID: 100000, guid: 7801ce558f3239a419e3db3027cf310e, type: 2}
+    Mesh_KO: {fileID: 100000, guid: cfa254f017fa702459f439feae538faa, type: 2}
+    rateThisApp: "\u30EC\u30D3\u30E5\u30FC\u3092 \u304B\u304F"
+    keywords:
+    - "\u65E5\u672C\u8A9E"
+    - "\u3072\u3089\u304C\u306A"
+    - "\u304B\u305F\u304B\u306A"
+    - "\u304B\u306A"
+    - "\u611F\u3058"
+    - "\u5B66\u3076"
+    - "\u52C9\u5F37"
+    - "\u30B2\u30FC\u30E0"
+    - "\u30D2\u30E9\u30AC\u30CA"
+    - "\u30AB\u30BF\u30AB\u30CA"
+    - "\u30AB\u30CA"
+    - "\u304B\u3093\u3058"
+    - "\u30AB\u30F3\u30B8"
+    - "\u5B50\u4F9B"
+    - "\u3053\u3069\u3082"
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 14
+  data:
+    name: "Fran\xE7ais"
+    texture: {fileID: 2800000, guid: 3990522b6ea70054dae39527d7525ffb, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    loading: En cours...
+    play: JOUER
+    dojo: "\xC9TUDIER"
+    welcome: 'BIENVENUE
+
+      AU DOJO'
+    studyHiragana: "\xC9TUDIER\nHIRAGANA"
+    studyKatakana: "\xC9TUDIER\nKATAKANA"
+    goodbye: 'QUITTEZ
+
+      LE DOJO?'
+    exit: OUI
+    stay: NO
+    newGame: Nouveau Jeu
+    difficulty: "DIFFICULT\xC9"
+    easy: FACILE
+    medium: NORMAL
+    hard: DIFFICILE
+    boardSize: DIMENSION
+    small: PETIT
+    regular: MOYENNE
+    big: GRAND
+    gameType: MODE DE JEU
+    confirmQuitGame: ABANDONNER?
+    quitGame: OUI
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100000, guid: ef40b22bbe0cbd94b820905739e970bc, type: 2}
+    Mesh_KO: {fileID: 100000, guid: 671e1edba7b2ffc4ca79af72aa28699d, type: 2}
+    rateThisApp: "\xC9valuer cette application"
+    keywords:
+    - Japonais
+    - Hiragana
+    - Katakana
+    - Kana
+    - Kanji
+    - Apprendre
+    - "\xC9tudier"
+    - Langue
+    - Jeu
+    - Voyager
+    - Japon
+    - JP
+    - Asie
+    - Honshu
+    - Hokkaido
+    - Kyushu
+    - Shikoku
+    - Tokyo
+    - Yokohama
+    - Osaka
+    - Nagoya
+    - Kobe
+    - Kyoto
+    - Fukuoka
+    - Kawasaki
+    - Saitama
+    - Hiroshima
+    - Miyajima
+    - Okinawa
+    - Kiyomizudera
+    - Ginkaku
+    - Jinkaku
+    - Tombeau
+    - Zen
+    - Shibuya
+    - Harajuku
+    - Asakusa
+    - Ueno
+    - Akihabara
+    - Akiba
+    - Baguettes
+    - Sushi
+    - Wasabi
+    - Tempura
+    - Ramen
+    - Onigiri
+    - Teriyaki
+    - Yakitori
+    - Okonomiyaki
+    - Gyoza
+    - Yakisoba
+    - Sukiyaki
+    - Bento
+    - Sake
+    - Asahi
+    - Kirin
+    - Sapporo
+    - Ikebana
+    - Bonsai
+    - Taiko
+    - Kabuki
+    - Origami
+    - Sumo
+    - Kendo
+    - Judo
+    - Aikido
+    - Kyudo
+    - Karate
+    - Samurai
+    - Shogun
+    - Katana
+    - Ninja
+    - Akira
+    - Doraemon
+    - Ranma
+    - Naruto
+    - Pokemon
+    - Shinchan
+    - Layton
+    - Astroboy
+    - Godzilla
+    - Gamera
+    - Dragon
+    - Tanuki
+    - Kappa
+    - Daruma
+    - Manga
+    - Anime
+    - Otaku
+    - Nintendo
+    - Ghibli
+    - Tototro
+    - Ponyo
+    - Chihiro
+    - Miyazaki
+    - Idol
+    - Pachinko
+    - Sakura
+    - Hanami
+    - Hachiko
+    - Karaoke
+    - J-POP
+    - AKB48
+    - Dorama
+    - Murakami
+    - Toriyama
+    - Kotoba
+    - Jitensha
+    - Kuma
+    - Neko
+    - Tanaka
+    - Taro
+    - Kawai
+    - Sugoi
+    - Banzai
+    - Kanpai
+    - Yamanote
+    - Shinkansen
+    - JR
+    - NHK
+    - Nihon
+    - Nippon
+    - Nihongo
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   system: 10
   data:
     name: English
     texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     loading: Loading...
     play: PLAY
     dojo: STUDY
@@ -271,12 +585,189 @@ MonoBehaviour:
     - Nihon
     - Nippon
     - Nihongo
---- !u!114 &11400004
+--- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 28
+  data:
+    name: "Portugu\xEAs"
+    texture: {fileID: 2800000, guid: 8f71e4ab879d2ca4e877a4f877425e77, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    loading: Carregando...
+    play: JOGAR
+    dojo: ESTUDAR
+    welcome: 'BEM-VINDO
+
+      AO DOJO'
+    studyHiragana: 'ESTUDAR
+
+      HIRAGANA'
+    studyKatakana: 'ESTUDAR
+
+      KATAKANA'
+    goodbye: 'SAIR
+
+      DO DOJO?'
+    exit: SIM
+    stay: "N\xC3O"
+    newGame: Novo Jogo
+    difficulty: DIFICULTAD
+    easy: "F\xC1CIL"
+    medium: NORMAL
+    hard: "DIF\xCDCIL"
+    boardSize: "TAMA\xD1O"
+    small: "PEQUE\xD1O"
+    regular: MEDIANO
+    big: GRANDE
+    gameType: MODO DE JOGO
+    confirmQuitGame: ABANDONAR?
+    quitGame: SIM
+    keepPlaying: "N\xC3O"
+    Mesh_OK: {fileID: 100000, guid: 75aa03e66eb5fb2429060adf8f27d94b, type: 2}
+    Mesh_KO: {fileID: 100000, guid: 9ad61a4ec4286e940b4f2347594c8b03, type: 2}
+    rateThisApp: "Avalie esta aplica\xE7\xE3o"
+    keywords:
+    - "Japon\xEAs"
+    - Hiragana
+    - Katakana
+    - Kana
+    - Kanji
+    - Aprender
+    - Estudar
+    - Linguagem
+    - Jogo
+    - Viajar
+    - "Jap\xE3o"
+    - JP
+    - "\xC1sia"
+    - Honshu
+    - Hokkaido
+    - Kyushu
+    - Shikoku
+    - Tokyo
+    - Yokohama
+    - Osaka
+    - Nagoya
+    - Kobe
+    - Kyoto
+    - Fukuoka
+    - Kawasaki
+    - Saitama
+    - Hiroshima
+    - Miyajima
+    - Okinawa
+    - Kiyomizudera
+    - Ginkaku
+    - Jinkaku
+    - "Santu\xE1rio"
+    - Zen
+    - Shibuya
+    - Harajuku
+    - Asakusa
+    - Ueno
+    - Akihabara
+    - Akiba
+    - Pauzinhos
+    - Sushi
+    - Wasabi
+    - Tempura
+    - Ramen
+    - Onigiri
+    - Teriyaki
+    - Yakitori
+    - Okonomiyaki
+    - Gyoza
+    - Yakisoba
+    - Sukiyaki
+    - Bento
+    - Sake
+    - Asahi
+    - Kirin
+    - Sapporo
+    - Ikebana
+    - Bonsai
+    - Taiko
+    - Kabuki
+    - Origami
+    - Sumo
+    - Kendo
+    - Judo
+    - Aikido
+    - Kyudo
+    - Karate
+    - Samurai
+    - Shogun
+    - Katana
+    - Ninja
+    - Akira
+    - Doraemon
+    - Ranma
+    - Naruto
+    - Pokemon
+    - Shinchan
+    - Layton
+    - Astroboy
+    - Godzilla
+    - Gamera
+    - Dragon
+    - Tanuki
+    - Kappa
+    - Daruma
+    - Manga
+    - Anime
+    - Otaku
+    - Nintendo
+    - Ghibli
+    - Tototro
+    - Ponyo
+    - Chihiro
+    - Miyazaki
+    - Idol
+    - Pachinko
+    - Sakura
+    - Hanami
+    - Hachiko
+    - Karaoke
+    - J-POP
+    - AKB48
+    - Dorama
+    - Murakami
+    - Toriyama
+    - Kotoba
+    - Jitensha
+    - Kuma
+    - Neko
+    - Tanaka
+    - Taro
+    - Kawai
+    - Sugoi
+    - Banzai
+    - Kanpai
+    - Yamanote
+    - Shinkansen
+    - JR
+    - NHK
+    - Nihon
+    - Nippon
+    - Nihongo
+    - Japones
+    - Japao
+    - "T\xF3quio"
+    - Quioto
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
@@ -286,6 +777,7 @@ MonoBehaviour:
   data:
     name: "Espa\xF1ol"
     texture: {fileID: 2800000, guid: 9be5f9e2f9a11d041be6244b13ce71f8, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     loading: Cargando...
     play: JUGAR
     dojo: ESTUDIAR
