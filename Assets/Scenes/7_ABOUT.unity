@@ -200,6 +200,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1650523581}
   action: 1
 --- !u!1 &452489661
@@ -495,6 +496,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1650523581}
   action: 0
 --- !u!1 &664375160
@@ -626,6 +628,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1650523581}
   action: 5
 --- !u!1 &835349130
@@ -767,6 +770,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1650523581}
   action: 4
 --- !u!1001 &947427260
@@ -1322,7 +1326,6 @@ MonoBehaviour:
   mail: mailto:origamestudio@gmail.com?subject=KanaMemory
   facebook: http://www.facebook.com/OrigameStudio
   twitter: http://twitter.com/OrigameStudio
-  rateApp: market://details?id=com.origamestudio.kanamemory
 --- !u!4 &1650523582
 Transform:
   m_ObjectHideFlags: 0
@@ -1611,6 +1614,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1650523581}
   action: 2
 --- !u!1 &2078645647

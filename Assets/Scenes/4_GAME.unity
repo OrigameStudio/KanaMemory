@@ -134,6 +134,7 @@ MonoBehaviour:
   alignment:
     horizontal: 2
     vertical: 1
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &139474495
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +313,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 628095890}
   action: 0
 --- !u!1 &525263518
@@ -1387,6 +1389,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 628095890}
   action: 1
 --- !u!1 &1484584247
@@ -1964,6 +1967,7 @@ MonoBehaviour:
   alignment:
     horizontal: 2
     vertical: 1
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1946788336
 GameObject:
   m_ObjectHideFlags: 0

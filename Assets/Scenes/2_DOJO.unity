@@ -1492,6 +1492,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 2
 --- !u!1 &76449834
@@ -7076,6 +7077,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &442241679
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,6 +7627,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 2
 --- !u!1 &464064986
@@ -17694,6 +17697,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 7
 --- !u!1 &1302859446
@@ -21727,6 +21731,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 5
 --- !u!1 &1622237166
@@ -22682,6 +22687,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1724252397
 GameObject:
   m_ObjectHideFlags: 0
@@ -22965,6 +22971,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 6
 --- !u!1 &1742976622
@@ -23202,6 +23209,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 1983942500}
   action: 8
 --- !u!1 &1758669446

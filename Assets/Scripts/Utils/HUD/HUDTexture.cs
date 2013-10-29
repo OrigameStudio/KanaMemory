@@ -11,6 +11,7 @@ public class HUDTexture : HUDElement{
 	public bool				alphaBlend	= true;
 	public float			imageAspect	= 0;
 	public HUDAlignment		alignment	= new HUDAlignment(HUDAlignmentX.Center, HUDAlignmentY.Middle);
+	public Color			color		= Color.white;
 
 	public float GetImageAspect(){
 
@@ -54,6 +55,8 @@ public class HUDTexture : HUDElement{
 		}
 
 		if(this.texture != null){
+
+			GUI.color = this.color;
 
 			GUI.DrawTexture(position, this.texture, new HUDScaleMode(this.scaleMode), this.alphaBlend, this.imageAspect);
 
