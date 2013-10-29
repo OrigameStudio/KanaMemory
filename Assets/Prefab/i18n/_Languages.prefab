@@ -624,7 +624,7 @@ MonoBehaviour:
     medium: NORMAL
     hard: "DIF\xCDCIL"
     boardSize: TAMANHO
-    small: "PEQUE\xD1O"
+    small: PEQUENO
     regular: MEDIANO
     big: GRANDE
     gameType: MODO DE JOGO
