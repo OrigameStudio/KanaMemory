@@ -96,6 +96,11 @@ public class HomeControl : SplashControl{
 
 				this.SwitchLanguage();
 				return;
+
+			case HomeHUDAction.RateApp:
+
+				MemoryGame.GetInstance().RateApp();
+				return;
 		}
 
 		if(this.switchedLanguage){

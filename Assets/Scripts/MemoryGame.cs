@@ -5,13 +5,18 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
+	public string rateAppUrl = "market://details?id=com.origamestudio.kanamemory";
+
 	public static string GAMES_PLAYED			= "GamesPlayed";
 	public static string GAMES_WON				= "GamesWon";
 	public static string GAMES_LOST				= "GamesLost";
 	public static string PREFERRED_DIFFICULTY	= "PreferredDifficulty";
 	public static string PREFERRED_BOARD_SIZE	= "PreferredBoardSize";
+	public static string APP_RATED				= "AppRated";
 
 	public GameLanguageData		language;
+	public bool					isAppRated	= false;
+	public int					fewGames	= 10;
 	public GameStatus			status		= GameStatus.Ready;
 	public GameType				type		= GameType.GameType1;
 	public GameDifficulty		difficulty	= GameDifficulty.MEDIUM;
@@ -49,6 +54,7 @@ public class MemoryGame : MonoBehaviour{
 			this.gamesPlayed= PlayerPrefs.GetInt(GAMES_PLAYED);
 			this.gamesWon	= PlayerPrefs.GetInt(GAMES_WON);
 			this.gamesLost	= PlayerPrefs.GetInt(GAMES_LOST);
+			this.isAppRated	= ( PlayerPrefs.GetInt(APP_RATED) != 0 );
 
 			this.LoadGamePrefs();
 
@@ -114,6 +120,22 @@ public class MemoryGame : MonoBehaviour{
 
 		PlayerPrefs.SetInt(PREFERRED_DIFFICULTY, (int)this.difficulty);
 		PlayerPrefs.SetInt(PREFERRED_BOARD_SIZE, (int)this.boardSize);
+	}
+
+	public bool ShouldAskForRating(){
+
+		return( !this.isAppRated && this.gamesPlayed >= this.fewGames );
+	}
+
+	public void RateApp(){
+
+		this.isAppRated = true;
+
+		PlayerPrefs.SetInt(APP_RATED, 1);
+
+		PlayerPrefs.Save();
+
+		Application.OpenURL(this.rateAppUrl);
 	}
 
 	public void StartGame(int pairs, int seconds){

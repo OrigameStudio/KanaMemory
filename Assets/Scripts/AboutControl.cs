@@ -9,7 +9,6 @@ public class AboutControl : SplashControl{
 	public string mail		= "mailto:origamestudio@gmail.com?subject=KanaMemory";
 	public string facebook	= "http://www.facebook.com/OrigameStudio";
 	public string twitter	= "http://twitter.com/OrigameStudio";
-	public string rateApp	= "market://details?id=com.origamestudio.kanamemory";
 
 	public void GoTo(string url){
 
@@ -47,7 +46,7 @@ public class AboutControl : SplashControl{
 
 			case AboutHUDAction.RateApp:
 
-				this.GoTo(this.rateApp);
+				MemoryGame.GetInstance().RateApp();
 				break;
 		}
 	}
