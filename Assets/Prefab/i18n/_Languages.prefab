@@ -623,7 +623,7 @@ MonoBehaviour:
     easy: "F\xC1CIL"
     medium: NORMAL
     hard: "DIF\xCDCIL"
-    boardSize: "TAMA\xD1O"
+    boardSize: TAMANHO
     small: "PEQUE\xD1O"
     regular: MEDIANO
     big: GRANDE
