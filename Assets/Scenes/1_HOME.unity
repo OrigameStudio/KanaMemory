@@ -957,7 +957,7 @@ MonoBehaviour:
   loadingMessage: {fileID: 251987254}
   sound: {fileID: 143965619}
   homeI18n: {fileID: 374791140}
-  availableLanguages: {fileID: 0}
+  availableLanguages: {fileID: 1469186575}
 --- !u!1 &598385343
 GameObject:
   m_ObjectHideFlags: 0
