@@ -753,6 +753,78 @@ AnimationClip:
     path: _HUD/KanaMemory
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/RateThisAppBalloon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/RateThisAppBalloon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: Infinity
+        outSlope: .285714298
+        tangentMode: 1
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: 0
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/RateThisApp
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_SampleRate: 60
   m_WrapMode: 1
   m_Bounds:
@@ -1511,6 +1583,78 @@ AnimationClip:
       m_PostInfinity: 2
     attribute: color.a
     path: _HUD/KanaMemory
+    classID: 114
+    script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/RateThisAppBalloon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: .140024289
+        outSlope: .140024289
+        tangentMode: 10
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: -.0056657223
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: isClickable
+    path: _HUD/RateThisAppBalloon
+    classID: 114
+    script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: .285714298
+        outSlope: Infinity
+        tangentMode: 1
+      - time: 3.5
+        value: 1
+        inSlope: Infinity
+        outSlope: .285714298
+        tangentMode: 1
+      - time: 180
+        value: 0
+        inSlope: Infinity
+        outSlope: 0
+        tangentMode: 1
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: color.a
+    path: _HUD/RateThisApp
     classID: 114
     script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
   m_EulerEditorCurves: []
