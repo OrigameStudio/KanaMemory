@@ -9,6 +9,8 @@ public class GameLanguageData{
 	public string		name			= "English";
 	public Texture2D	texture;
 
+	public Font			font;
+
 	public string		loading			= "Loading...";
 
 	/* home */

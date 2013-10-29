@@ -14,6 +14,10 @@ public class AboutI18n : MonoBehaviour{
 
 	public void UpdateLanguage(GameLanguageData language){
 
+		/* font{ */
+			this.rateThisApp.font.family = language.font;
+		/* } */
+
 		this.rateThisApp.SetText(language.rateThisApp);
 	}
 }

@@ -18,6 +18,16 @@ public class StartI18n : MonoBehaviour{
 
 	public void UpdateLanguage(MemoryGame game){
 
+		/* font{ */
+			this.newGame.font.family = game.language.font;
+			this.loading.font.family = game.language.font;
+			this.gameType.font.family = game.language.font;
+			this.difficulty.font.family = game.language.font;
+			this.boardSize.font.family = game.language.font;
+			this.difficultyValue.font.family = game.language.font;
+			this.boardSizeValue.font.family = game.language.font;
+		/* } */
+
 		this.newGame.SetText(game.language.newGame);
 		this.loading.SetText(game.language.loading);
 

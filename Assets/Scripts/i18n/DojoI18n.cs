@@ -17,6 +17,15 @@ public class DojoI18n : MonoBehaviour{
 
 	public void UpdateLanguage(GameLanguageData language){
 
+		/* font{ */
+			this.welcome.font.family = language.font;
+			this.studyHiragana.font.family = language.font;
+			this.studyKatakana.font.family = language.font;
+			this.goodbye.font.family = language.font;
+			this.exit.font.family = language.font;
+			this.stay.font.family = language.font;
+		/* } */
+
 		this.welcome.SetText(language.welcome);
 		this.studyHiragana.SetText(language.studyHiragana);
 		this.studyKatakana.SetText(language.studyKatakana);

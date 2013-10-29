@@ -31,6 +31,14 @@ public class HomeI18n : MonoBehaviour {
 			this.game.language = language.data;
 		}
 
+		/* font{ */
+			this.play.font.family = game.language.font;
+			this.dojo.font.family = game.language.font;
+			this.loading.font.family = game.language.font;
+			this.languageName.font.family = game.language.font;
+			this.rateThisApp.font.family = game.language.font;
+		/* } */
+
 		this.play.SetText(this.game.language.play);
 		this.dojo.SetText(this.game.language.dojo);
 		this.loading.SetText(this.game.language.loading);

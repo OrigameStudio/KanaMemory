@@ -29,6 +29,13 @@ public class GameI18n : MonoBehaviour{
 
 	public void UpdateLanguage(MemoryGame game){
 
+		/* font{ */
+			this.difficulty.font.family = game.language.font;
+			this.confirmQuitGame.font.family = game.language.font;
+			this.quitGame.font.family = game.language.font;
+			this.keepPlaying.font.family = game.language.font;
+		/* } */
+
 		this.difficulty.SetText( this.GetDifficultyValue(game) );
 		this.confirmQuitGame.SetText(game.language.confirmQuitGame);
 		this.quitGame.SetText(game.language.quitGame);
