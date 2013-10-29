@@ -10,6 +10,9 @@ public class HomeI18n : MonoBehaviour {
 	public HUDText loading;
 	public HUDText languageName;
 	public HUDTexture languageIcon;
+	public HUDText rateThisApp;
+	public HUDTexture rateThisAppBalloon;
+
 
 	void Start(){
 
@@ -19,6 +22,9 @@ public class HomeI18n : MonoBehaviour {
 	}
 
 	public void UpdateLanguage(GameLanguage language = null){
+
+		this.rateThisApp.enabled = this.game.ShouldAskForRating();
+		this.rateThisAppBalloon.enabled = this.game.ShouldAskForRating();
 
 		if(language != null){
 
@@ -30,5 +36,6 @@ public class HomeI18n : MonoBehaviour {
 		this.loading.SetText(this.game.language.loading);
 		this.languageName.SetText(this.game.language.name);
 		this.languageIcon.texture = this.game.language.texture;
+		this.rateThisApp.SetText(this.game.language.rateThisApp);
 	}
 }
