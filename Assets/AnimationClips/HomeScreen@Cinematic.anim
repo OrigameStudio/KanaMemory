@@ -812,7 +812,7 @@ AnimationClip:
       - time: 3.5
         value: 1
         inSlope: Infinity
-        outSlope: .285714298
+        outSlope: Infinity
         tangentMode: 1
       - time: 180
         value: 0
@@ -1644,7 +1644,7 @@ AnimationClip:
       - time: 3.5
         value: 1
         inSlope: Infinity
-        outSlope: .285714298
+        outSlope: Infinity
         tangentMode: 1
       - time: 180
         value: 0
