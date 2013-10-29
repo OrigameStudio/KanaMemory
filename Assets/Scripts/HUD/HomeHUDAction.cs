@@ -5,5 +5,6 @@ public enum HomeHUDAction{
 	Dojo,
 	Exit,
 	About,
-	SwitchLanguage
+	SwitchLanguage,
+	RateApp
 }
