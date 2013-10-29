@@ -235,7 +235,7 @@ SphereCollider:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 226938554}
@@ -251,32 +251,38 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   m_GameObject: {fileID: 226938553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1244724249}
+  - {fileID: 931225725}
   - {fileID: 381018026}
   - {fileID: 1587832591}
+  - {fileID: 1863149113}
   m_Father: {fileID: 0}
 --- !u!114 &226938555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: b5a37fca3dc21d143a99691f989f1a65,
     type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   m_GameObject: {fileID: 226938553}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f79c80c4589cb2d4fbe076251e7b7118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultLanguage: {fileID: 381018025}
+  defaultLanguage: {fileID: 1244724248}
   forceDefaultLanguage: 0
   languages:
-  - {fileID: 381018025}
+  - {fileID: 1244724248}
+  - {fileID: 931225724}
   - {fileID: 1587832592}
+  - {fileID: 1863149112}
+  - {fileID: 381018025}
 --- !u!1 &250761928
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,7 +351,7 @@ MonoBehaviour:
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
+  orientation: 1
   rectangle:
     left: 0
     top: .375
@@ -409,7 +415,7 @@ MonoBehaviour:
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
+  orientation: 1
   rectangle:
     left: 0
     top: .875
@@ -428,6 +434,7 @@ MonoBehaviour:
   alignment:
     horizontal: 0
     vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
   control: {fileID: 466758275}
   action: 3
 --- !u!1001 &351510625
@@ -468,10 +475,6 @@ Prefab:
     - target: {fileID: 100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
       propertyPath: m_Name
       value: _Game
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
-      propertyPath: boardSize
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
@@ -521,17 +524,19 @@ MonoBehaviour:
   loading: {fileID: 251987254}
   languageName: {fileID: 1470727321}
   languageIcon: {fileID: 1336642111}
+  rateThisApp: {fileID: 461130381}
+  rateThisAppBalloon: {fileID: 607325575}
 --- !u!1 &381018024
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 381018026}
   - 114: {fileID: 381018025}
   m_Layer: 0
-  m_Name: English
+  m_Name: Japanese
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,179 +547,64 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: b5a37fca3dc21d143a99691f989f1a65,
     type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   m_GameObject: {fileID: 381018024}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  system: 10
+  system: 22
   data:
-    name: English
-    texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
-    loading: Loading...
-    play: PLAY
-    dojo: STUDY
-    welcome: 'WELCOME TO
-
-      THE DOJO'
-    studyHiragana: 'STUDY
-
-      HIRAGANA'
-    studyKatakana: 'STUDY
-
-      KATAKANA'
-    goodbye: 'EXIT
-
-      DOJO?'
-    exit: YES
-    stay: NO
-    newGame: New Game
-    difficulty: DIFFICULTY
-    easy: EASY
-    medium: MEDIUM
-    hard: HARD
-    boardSize: SIZE
-    small: SMALL
-    regular: REGULAR
-    big: BIG
-    gameType: GAME MODE
-    confirmQuitGame: QUIT?
-    quitGame: YES
-    keepPlaying: NO
-    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
-    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
-    rateThisApp: Rate this app
+    name: "\u306B\u307B\u3093\u3054"
+    texture: {fileID: 2800000, guid: 898638fbd8e084a4bb718c19e3d32702, type: 3}
+    font: {fileID: 12800000, guid: 2f6049b72665ce54eb65aefbcfb09ced, type: 3}
+    loading: "\u304A\u307E\u3061\u304F\u3060\u3055\u3044"
+    play: "\u3042\u305D\u3073"
+    dojo: "\u3079\u3093\u304D\u3087\u3046"
+    welcome: "\u3069\u3046\u3058\u3087\u3046\r\u3078\n\u3088\u3046\u3053\u305D"
+    studyHiragana: "\u3072\u3089\u304C\u306A\u306E\r\n\u3079\u3093\u304D\u3087\u3046"
+    studyKatakana: "\u30AB\u30BF\u30AB\u30CA\u306E\r\n\u3079\u3093\u304D\u3087\u3046"
+    goodbye: "\u3069\u3046\u3058\u3087\u3046\u304B\u3089\r\n\u3067\u305F\u3044\u3067\u3059\u304B\uFF1F"
+    exit: "\u306F\u3044"
+    stay: "\u3044\u3044\u3048"
+    newGame: "\u3042\u305F\u3089\u3057\u3044\u30B2\u30FC\u30E0"
+    difficulty: "\u30AC\u30A4\u30C9"
+    easy: "\u304B\u3093\u305F\u3093"
+    medium: "\u307E\u3042\u307E\u3042..."
+    hard: "\u3080\u305A\u304B\u3057\u3044"
+    boardSize: "\u30B5\u30A4\u30BA"
+    small: "\u3061\u3044\u3055\u3044"
+    regular: "\u3061\u3085\u3046\u304C\u305F"
+    big: "\u304A\u304A\u304D\u3044"
+    gameType: "\u30E2\u30FC\u30C9"
+    confirmQuitGame: "\u30AD\u30E3\u30F3\u30BB\u30EB\r\n\u3057\u305F\u3044\u304B\uFF1F"
+    quitGame: "\u306F\u3044"
+    keepPlaying: "\u3044\u3044\u3048"
+    Mesh_OK: {fileID: 100000, guid: 7801ce558f3239a419e3db3027cf310e, type: 2}
+    Mesh_KO: {fileID: 100000, guid: cfa254f017fa702459f439feae538faa, type: 2}
+    rateThisApp: "\u30EC\u30D3\u30E5\u30FC\u3092 \u304B\u304F"
     keywords:
-    - Japanese
-    - Hiragana
-    - Katakana
-    - Kana
-    - Kanji
-    - Learn
-    - Study
-    - Language
-    - Game
-    - Travel
-    - Japan
-    - JP
-    - Asia
-    - Honshu
-    - Hokkaido
-    - Kyushu
-    - Shikoku
-    - Tokyo
-    - Yokohama
-    - Osaka
-    - Nagoya
-    - Kobe
-    - Kyoto
-    - Fukuoka
-    - Kawasaki
-    - Saitama
-    - Hiroshima
-    - Miyajima
-    - Okinawa
-    - Kiyomizudera
-    - Ginkaku
-    - Jinkaku
-    - Shrine
-    - Zen
-    - Shibuya
-    - Harajuku
-    - Asakusa
-    - Ueno
-    - Akihabara
-    - Akiba
-    - Chopsticks
-    - Sushi
-    - Wasabi
-    - Tempura
-    - Ramen
-    - Onigiri
-    - Teriyaki
-    - Yakitori
-    - Okonomiyaki
-    - Gyoza
-    - Yakisoba
-    - Sukiyaki
-    - Bento
-    - Sake
-    - Asahi
-    - Kirin
-    - Sapporo
-    - Ikebana
-    - Bonsai
-    - Taiko
-    - Kabuki
-    - Origami
-    - Sumo
-    - Kendo
-    - Judo
-    - Aikido
-    - Kyudo
-    - Karate
-    - Samurai
-    - Shogun
-    - Katana
-    - Ninja
-    - Akira
-    - Doraemon
-    - Ranma
-    - Naruto
-    - Pokemon
-    - Shinchan
-    - Layton
-    - Astroboy
-    - Godzilla
-    - Gamera
-    - Dragon
-    - Tanuki
-    - Kappa
-    - Daruma
-    - Manga
-    - Anime
-    - Otaku
-    - Nintendo
-    - Ghibli
-    - Tototro
-    - Ponyo
-    - Chihiro
-    - Miyazaki
-    - Idol
-    - Pachinko
-    - Sakura
-    - Hanami
-    - Hachiko
-    - Karaoke
-    - J-POP
-    - AKB48
-    - Dorama
-    - Murakami
-    - Toriyama
-    - Kotoba
-    - Jitensha
-    - Kuma
-    - Neko
-    - Tanaka
-    - Taro
-    - Kawai
-    - Sugoi
-    - Banzai
-    - Kanpai
-    - Yamanote
-    - Shinkansen
-    - JR
-    - NHK
-    - Nihon
-    - Nippon
-    - Nihongo
+    - "\u65E5\u672C\u8A9E"
+    - "\u3072\u3089\u304C\u306A"
+    - "\u304B\u305F\u304B\u306A"
+    - "\u304B\u306A"
+    - "\u611F\u3058"
+    - "\u5B66\u3076"
+    - "\u52C9\u5F37"
+    - "\u30B2\u30FC\u30E0"
+    - "\u30D2\u30E9\u30AC\u30CA"
+    - "\u30AB\u30BF\u30AB\u30CA"
+    - "\u30AB\u30CA"
+    - "\u304B\u3093\u3058"
+    - "\u30AB\u30F3\u30B8"
+    - "\u5B50\u4F9B"
+    - "\u3053\u3069\u3082"
 --- !u!4 &381018026
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
+  m_PrefabInternal: {fileID: 524011123}
   m_GameObject: {fileID: 381018024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -749,11 +639,13 @@ Transform:
   - {fileID: 1304239174}
   - {fileID: 290495745}
   - {fileID: 1030814190}
+  - {fileID: 461130380}
   - {fileID: 2088125367}
   - {fileID: 1470727320}
   - {fileID: 1336642110}
   - {fileID: 251987253}
   - {fileID: 2133026527}
+  - {fileID: 607325574}
   m_Father: {fileID: 466758271}
 --- !u!1 &453314981
 GameObject:
@@ -830,25 +722,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fa03e09f4a23a429c7bdde061f2ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rateAppUrl: 
   language:
     name: 
     texture: {fileID: 0}
-    loading: Loading...
-    play: PLAY
-    dojo: DOJO
-    welcome: 'WELCOME TO
-
-      THE DOJO'
-    studyHiragana: 'STUDY
-
-      HIRAGANA'
-    studyKatakana: 'STUDY
-
-      KATAKANA'
+    font: {fileID: 0}
+    loading: 
+    play: 
+    dojo: 
+    welcome: 
+    studyHiragana: 
+    studyKatakana: 
     goodbye: 
-    exit: YES
-    stay: NO
-    newGame: 8
+    exit: 
+    stay: 
+    newGame: 
     difficulty: 
     easy: 
     medium: 
@@ -858,13 +746,15 @@ MonoBehaviour:
     regular: 
     big: 
     gameType: 
-    confirmQuitGame: QUIT?
-    quitGame: YES
-    keepPlaying: NO
+    confirmQuitGame: 
+    quitGame: 
+    keepPlaying: 
     Mesh_OK: {fileID: 0}
     Mesh_KO: {fileID: 0}
     rateThisApp: 
     keywords: []
+  isAppRated: 0
+  fewGames: 10
   status: 0
   type: 0
   difficulty: 1
@@ -874,7 +764,9 @@ MonoBehaviour:
     total: 0
     matches: 0
     failures: 0
-  games: 0
+  gamesPlayed: 0
+  gamesWon: 0
+  gamesLost: 0
   time:
     start: 0
     total: 0
@@ -890,6 +782,70 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &461130379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 461130380}
+  - 114: {fileID: 461130381}
+  m_Layer: 0
+  m_Name: RateThisApp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461130380
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461130379}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &461130381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461130379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ffa0d81153aa84f8c0ac9d609e533a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 1
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .0874999985
+    top: .767499983
+    width: .25
+    height: .125
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 0
+  text: Rate this app
+  font:
+    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    style: 0
+    size: 0
+  color: {r: 0, g: 0, b: 0, a: 1}
+  shadowColor: {r: 0, g: 0, b: 0, a: 1}
+  alignment: 4
+  crop: 0
+  wordWrap: 1
+  shadowOffset: 0
 --- !u!1 &466758270
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,9 +974,7 @@ MonoBehaviour:
   ambientLight: {r: 0, g: 0, b: 0, a: 1}
   skipAnimationClip: HomeScreen@Skip
   escapeExitsApplication: 1
-  showActivityIndicator: 1
-  androidActivityIndicator: 0
-  iOsActivityIndicator: 0
+  activityIndicator: {fileID: 1113332685}
   HelpScene: 2
   StartScene: 3
   AboutScene: 7
@@ -1028,6 +982,109 @@ MonoBehaviour:
   sound: {fileID: 143965619}
   homeI18n: {fileID: 374791140}
   availableLanguages: {fileID: 226938555}
+--- !u!1001 &524011123
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_RootGameObject: {fileID: 226938553}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &607325573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 607325574}
+  - 114: {fileID: 607325575}
+  m_Layer: 0
+  m_Name: RateThisAppBalloon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607325574
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607325573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &607325575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607325573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 2
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .075000003
+    top: .754999995
+    width: .275000006
+    height: .150000006
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  texture: {fileID: 2800000, guid: ff46795dd0e7ddb44871173ab0ae54e1, type: 3}
+  scaleMode: 2
+  alphaBlend: 1
+  imageAspect: 0
+  alignment:
+    horizontal: 0
+    vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  control: {fileID: 466758275}
+  action: 5
 --- !u!1 &629579282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,463 +1211,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!1 &946007602
+--- !u!1 &931225723
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100008, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
-  m_PrefabInternal: {fileID: 1648637388}
+  m_PrefabParentObject: {fileID: 100010, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 946007603}
-  - 108: {fileID: 946007606}
-  - 111: {fileID: 946007605}
-  - 114: {fileID: 946007604}
-  m_Layer: 0
-  m_Name: Spotlight1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &946007603
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400008, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
-  m_PrefabInternal: {fileID: 1648637388}
-  m_GameObject: {fileID: 946007602}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 629579283}
---- !u!114 &946007604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 372e9f64cb27eb34abbfdfc66a01852d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1648637388}
-  m_GameObject: {fileID: 946007602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 964f466d3e0e07649b4a4caf6bcf2954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!111 &946007605
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100006, guid: 372e9f64cb27eb34abbfdfc66a01852d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1648637388}
-  m_GameObject: {fileID: 946007602}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a510f615522fa2c40a1145480c8c33ae, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: a510f615522fa2c40a1145480c8c33ae, type: 2}
-  - {fileID: 7400000, guid: 1a6974e51e0b0d140916541e755709a2, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
-  m_UserAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0, y: 0, z: 0}
---- !u!108 &946007606
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: 372e9f64cb27eb34abbfdfc66a01852d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1648637388}
-  m_GameObject: {fileID: 946007602}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 150
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
---- !u!1 &1030814189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1030814190}
-  - 114: {fileID: 1030814192}
-  m_Layer: 0
-  m_Name: Dojo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1030814190
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1030814189}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 413964131}
---- !u!114 &1030814192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1030814189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiDepth: 0
-  debug: 0
-  debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
-  rectangle:
-    left: .100000001
-    top: .349999994
-    width: .5
-    height: .200000003
-  padding:
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-  isClickable: 1
-  text: STUDY
-  font:
-    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
-    style: 0
-    size: 0
-  color: {r: 0, g: .686274529, b: 0, a: .784313738}
-  shadowColor: {r: 0, g: 0, b: 0, a: 1}
-  alignment: 3
-  crop: 0
-  wordWrap: 0
-  shadowOffset: 2
-  control: {fileID: 466758275}
-  action: 1
---- !u!1 &1070940941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: b14abd37f9561c649832926ffd989693, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1070940942}
-  - 33: {fileID: 1070940944}
-  - 23: {fileID: 1070940943}
-  m_Layer: 0
-  m_Name: Image2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1070940942
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: b14abd37f9561c649832926ffd989693, type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1070940941}
-  m_LocalRotation: {x: -.707105994, y: 0, z: 0, w: .707107604}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .800000012, y: 1, z: .480000019}
-  m_Children: []
-  m_Father: {fileID: 250761929}
---- !u!23 &1070940943
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: b14abd37f9561c649832926ffd989693,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1070940941}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 0193234430b55744f96a48b1a54688df, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
---- !u!33 &1070940944
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: b14abd37f9561c649832926ffd989693,
-    type: 3}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1070940941}
-  m_Mesh: {fileID: 4300000, guid: b14abd37f9561c649832926ffd989693, type: 3}
---- !u!1001 &1108671855
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_RootGameObject: {fileID: 226938553}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1 &1304239173
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1304239174}
-  - 114: {fileID: 1304239176}
-  m_Layer: 0
-  m_Name: ButtonExit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1304239174
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1304239173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 413964131}
---- !u!114 &1304239176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1304239173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiDepth: 0
-  debug: 0
-  debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 1
-  rectangle:
-    left: .899999976
-    top: .875
-    width: .100000001
-    height: .100000001
-  padding:
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-  isClickable: 1
-  texture: {fileID: 2800000, guid: a6b6556bc12f82c4da1b4689807790b3, type: 3}
-  scaleMode: 1
-  alphaBlend: 1
-  imageAspect: 0
-  alignment:
-    horizontal: 0
-    vertical: 0
-  control: {fileID: 466758275}
-  action: 2
---- !u!1 &1336642109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1336642110}
-  - 114: {fileID: 1336642111}
-  m_Layer: 0
-  m_Name: LanguageIcon
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1336642110
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1336642109}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 413964131}
---- !u!114 &1336642111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1336642109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiDepth: 0
-  debug: 0
-  debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 1
-  rectangle:
-    left: .474999994
-    top: .850000024
-    width: .0500000007
-    height: .0799999982
-  padding:
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-  isClickable: 1
-  texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
-  scaleMode: 1
-  alphaBlend: 1
-  imageAspect: 0
-  alignment:
-    horizontal: 0
-    vertical: 0
-  control: {fileID: 466758275}
-  action: 4
---- !u!1 &1470727319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1470727320}
-  - 114: {fileID: 1470727321}
-  m_Layer: 0
-  m_Name: LanguageName
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1470727320
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1470727319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 413964131}
---- !u!114 &1470727321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1470727319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  guiDepth: 0
-  debug: 0
-  debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
-  rectangle:
-    left: .400000006
-    top: .925000012
-    width: .200000003
-    height: .075000003
-  padding:
-    top: 0
-    left: 0
-    bottom: 0
-    right: 0
-  isClickable: 1
-  text: English
-  font:
-    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
-    style: 0
-    size: 0
-  color: {r: 1, g: 1, b: 1, a: 1}
-  shadowColor: {r: 0, g: 0, b: 0, a: 1}
-  alignment: 1
-  crop: 0
-  wordWrap: 0
-  shadowOffset: 2
-  control: {fileID: 466758275}
-  action: 4
---- !u!1 &1587832590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1587832591}
-  - 114: {fileID: 1587832592}
+  - 4: {fileID: 931225725}
+  - 114: {fileID: 931225724}
   m_Layer: 0
   m_Name: Spanish
   m_TagString: Untagged
@@ -1618,24 +1227,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1587832591
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
-  m_GameObject: {fileID: 1587832590}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 226938554}
---- !u!114 &1587832592
+--- !u!114 &931225724
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: b5a37fca3dc21d143a99691f989f1a65,
+  m_PrefabParentObject: {fileID: 11400010, guid: b5a37fca3dc21d143a99691f989f1a65,
     type: 2}
-  m_PrefabInternal: {fileID: 1108671855}
-  m_GameObject: {fileID: 1587832590}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 931225723}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
@@ -1645,6 +1243,7 @@ MonoBehaviour:
   data:
     name: "Espa\xF1ol"
     texture: {fileID: 2800000, guid: 9be5f9e2f9a11d041be6244b13ce71f8, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
     loading: Cargando...
     play: JUGAR
     dojo: ESTUDIAR
@@ -1805,6 +1404,922 @@ MonoBehaviour:
     - Tokio
     - Kioto
     - Papiroflexia
+--- !u!4 &931225725
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400010, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 931225723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 226938554}
+--- !u!1 &946007602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
+  m_PrefabInternal: {fileID: 1648637388}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 946007603}
+  - 108: {fileID: 946007606}
+  - 111: {fileID: 946007605}
+  - 114: {fileID: 946007604}
+  m_Layer: 0
+  m_Name: Spotlight1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &946007603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
+  m_PrefabInternal: {fileID: 1648637388}
+  m_GameObject: {fileID: 946007602}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 629579283}
+--- !u!114 &946007604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 372e9f64cb27eb34abbfdfc66a01852d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1648637388}
+  m_GameObject: {fileID: 946007602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964f466d3e0e07649b4a4caf6bcf2954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!111 &946007605
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11100006, guid: 372e9f64cb27eb34abbfdfc66a01852d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1648637388}
+  m_GameObject: {fileID: 946007602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a510f615522fa2c40a1145480c8c33ae, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: a510f615522fa2c40a1145480c8c33ae, type: 2}
+  - {fileID: 7400000, guid: 1a6974e51e0b0d140916541e755709a2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!108 &946007606
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 10800002, guid: 372e9f64cb27eb34abbfdfc66a01852d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1648637388}
+  m_GameObject: {fileID: 946007602}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 150
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!1 &1030814189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1030814190}
+  - 114: {fileID: 1030814192}
+  m_Layer: 0
+  m_Name: Dojo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1030814190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030814189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &1030814192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1030814189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 0
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .100000001
+    top: .349999994
+    width: .5
+    height: .200000003
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  text: STUDY
+  font:
+    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    style: 0
+    size: 0
+  color: {r: 0, g: .686274529, b: 0, a: .784313738}
+  shadowColor: {r: 0, g: 0, b: 0, a: 1}
+  alignment: 3
+  crop: 0
+  wordWrap: 0
+  shadowOffset: 2
+  control: {fileID: 466758275}
+  action: 1
+--- !u!1 &1070940941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: b14abd37f9561c649832926ffd989693, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1070940942}
+  - 33: {fileID: 1070940944}
+  - 23: {fileID: 1070940943}
+  m_Layer: 0
+  m_Name: Image2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070940942
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: b14abd37f9561c649832926ffd989693, type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070940941}
+  m_LocalRotation: {x: -.707105994, y: 0, z: 0, w: .707107604}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .800000012, y: 1, z: .480000019}
+  m_Children: []
+  m_Father: {fileID: 250761929}
+--- !u!23 &1070940943
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: b14abd37f9561c649832926ffd989693,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070940941}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 0193234430b55744f96a48b1a54688df, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!33 &1070940944
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: b14abd37f9561c649832926ffd989693,
+    type: 3}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070940941}
+  m_Mesh: {fileID: 4300000, guid: b14abd37f9561c649832926ffd989693, type: 3}
+--- !u!1 &1113332684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_PrefabInternal: {fileID: 1270099323}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1113332686}
+  - 114: {fileID: 1113332685}
+  m_Layer: 0
+  m_Name: _HanheldActivityIndicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1113332685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1270099323}
+  m_GameObject: {fileID: 1113332684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f1121ab96028e44889d27237fe282ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show: 0
+  dummyTexture: {fileID: 2800000, guid: c43006270fa81294ea00ea30c239d561, type: 3}
+  dummyPosition:
+    serializedVersion: 2
+    x: 8
+    y: 8
+    width: 72
+    height: 72
+  androidActivityIndicator: 0
+  iOsActivityIndicator: 0
+--- !u!4 &1113332686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_PrefabInternal: {fileID: 1270099323}
+  m_GameObject: {fileID: 1113332684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &1244724247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1244724249}
+  - 114: {fileID: 1244724248}
+  m_Layer: 0
+  m_Name: English
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1244724248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1244724247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 10
+  data:
+    name: English
+    texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    loading: Loading...
+    play: PLAY
+    dojo: STUDY
+    welcome: 'WELCOME TO
+
+      THE DOJO'
+    studyHiragana: 'STUDY
+
+      HIRAGANA'
+    studyKatakana: 'STUDY
+
+      KATAKANA'
+    goodbye: 'EXIT
+
+      DOJO?'
+    exit: YES
+    stay: NO
+    newGame: New Game
+    difficulty: DIFFICULTY
+    easy: EASY
+    medium: MEDIUM
+    hard: HARD
+    boardSize: SIZE
+    small: SMALL
+    regular: REGULAR
+    big: BIG
+    gameType: GAME MODE
+    confirmQuitGame: QUIT?
+    quitGame: YES
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100002, guid: 3d361efd67914064181c9b96ac37b8f4, type: 2}
+    Mesh_KO: {fileID: 100000, guid: d693dc3ab7c8079409121096476105e9, type: 2}
+    rateThisApp: Rate this app
+    keywords:
+    - Japanese
+    - Hiragana
+    - Katakana
+    - Kana
+    - Kanji
+    - Learn
+    - Study
+    - Language
+    - Game
+    - Travel
+    - Japan
+    - JP
+    - Asia
+    - Honshu
+    - Hokkaido
+    - Kyushu
+    - Shikoku
+    - Tokyo
+    - Yokohama
+    - Osaka
+    - Nagoya
+    - Kobe
+    - Kyoto
+    - Fukuoka
+    - Kawasaki
+    - Saitama
+    - Hiroshima
+    - Miyajima
+    - Okinawa
+    - Kiyomizudera
+    - Ginkaku
+    - Jinkaku
+    - Shrine
+    - Zen
+    - Shibuya
+    - Harajuku
+    - Asakusa
+    - Ueno
+    - Akihabara
+    - Akiba
+    - Chopsticks
+    - Sushi
+    - Wasabi
+    - Tempura
+    - Ramen
+    - Onigiri
+    - Teriyaki
+    - Yakitori
+    - Okonomiyaki
+    - Gyoza
+    - Yakisoba
+    - Sukiyaki
+    - Bento
+    - Sake
+    - Asahi
+    - Kirin
+    - Sapporo
+    - Ikebana
+    - Bonsai
+    - Taiko
+    - Kabuki
+    - Origami
+    - Sumo
+    - Kendo
+    - Judo
+    - Aikido
+    - Kyudo
+    - Karate
+    - Samurai
+    - Shogun
+    - Katana
+    - Ninja
+    - Akira
+    - Doraemon
+    - Ranma
+    - Naruto
+    - Pokemon
+    - Shinchan
+    - Layton
+    - Astroboy
+    - Godzilla
+    - Gamera
+    - Dragon
+    - Tanuki
+    - Kappa
+    - Daruma
+    - Manga
+    - Anime
+    - Otaku
+    - Nintendo
+    - Ghibli
+    - Tototro
+    - Ponyo
+    - Chihiro
+    - Miyazaki
+    - Idol
+    - Pachinko
+    - Sakura
+    - Hanami
+    - Hachiko
+    - Karaoke
+    - J-POP
+    - AKB48
+    - Dorama
+    - Murakami
+    - Toriyama
+    - Kotoba
+    - Jitensha
+    - Kuma
+    - Neko
+    - Tanaka
+    - Taro
+    - Kawai
+    - Sugoi
+    - Banzai
+    - Kanpai
+    - Yamanote
+    - Shinkansen
+    - JR
+    - NHK
+    - Nihon
+    - Nippon
+    - Nihongo
+--- !u!4 &1244724249
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1244724247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 226938554}
+--- !u!1001 &1270099323
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: androidActivityIndicator
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+      propertyPath: iOsActivityIndicator
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bc573de67978a9240b97ce008de4bd9b, type: 2}
+  m_RootGameObject: {fileID: 1113332684}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &1304239173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1304239174}
+  - 114: {fileID: 1304239176}
+  m_Layer: 0
+  m_Name: ButtonExit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1304239174
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304239173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &1304239176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304239173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 0
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .899999976
+    top: .875
+    width: .100000001
+    height: .100000001
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  texture: {fileID: 2800000, guid: a6b6556bc12f82c4da1b4689807790b3, type: 3}
+  scaleMode: 1
+  alphaBlend: 1
+  imageAspect: 0
+  alignment:
+    horizontal: 0
+    vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  control: {fileID: 466758275}
+  action: 2
+--- !u!1 &1336642109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1336642110}
+  - 114: {fileID: 1336642111}
+  m_Layer: 0
+  m_Name: LanguageIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1336642110
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336642109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &1336642111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1336642109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f085d07fe7670e04aad3725bfd42b245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 0
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .474999994
+    top: .850000024
+    width: .0500000007
+    height: .0799999982
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  texture: {fileID: 2800000, guid: 18665845f87033040bf5ee87c4896e74, type: 3}
+  scaleMode: 1
+  alphaBlend: 1
+  imageAspect: 0
+  alignment:
+    horizontal: 0
+    vertical: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  control: {fileID: 466758275}
+  action: 4
+--- !u!1 &1470727319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1470727320}
+  - 114: {fileID: 1470727321}
+  m_Layer: 0
+  m_Name: LanguageName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1470727320
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1470727319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 413964131}
+--- !u!114 &1470727321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1470727319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195b25c216321bc49b10fadf06830ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guiDepth: 0
+  debug: 0
+  debugColor: {r: 1, g: 0, b: 1, a: 1}
+  orientation: 1
+  rectangle:
+    left: .400000006
+    top: .925000012
+    width: .200000003
+    height: .075000003
+  padding:
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  isClickable: 1
+  text: English
+  font:
+    family: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    style: 0
+    size: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  shadowColor: {r: 0, g: 0, b: 0, a: 1}
+  alignment: 1
+  crop: 0
+  wordWrap: 0
+  shadowOffset: 2
+  control: {fileID: 466758275}
+  action: 4
+--- !u!1 &1587832590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1587832591}
+  - 114: {fileID: 1587832592}
+  m_Layer: 0
+  m_Name: French
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1587832591
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1587832590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 226938554}
+--- !u!114 &1587832592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1587832590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 14
+  data:
+    name: "Fran\xE7ais"
+    texture: {fileID: 2800000, guid: 3990522b6ea70054dae39527d7525ffb, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    loading: En cours...
+    play: JOUER
+    dojo: "\xC9TUDIER"
+    welcome: 'BIENVENUE
+
+      AU DOJO'
+    studyHiragana: "\xC9TUDIER\nHIRAGANA"
+    studyKatakana: "\xC9TUDIER\nKATAKANA"
+    goodbye: 'QUITTEZ
+
+      LE DOJO?'
+    exit: OUI
+    stay: NO
+    newGame: Nouveau Jeu
+    difficulty: "DIFFICULT\xC9"
+    easy: FACILE
+    medium: NORMAL
+    hard: DIFFICILE
+    boardSize: DIMENSION
+    small: PETIT
+    regular: MOYENNE
+    big: GRAND
+    gameType: MODE DE JEU
+    confirmQuitGame: ABANDONNER?
+    quitGame: OUI
+    keepPlaying: NO
+    Mesh_OK: {fileID: 100000, guid: ef40b22bbe0cbd94b820905739e970bc, type: 2}
+    Mesh_KO: {fileID: 100000, guid: 671e1edba7b2ffc4ca79af72aa28699d, type: 2}
+    rateThisApp: "\xC9valuer cette application"
+    keywords:
+    - Japonais
+    - Hiragana
+    - Katakana
+    - Kana
+    - Kanji
+    - Apprendre
+    - "\xC9tudier"
+    - Langue
+    - Jeu
+    - Voyager
+    - Japon
+    - JP
+    - Asie
+    - Honshu
+    - Hokkaido
+    - Kyushu
+    - Shikoku
+    - Tokyo
+    - Yokohama
+    - Osaka
+    - Nagoya
+    - Kobe
+    - Kyoto
+    - Fukuoka
+    - Kawasaki
+    - Saitama
+    - Hiroshima
+    - Miyajima
+    - Okinawa
+    - Kiyomizudera
+    - Ginkaku
+    - Jinkaku
+    - Tombeau
+    - Zen
+    - Shibuya
+    - Harajuku
+    - Asakusa
+    - Ueno
+    - Akihabara
+    - Akiba
+    - Baguettes
+    - Sushi
+    - Wasabi
+    - Tempura
+    - Ramen
+    - Onigiri
+    - Teriyaki
+    - Yakitori
+    - Okonomiyaki
+    - Gyoza
+    - Yakisoba
+    - Sukiyaki
+    - Bento
+    - Sake
+    - Asahi
+    - Kirin
+    - Sapporo
+    - Ikebana
+    - Bonsai
+    - Taiko
+    - Kabuki
+    - Origami
+    - Sumo
+    - Kendo
+    - Judo
+    - Aikido
+    - Kyudo
+    - Karate
+    - Samurai
+    - Shogun
+    - Katana
+    - Ninja
+    - Akira
+    - Doraemon
+    - Ranma
+    - Naruto
+    - Pokemon
+    - Shinchan
+    - Layton
+    - Astroboy
+    - Godzilla
+    - Gamera
+    - Dragon
+    - Tanuki
+    - Kappa
+    - Daruma
+    - Manga
+    - Anime
+    - Otaku
+    - Nintendo
+    - Ghibli
+    - Tototro
+    - Ponyo
+    - Chihiro
+    - Miyazaki
+    - Idol
+    - Pachinko
+    - Sakura
+    - Hanami
+    - Hachiko
+    - Karaoke
+    - J-POP
+    - AKB48
+    - Dorama
+    - Murakami
+    - Toriyama
+    - Kotoba
+    - Jitensha
+    - Kuma
+    - Neko
+    - Tanaka
+    - Taro
+    - Kawai
+    - Sugoi
+    - Banzai
+    - Kanpai
+    - Yamanote
+    - Shinkansen
+    - JR
+    - NHK
+    - Nihon
+    - Nippon
+    - Nihongo
 --- !u!1001 &1648637388
 Prefab:
   m_ObjectHideFlags: 0
@@ -1913,6 +2428,211 @@ Prefab:
   m_RootGameObject: {fileID: 186224826}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1863149111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1863149113}
+  - 114: {fileID: 1863149112}
+  m_Layer: 0
+  m_Name: Portuguese
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1863149112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: b5a37fca3dc21d143a99691f989f1a65,
+    type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1863149111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac499f3dbbae7e4ca67cece4841ba97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  system: 28
+  data:
+    name: "Portugu\xEAs"
+    texture: {fileID: 2800000, guid: 8f71e4ab879d2ca4e877a4f877425e77, type: 3}
+    font: {fileID: 12800000, guid: eab65fb9ef5510247ad88e7e721b3578, type: 3}
+    loading: Carregando...
+    play: JOGAR
+    dojo: ESTUDAR
+    welcome: 'BEM-VINDO
+
+      AO DOJO'
+    studyHiragana: 'ESTUDAR
+
+      HIRAGANA'
+    studyKatakana: 'ESTUDAR
+
+      KATAKANA'
+    goodbye: 'SAIR
+
+      DO DOJO?'
+    exit: SIM
+    stay: "N\xC3O"
+    newGame: Novo Jogo
+    difficulty: DIFICULTAD
+    easy: "F\xC1CIL"
+    medium: NORMAL
+    hard: "DIF\xCDCIL"
+    boardSize: "TAMA\xD1O"
+    small: "PEQUE\xD1O"
+    regular: MEDIANO
+    big: GRANDE
+    gameType: MODO DE JOGO
+    confirmQuitGame: ABANDONAR?
+    quitGame: SIM
+    keepPlaying: "N\xC3O"
+    Mesh_OK: {fileID: 100000, guid: 75aa03e66eb5fb2429060adf8f27d94b, type: 2}
+    Mesh_KO: {fileID: 100000, guid: 9ad61a4ec4286e940b4f2347594c8b03, type: 2}
+    rateThisApp: "Avalie esta aplica\xE7\xE3o"
+    keywords:
+    - "Japon\xEAs"
+    - Hiragana
+    - Katakana
+    - Kana
+    - Kanji
+    - Aprender
+    - Estudar
+    - Linguagem
+    - Jogo
+    - Viajar
+    - "Jap\xE3o"
+    - JP
+    - "\xC1sia"
+    - Honshu
+    - Hokkaido
+    - Kyushu
+    - Shikoku
+    - Tokyo
+    - Yokohama
+    - Osaka
+    - Nagoya
+    - Kobe
+    - Kyoto
+    - Fukuoka
+    - Kawasaki
+    - Saitama
+    - Hiroshima
+    - Miyajima
+    - Okinawa
+    - Kiyomizudera
+    - Ginkaku
+    - Jinkaku
+    - "Santu\xE1rio"
+    - Zen
+    - Shibuya
+    - Harajuku
+    - Asakusa
+    - Ueno
+    - Akihabara
+    - Akiba
+    - Pauzinhos
+    - Sushi
+    - Wasabi
+    - Tempura
+    - Ramen
+    - Onigiri
+    - Teriyaki
+    - Yakitori
+    - Okonomiyaki
+    - Gyoza
+    - Yakisoba
+    - Sukiyaki
+    - Bento
+    - Sake
+    - Asahi
+    - Kirin
+    - Sapporo
+    - Ikebana
+    - Bonsai
+    - Taiko
+    - Kabuki
+    - Origami
+    - Sumo
+    - Kendo
+    - Judo
+    - Aikido
+    - Kyudo
+    - Karate
+    - Samurai
+    - Shogun
+    - Katana
+    - Ninja
+    - Akira
+    - Doraemon
+    - Ranma
+    - Naruto
+    - Pokemon
+    - Shinchan
+    - Layton
+    - Astroboy
+    - Godzilla
+    - Gamera
+    - Dragon
+    - Tanuki
+    - Kappa
+    - Daruma
+    - Manga
+    - Anime
+    - Otaku
+    - Nintendo
+    - Ghibli
+    - Tototro
+    - Ponyo
+    - Chihiro
+    - Miyazaki
+    - Idol
+    - Pachinko
+    - Sakura
+    - Hanami
+    - Hachiko
+    - Karaoke
+    - J-POP
+    - AKB48
+    - Dorama
+    - Murakami
+    - Toriyama
+    - Kotoba
+    - Jitensha
+    - Kuma
+    - Neko
+    - Tanaka
+    - Taro
+    - Kawai
+    - Sugoi
+    - Banzai
+    - Kanpai
+    - Yamanote
+    - Shinkansen
+    - JR
+    - NHK
+    - Nihon
+    - Nippon
+    - Nihongo
+    - Japones
+    - Japao
+    - "T\xF3quio"
+    - Quioto
+--- !u!4 &1863149113
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+  m_PrefabInternal: {fileID: 524011123}
+  m_GameObject: {fileID: 1863149111}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 226938554}
 --- !u!1 &1881037145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,7 +2833,7 @@ MonoBehaviour:
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
+  orientation: 1
   rectangle:
     left: .0500000007
     top: .0500000007
@@ -2177,7 +2897,7 @@ MonoBehaviour:
   guiDepth: 0
   debug: 0
   debugColor: {r: 1, g: 0, b: 1, a: 1}
-  orientation: 0
+  orientation: 1
   rectangle:
     left: .100000001
     top: .550000012
