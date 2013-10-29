@@ -12,6 +12,7 @@ public class MemoryGame : MonoBehaviour{
 	public static string GAMES_LOST				= "GamesLost";
 	public static string PREFERRED_DIFFICULTY	= "PreferredDifficulty";
 	public static string PREFERRED_BOARD_SIZE	= "PreferredBoardSize";
+	public static string HINTS_ENABLED			= "HintsEnabled";
 	public static string APP_RATED				= "AppRated";
 
 	public GameLanguageData		language;
@@ -114,12 +115,15 @@ public class MemoryGame : MonoBehaviour{
 				this.boardSize = BoardSize.BIG;
 				break;
 		}
+
+		this.hint = ( PlayerPrefs.GetInt(HINTS_ENABLED) != 0 );
 	}
 
 	private void SaveGamePrefs(){
 
 		PlayerPrefs.SetInt(PREFERRED_DIFFICULTY, (int)this.difficulty);
 		PlayerPrefs.SetInt(PREFERRED_BOARD_SIZE, (int)this.boardSize);
+		PlayerPrefs.SetInt(HINTS_ENABLED, this.hint ? 1 : 0);
 	}
 
 	public bool ShouldAskForRating(){
