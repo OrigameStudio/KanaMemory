@@ -56,6 +56,7 @@ public class MemoryGame : MonoBehaviour{
 			this.gamesWon	= PlayerPrefs.GetInt(GAMES_WON);
 			this.gamesLost	= PlayerPrefs.GetInt(GAMES_LOST);
 			this.isAppRated	= ( PlayerPrefs.GetInt(APP_RATED) != 0 );
+			this.hint		= ( PlayerPrefs.GetInt(HINTS_ENABLED) != 0 );
 
 			this.LoadGamePrefs();
 
@@ -115,15 +116,12 @@ public class MemoryGame : MonoBehaviour{
 				this.boardSize = BoardSize.BIG;
 				break;
 		}
-
-		this.hint = ( PlayerPrefs.GetInt(HINTS_ENABLED) != 0 );
 	}
 
 	private void SaveGamePrefs(){
 
 		PlayerPrefs.SetInt(PREFERRED_DIFFICULTY, (int)this.difficulty);
 		PlayerPrefs.SetInt(PREFERRED_BOARD_SIZE, (int)this.boardSize);
-		PlayerPrefs.SetInt(HINTS_ENABLED, this.hint ? 1 : 0);
 	}
 
 	public bool ShouldAskForRating(){
@@ -219,8 +217,9 @@ public class MemoryGame : MonoBehaviour{
 
 		this.gamesLost++;
 		PlayerPrefs.SetInt(GAMES_LOST, this.gamesLost);
-	}
 
+		PlayerPrefs.SetInt(HINTS_ENABLED, this.hint ? 1 : 0);
+	}
 
 	private void Success(){
 
@@ -231,5 +230,7 @@ public class MemoryGame : MonoBehaviour{
 
 		this.gamesWon++;
 		PlayerPrefs.SetInt(GAMES_WON, this.gamesWon);
+
+		PlayerPrefs.SetInt(HINTS_ENABLED, this.hint ? 1 : 0);
 	}
 }
