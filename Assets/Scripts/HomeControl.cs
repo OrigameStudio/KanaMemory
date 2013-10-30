@@ -100,6 +100,7 @@ public class HomeControl : SplashControl{
 			case HomeHUDAction.RateApp:
 
 				MemoryGame.GetInstance().RateApp();
+				this.homeI18n.SetBalloonVisibility();
 				return;
 		}
 

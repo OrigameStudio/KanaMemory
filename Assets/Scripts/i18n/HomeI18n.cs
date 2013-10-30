@@ -23,8 +23,7 @@ public class HomeI18n : MonoBehaviour {
 
 	public void UpdateLanguage(GameLanguage language = null){
 
-		this.rateThisApp.enabled = this.game.ShouldAskForRating();
-		this.rateThisAppBalloon.enabled = this.game.ShouldAskForRating();
+		this.SetBalloonVisibility();
 
 		if(language != null){
 
@@ -45,5 +44,11 @@ public class HomeI18n : MonoBehaviour {
 		this.languageName.SetText(this.game.language.name);
 		this.languageIcon.texture = this.game.language.texture;
 		this.rateThisApp.SetText(this.game.language.rateThisApp);
+	}
+
+	public void SetBalloonVisibility(){
+
+		this.rateThisApp.enabled = this.game.ShouldAskForRating();
+		this.rateThisAppBalloon.enabled = this.game.ShouldAskForRating();
 	}
 }
