@@ -9,6 +9,7 @@ Material:
   m_Name: 3DFont-IrisChan-Black
   m_Shader: {fileID: 4800000, guid: 2a061e957ed44e643b97973be0c52a96, type: 3}
   m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:

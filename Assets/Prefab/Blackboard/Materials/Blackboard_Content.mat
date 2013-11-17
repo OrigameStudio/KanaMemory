@@ -9,6 +9,7 @@ Material:
   m_Name: Blackboard_Content
   m_Shader: {fileID: 4800000, guid: 8a1b2cf8968e7054e891886ff85d44f7, type: 3}
   m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
