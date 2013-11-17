@@ -39,6 +39,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1bdf14effc102404ab6a46bc6a50a821, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   publisherId: YOUR_PUBLISHER_ID
   isTesting: 1
   testDeviceIds:
@@ -50,6 +51,7 @@ MonoBehaviour:
   verticalPosition: 2
   refreshInterval: 30
   loadOnStart: 1
+  setTargetOnStart: 0
   loadOnReconfigure: 1
   target:
     gender: 0
@@ -72,6 +74,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bcdadf56b0d1e54e906ae9deec40c57, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   executeInEditMode: 1
   style: 0
   texts:
@@ -108,10 +111,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 8dfbace6cba0c764aa4d45617a306291, type: 3}
   darkBackground: {fileID: 2800000, guid: 5b39f3498b3c64b429ec2741e91a7673, type: 3}
   lightBackground: {fileID: 2800000, guid: 975975dbb2b2710468aa64f84f24d99e, type: 3}
-  currentAd:
-    icon: {fileID: 2800000, guid: fbf551ccd05c60540877234ccbe0f135, type: 3}
-    action: {fileID: 2800000, guid: 87cb40c70b3249c4896cb0ef2bff4e61, type: 3}
-    text: Some people get confused when a sentence does not end as they potato.
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,6 +121,74 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36da46230c88f0e44ba41ec202f52749, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
+  rectangles:
+    loadButton:
+      serializedVersion: 2
+      x: 32
+      y: 32
+      width: 64
+      height: 48
+    exitButton:
+      serializedVersion: 2
+      x: 104
+      y: 32
+      width: 64
+      height: 48
+    showButton:
+      serializedVersion: 2
+      x: 32
+      y: 88
+      width: 64
+      height: 48
+    hideButton:
+      serializedVersion: 2
+      x: 104
+      y: 88
+      width: 64
+      height: 48
+    horizontalPositionButton:
+      serializedVersion: 2
+      x: 176
+      y: 32
+      width: 240
+      height: 48
+    verticalPositionButton:
+      serializedVersion: 2
+      x: 176
+      y: 88
+      width: 240
+      height: 48
+    orientationButton:
+      serializedVersion: 2
+      x: 176
+      y: 144
+      width: 240
+      height: 48
+    genderButton:
+      serializedVersion: 2
+      x: 32
+      y: 144
+      width: 136
+      height: 48
+    sizeButton:
+      serializedVersion: 2
+      x: 176
+      y: 200
+      width: 240
+      height: 50
+    lastErrorRectButton:
+      serializedVersion: 2
+      x: 32
+      y: 256
+      width: 384
+      height: 50
+    receivedLabel:
+      serializedVersion: 2
+      x: 32
+      y: 256
+      width: 384
+      height: 50
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
