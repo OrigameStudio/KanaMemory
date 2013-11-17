@@ -1332,8 +1332,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400154}
-  - 33: {fileID: 3300070}
-  - 23: {fileID: 2300070}
   m_Layer: 0
   m_Name: Liquid
   m_TagString: Untagged
@@ -1415,6 +1413,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400164}
+  - 114: {fileID: 11400064}
   m_Layer: 0
   m_Name: TeaCupAndSaucer
   m_TagString: Untagged
@@ -2387,7 +2386,7 @@ Transform:
   m_GameObject: {fileID: 100154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .899999976, y: .800000012, z: .899999976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400164}
 --- !u!4 &400156
@@ -3271,27 +3270,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!23 &2300070
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100154}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 46e5a6e03f1823a4886d6a69895269d0, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -3537,13 +3515,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100166}
   m_Mesh: {fileID: 4300004, guid: 30c7e9d38c5630a40b2e4e4a176cb19e, type: 3}
---- !u!33 &3300070
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100154}
-  m_Mesh: {fileID: 4300000, guid: b6f63d85742da5c44ae2dd543909b71f, type: 3}
 --- !u!54 &5400000
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -5100,6 +5071,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 175
   explosionRadius: 1
+--- !u!114 &11400064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9f5848700500f408f99cc696161de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  liquidPrefab: {fileID: 100000, guid: 8273efda2bdc30f49b646dc0c82756a5, type: 2}
+  liquidTransform: {fileID: 400154}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
