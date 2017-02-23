@@ -16,11 +16,11 @@ public class GameMusic : MonoBehaviour{
 
 	void Update(){
 
-		if(!this.audio.isPlaying){
+		if(!this.GetComponent<AudioSource>().isPlaying){
 
-			this.audio.clip = this.tracks[this.nextTrack];
+			this.GetComponent<AudioSource>().clip = this.tracks[this.nextTrack];
 
-			this.audio.Play();
+			this.GetComponent<AudioSource>().Play();
 
 			nextTrack++;
 

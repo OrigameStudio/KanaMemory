@@ -7,35 +7,35 @@ public class SplashLight : MonoBehaviour{
 
 	void Start(){
 
-		this.light.intensity = 0;
+		this.GetComponent<Light>().intensity = 0;
 	}
 
 	public void FadeIn(){
 
-		if(this.animation.isPlaying){
+		if(this.GetComponent<Animation>().isPlaying){
 
-			this.animation.Stop();
+			this.GetComponent<Animation>().Stop();
 		}
 
-		this.animation.clip = animation.GetClip("Light@FadeIn");
+		this.GetComponent<Animation>().clip = GetComponent<Animation>().GetClip("Light@FadeIn");
 
-		this.animation.Rewind();
+		this.GetComponent<Animation>().Rewind();
 
-		this.animation.Play();
+		this.GetComponent<Animation>().Play();
 	}
 
 	public void FadeOut(){
 
-		if(this.animation.isPlaying){
+		if(this.GetComponent<Animation>().isPlaying){
 
-			this.animation.Stop();
+			this.GetComponent<Animation>().Stop();
 		}
 
-		this.animation.clip = animation.GetClip("Light@FadeOut");
+		this.GetComponent<Animation>().clip = GetComponent<Animation>().GetClip("Light@FadeOut");
 
-		this.animation.Rewind();
+		this.GetComponent<Animation>().Rewind();
 
-		this.animation.Play();
+		this.GetComponent<Animation>().Play();
 	}
 
 }

@@ -9,12 +9,12 @@ public class LingerAudio : MonoBehaviour{
 
 		if(this.played){
 
-			if(!this.audio.isPlaying){
+			if(!this.GetComponent<AudioSource>().isPlaying){
 
 				GameObject.Destroy(this.gameObject);
 			}
 
-		}else if(this.audio.isPlaying){
+		}else if(this.GetComponent<AudioSource>().isPlaying){
 
 			this.played = true;
 

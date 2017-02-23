@@ -92,7 +92,7 @@ public class GameControl : MonoBehaviour{
 
 			this.music.enabled = false;
 
-			this.music.audio.Pause();
+			this.music.GetComponent<AudioSource>().Pause();
 
 			this.hud.Pause();
 
@@ -110,7 +110,7 @@ public class GameControl : MonoBehaviour{
 
 			this.music.enabled = true;
 
-			this.music.audio.Play();
+			this.music.GetComponent<AudioSource>().Play();
 
 			this.memoryGame.ExtendTimeLeft(Time.time - this.timePaused);
 
@@ -127,7 +127,7 @@ public class GameControl : MonoBehaviour{
 
 	void Update(){
 
-		if(!this.animation.isPlaying){
+		if(!this.GetComponent<Animation>().isPlaying){
 
 			this.memoryGame.UpdateTimeLeft(Time.time);
 
@@ -145,7 +145,7 @@ public class GameControl : MonoBehaviour{
 
 			if(this.memoryGame.status == GameStatus.Success){
 
-				this.animation.Play("Game@Success");
+				this.GetComponent<Animation>().Play("Game@Success");
 
 			}else if(this.memoryGame.status == GameStatus.Failure){
 
@@ -155,7 +155,7 @@ public class GameControl : MonoBehaviour{
 
 				this.sounds.timeOut.Play();
 
-				this.animation.Play("Game@Failure");
+				this.GetComponent<Animation>().Play("Game@Failure");
 			}
 		}
 

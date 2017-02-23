@@ -62,7 +62,7 @@ public class StartControl : MonoBehaviour{
 
 		RenderSettings.ambientLight = this.ambientLight;
 
-		this.animation.Play();
+		this.GetComponent<Animation>().Play();
 	}
 
 
@@ -93,16 +93,16 @@ public class StartControl : MonoBehaviour{
 
 		if(this.status == StartStatus.ready){
 
-			if(this.animation.isPlaying){
+			if(this.GetComponent<Animation>().isPlaying){
 
-				this.animation.Stop();
+				this.GetComponent<Animation>().Stop();
 			}
 
-			this.animation.clip = this.animation.GetClip(this.skipAnimationClip);
+			this.GetComponent<Animation>().clip = this.GetComponent<Animation>().GetClip(this.skipAnimationClip);
 
-			this.animation.Rewind();
+			this.GetComponent<Animation>().Rewind();
 
-			this.animation.Play();
+			this.GetComponent<Animation>().Play();
 		}
 	}
 
@@ -130,7 +130,7 @@ public class StartControl : MonoBehaviour{
 
 		this.status = StartStatus.ready;
 
-		this.audio.Play();
+		this.GetComponent<AudioSource>().Play();
 	}
 
 	private void Finished(){
@@ -162,7 +162,7 @@ public class StartControl : MonoBehaviour{
 
 		foreach(StartButton button in this.buttons){
 
-			button.rigidbody.isKinematic = false;
+			button.GetComponent<Rigidbody>().isKinematic = false;
 
 			if(button.action == action){
 
@@ -172,8 +172,8 @@ public class StartControl : MonoBehaviour{
 
 		if(clickedButton != null){
 
-			clickedButton.rigidbody.useGravity = true;
-			clickedButton.rigidbody.AddExplosionForce(explosionForce, hitPoint.Value, explosionRadius);
+			clickedButton.GetComponent<Rigidbody>().useGravity = true;
+			clickedButton.GetComponent<Rigidbody>().AddExplosionForce(explosionForce, hitPoint.Value, explosionRadius);
 		}
 
 		this.startSound.Play();

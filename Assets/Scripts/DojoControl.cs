@@ -157,7 +157,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 
 		this.UpdateSwitchIcon();
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 
 		this.UpdateCurrentTarget();
@@ -178,7 +178,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 
 		this.UpdateSwitchIcon();
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 
 		this.UpdateCurrentTarget();
@@ -211,7 +211,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 
 		this.UpdateSwitchIcon();
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 
 		this.UpdateCurrentTarget();
@@ -230,7 +230,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 
 		this.positionIndex = this.firstHiraganaIndex;
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 
 		this.UpdateCurrentTarget();
@@ -249,7 +249,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 
 		this.positionIndex = this.firstKatakanaIndex;
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 
 		this.UpdateCurrentTarget();
@@ -267,7 +267,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 		this.moveTo.target		= this.exitPosition.transform.position;
 		this.rotateAs.target	= this.exitPosition.transform.rotation;
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 	}
 
@@ -283,7 +283,7 @@ public class DojoControl : MonoBehaviour, SwipeListenerHorizontal{
 		this.moveTo.target		= this.enterPosition.transform.position;
 		this.rotateAs.target	= this.enterPosition.transform.rotation;
 
-		this.observer.animation.Play();
+		this.observer.GetComponent<Animation>().Play();
 		this.steps.Play();
 	}
 

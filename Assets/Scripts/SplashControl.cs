@@ -30,7 +30,7 @@ public class SplashControl : MonoBehaviour{
 
 		RenderSettings.ambientLight = this.ambientLight;
 
-		this.animation.Play();
+		this.GetComponent<Animation>().Play();
 	}
 
 	void Update(){
@@ -82,16 +82,16 @@ public class SplashControl : MonoBehaviour{
 
 		if(this.status == SplashStatus.ready){
 
-			if(this.animation.isPlaying){
+			if(this.GetComponent<Animation>().isPlaying){
 
-				this.animation.Stop();
+				this.GetComponent<Animation>().Stop();
 			}
 
-			this.animation.clip = this.animation.GetClip(this.skipAnimationClip);
+			this.GetComponent<Animation>().clip = this.GetComponent<Animation>().GetClip(this.skipAnimationClip);
 
-			this.animation.Rewind();
+			this.GetComponent<Animation>().Rewind();
 
-			this.animation.Play();
+			this.GetComponent<Animation>().Play();
 		}
 	}
 
@@ -127,7 +127,7 @@ public class SplashControl : MonoBehaviour{
 
 		this.status = SplashStatus.ready;
 
-		this.audio.Play();
+		this.GetComponent<AudioSource>().Play();
 	}
 
 	private void Finished(){

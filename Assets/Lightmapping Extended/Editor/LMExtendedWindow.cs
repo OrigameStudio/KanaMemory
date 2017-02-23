@@ -844,7 +844,7 @@ public class LMExtendedWindow : EditorWindow
 	void BakeButtonsGUI ()
 	{
 		float width = 120;
-		bool disabled = LightmapSettings.lightmapsMode == LightmapsMode.Directional && !InternalEditorUtility.HasPro ();
+		bool disabled = LightmapSettings.lightmapsMode == LightmapsMode.CombinedDirectional && !InternalEditorUtility.HasPro ();
 		EditorGUI.BeginDisabledGroup (disabled);
 		{
 			GUILayout.BeginHorizontal ();
@@ -915,10 +915,10 @@ public class LMExtendedWindow : EditorWindow
 			Lightmapping.BakeAsync ();
 			break;
 		case BakeMode.BakeSelected:
-			Lightmapping.BakeSelectedAsync ();
+			Lightmapping.BakeAsync ();
 			break;
 		case BakeMode.BakeProbes:
-			Lightmapping.BakeLightProbesOnlyAsync ();
+			Lightmapping.BakeAsync ();
 			break;
 		}
 	}

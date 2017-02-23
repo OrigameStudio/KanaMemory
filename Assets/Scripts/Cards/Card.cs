@@ -21,10 +21,10 @@ public class Card : MonoBehaviour{
 	// Use this for initialization
 	void Start(){
 
-		this.flip1 = this.animation.GetClip("Card@Flip1");
-		this.flip2 = this.animation.GetClip("Card@Flip2");
-		this.wrong = this.animation.GetClip("Card@Wrong");
-		this.right = this.animation.GetClip("Card@Right");
+		this.flip1 = this.GetComponent<Animation>().GetClip("Card@Flip1");
+		this.flip2 = this.GetComponent<Animation>().GetClip("Card@Flip2");
+		this.wrong = this.GetComponent<Animation>().GetClip("Card@Wrong");
+		this.right = this.GetComponent<Animation>().GetClip("Card@Right");
 	}
 
 	public void Reset(Card that){
@@ -67,19 +67,19 @@ public class Card : MonoBehaviour{
 
 	private void PlayNow(AnimationClip clip){
 
-		if(this.animation.isPlaying){
+		if(this.GetComponent<Animation>().isPlaying){
 
-			this.animation.Stop();
+			this.GetComponent<Animation>().Stop();
 		}
 
-		this.animation.clip = clip;
+		this.GetComponent<Animation>().clip = clip;
 
-		this.animation.Play();
+		this.GetComponent<Animation>().Play();
 	}
 
 	private void PlayLater(AnimationClip clip){
 
-		this.animation.PlayQueued(clip.name);
+		this.GetComponent<Animation>().PlayQueued(clip.name);
 	}
 
 	public void FlipFaceUp(){

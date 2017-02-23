@@ -24,7 +24,7 @@ public class HanheldActivityIndicator : MonoBehaviour {
 
 #if UNITY_IPHONE || UNITY_EDITOR
 
-	public iOSActivityIndicatorStyle iOsActivityIndicator = iOSActivityIndicatorStyle.DontShow;
+	public UnityEngine.iOS.ActivityIndicatorStyle iOsActivityIndicator = UnityEngine.iOS.ActivityIndicatorStyle.DontShow;
 
 #endif
 

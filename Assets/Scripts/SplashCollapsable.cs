@@ -66,12 +66,12 @@ public class SplashCollapsable : MonoBehaviour {
 
 		if(this.destroyColliderOnCollapse){
 
-			Object.Destroy(this.gameObject.collider);
+			Object.Destroy(this.gameObject.GetComponent<Collider>());
 		}
 
 		if(this.destroyAnimationOnCollapse){
 
-			Object.Destroy(this.gameObject.animation);
+			Object.Destroy(this.gameObject.GetComponent<Animation>());
 		}
 
 		Object.Destroy(this);
