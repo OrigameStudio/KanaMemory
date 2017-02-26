@@ -21,7 +21,13 @@ public class GameAtrezzoControl : MonoBehaviour{
 
 				if( info.collider.gameObject.tag == "ATREZZO" ){
 
-					info.rigidbody.AddExplosionForce(this.explosionForce, info.point, this.explosionRadius);
+                    var rigidbody = info.rigidbody;
+
+                    if(rigidbody == null){
+                        rigidbody = info.transform.parent.gameObject.GetComponent<Rigidbody>();
+                    }
+
+                    rigidbody.AddExplosionForce(this.explosionForce, info.point, this.explosionRadius);
 				}
 			}
 		}
