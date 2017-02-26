@@ -11,7 +11,7 @@ PlayerSettings:
   targetResolution: 0
   accelerometerFrequency: 60
   companyName: Origame Studio
-  productName: Kana Memory
+  productName: Memorize Kana
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -73,7 +73,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: com.origamestudio.kanamemory
+  iPhoneBundleIdentifier: com.origamestudio.memorizekana
   productGUID: 25511ae292f7a264da114d4113d6ad9c
   iPhoneBundleVersion: 1.6
   AndroidBundleVersionCode: 16

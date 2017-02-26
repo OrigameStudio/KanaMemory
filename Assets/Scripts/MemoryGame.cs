@@ -5,7 +5,7 @@ using System.Collections;
 
 public class MemoryGame : MonoBehaviour{
 
-	public string rateAppUrl = "market://details?id=com.origamestudio.kanamemory";
+	public string rateAppUrl = "market://details?id=com.origamestudio.memorizekana";
 
 	public static string GAMES_PLAYED			= "GamesPlayed";
 	public static string GAMES_WON				= "GamesWon";

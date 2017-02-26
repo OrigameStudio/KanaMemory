@@ -973,7 +973,7 @@ MonoBehaviour:
   escapeExitsApplication: 0
   activityIndicator: {fileID: 0}
   tumblr: http://origamestudio.tumblr.com/
-  mail: mailto:origamestudio@gmail.com?subject=KanaMemory
+  mail: mailto:origamestudio@gmail.com?subject=MemorizeKana
   facebook: http://www.facebook.com/OrigameStudio
   twitter: http://twitter.com/OrigameStudio
 --- !u!4 &1650523582

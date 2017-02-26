@@ -1850,7 +1850,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: texts.Array.data[0]
-      value: Kana Memory
+      value: Memorize Kana
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 8e3676865462d674e9eba99e8724cada, type: 2}
       propertyPath: icons.Array.data[0]

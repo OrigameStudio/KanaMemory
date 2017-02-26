@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8fa03e09f4a23a429c7bdde061f2ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rateAppUrl: market://details?id=com.origamestudio.kanamemory
+  rateAppUrl: market://details?id=com.origamestudio.memorizekana
   language:
   isAppRated: 0
   fewGames: 10
