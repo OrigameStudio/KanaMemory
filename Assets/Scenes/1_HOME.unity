@@ -102,6 +102,14 @@ Prefab:
       propertyPath: m_Name
       value: _Game
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: rateAppUrl
+      value: tails?id=com.origamestudio.memorizekanaemorizekana
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72e7e9b3ce7d22040b80be13be02ef21, type: 2}
   m_IsPrefabParent: 0
@@ -133,7 +141,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &143965619
 AudioSource:
@@ -257,7 +265,7 @@ Transform:
   m_Children:
   - {fileID: 1070940942}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &251987252
 GameObject:
@@ -417,7 +425,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &374791140
 MonoBehaviour:
@@ -571,7 +579,7 @@ Transform:
   m_Children:
   - {fileID: 413964131}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &466758273
 AudioSource:
@@ -848,7 +856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &774984351
 Prefab:
@@ -884,6 +892,10 @@ Prefab:
     - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5a37fca3dc21d143a99691f989f1a65, type: 2}
@@ -1321,7 +1333,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -4.37113883e-08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
       propertyPath: m_IsActive
@@ -1390,6 +1402,10 @@ Prefab:
     - target: {fileID: 10800002, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
       propertyPath: m_Intensity
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 372e9f64cb27eb34abbfdfc66a01852d, type: 2}
