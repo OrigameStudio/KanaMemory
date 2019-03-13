@@ -1,29 +1,28 @@
 # App Info
-ios_app_id                                : 1234793120                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
+ios_app_id                                :
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
-playstore_link                            :                                           # Enter Google Play Store URL.
-presskit_download_link                    :                                           # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
-                                                                                      # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
+appstore_link                             :
+playstore_link                            : com.origamestudio.memorizekana
+presskit_download_link                    :
 
-app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
-app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_icon                                  : assets/appicon.png
+app_name                                  : Memorize Kana
+app_price                                 : Free
+app_description                           : Have fun studying Japanese! <br> Play this memory game to learn Hiragana and Katakana
 
-enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
+enable_smart_app_banner                   : true
 
 
 
 # Information About Yourself
-your_name                                 : Emil Baehr                                
-your_link                                 : https://emilbaehr.com                     
-your_city                                 : Copenhagen                                
-email_address                             : emil.baehr@gmail.com
-facebook_username                         :                                           
-instagram_username                        : ebaehr
-twitter_username                          : ebaehr
-github_username                           : emilbaehr
+your_name                                 : Guillermo Calvo
+your_link                                 : https://guillermo.dev/
+your_city                                 : Tokyo
+email_address                             : origame-studio@guillermo.dev
+facebook_username                         :
+instagram_username                        : guillermocalvo
+twitter_username                          : gcalvo
+github_username                           : guillermocalvo
 youtube_username                          :
 
 
@@ -31,46 +30,42 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : GitHub Pages Jekyll Theme
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
-    
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
+  - title                                 : Fun
+    description                           : >
+      Learn by matching up <strong>Hiragana</strong> and
+      <strong>Katakana</strong> characters and <strong>Romaji</strong>.
+    fontawesome_icon_name                 : gamepad
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
+  - title                                 : Free
+    description                           : >
+      Download this <strong>free game</strong> and start learning Japanese
+      language now.
+    fontawesome_icon_name                 : yen-sign
 
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
-    fontawesome_icon_name                 : sync
+  - title                                 : Game Modes
+    description                           : >
+      Select between <strong>three game modes</strong>, depending on the
+      syllabary you want to study.
+    fontawesome_icon_name                 : language
 
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
-  
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
+  - title                                 : Difficulty
+    description                           : >
+      Increase the difficulty level as you improve your skills:
+      <strong>Easy</strong>, <strong>Medium</strong>, and <strong>Hard</strong>.
+    fontawesome_icon_name                 : torii-gate
 
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
+  - title                                 : Hints
+    description                           : >
+      Learn the characters you don't know yet by hearing
+      <strong>how to pronounce</strong> each syllable.
+    fontawesome_icon_name                 : lightbulb
 
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
-
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
-
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
-
+  - title                                 : Music
+    description                           : >
+      Enjoy amazing music tracks by <a href="http://www.thekyotoconnection.com/">The Kyoto Connection</a>,
+      <a href="https://www.jamendo.com/artist/357163/ambient-samurai-ichiro-nakagawa">Ambient Samurai</a>,
+      and <a href="https://ozzed.net/">Ozzed</a>.
+    fontawesome_icon_name                 : music
 
 
 # Theme Settings
